@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model xmlns="http://heron.ttsnetwork.com/xml/v1" name="model.xml">
+    <variables/>
+    <modules>
+        <module-instance name="B" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="-9191" y="-512"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">B.startFrame</param>
+            <param name="endFrame">B.endFrame</param>
+            <param name="sensorNames"></param>
+            <param name="sensorPositions"></param>
+            <param name="sensorsReveal"></param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="ParametricSourceV2" type="com.ttsnetwork.modules.standard.ParametricSource2">
+            <visual x="-10634" y="-2329"/>
+            <param name="modelName">ParametricSourceV2</param>
+            <param name="creationFrameName">ParametricSourceV2.creationFrame</param>
+            <param name="timeInterval">3000</param>
+            <param name="marker"></param>
+        </module-instance>
+        <module-instance name="A" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="-8134" y="-2329"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">A.startFrame</param>
+            <param name="endFrame">A.endFrame</param>
+            <param name="sensorNames"></param>
+            <param name="sensorPositions"></param>
+            <param name="sensorsReveal"></param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+    </modules>
+    <connections>
+        <connection>
+            <port-out module="ParametricSourceV2" port="out"/>
+            <port-in module="A" port="flowIn"/>
+        </connection>
+    </connections>
+</model>
