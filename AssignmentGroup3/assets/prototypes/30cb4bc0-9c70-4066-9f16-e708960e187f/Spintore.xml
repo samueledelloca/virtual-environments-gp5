@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:environment xmlns="http://binding.ttsnetwork.com/commons" xmlns:ns2="http://binding.ttsnetwork.com/xml/v7" version="1.0" id="Spintore.xml">
+    <ns2:view>
+        <background>
+            <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
+        </background>
+        <floor visible="false">
+            <axis>Z</axis>
+            <center lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </center>
+            <sun-position lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </sun-position>
+            <top-color r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
+            <shadows-color r="0.7" g="0.7" b="0.7" a="1.0"/>
+        </floor>
+        <camera-ortho/>
+        <camera-perspective/>
+    </ns2:view>
+    <ns2:group id="Base">
+        <ns2:frames>
+            <frame name="from">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>-600.6549712271942</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="to">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>-132.2704480194533</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+        </ns2:frames>
+        <ns2:children>
+            <ns2:body visible="true" id="ElementiFissi">
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>80.0</y>
+                            <z>10.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="m" type="VRML">
+                    <geometry-uri>ElementiFissi.wrl</geometry-uri>
+                </ns2:geometry>
+                <ns2:children/>
+            </ns2:body>
+            <ns2:body visible="true" id="Spintore">
+                <ns2:frames>
+                    <frame name="spFr">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>68.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="TRANSLATIONAL">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>80.0</y>
+                            <z>10.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                    <ns2:translation-axis name="T">
+                        <axis>
+                            <origin lengthUnit="mm">
+<x>0.0</x>
+<y>0.0</y>
+<z>0.0</z>
+                            </origin>
+                            <versor>
+<x>0.0</x>
+<y>0.0</y>
+<z>1.0</z>
+                            </versor>
+                        </axis>
+                        <limits>
+                            <home>0.0</home>
+                            <low>0.0</low>
+                            <high>500.0</high>
+                        </limits>
+                    </ns2:translation-axis>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="m" type="VRML">
+                    <geometry-uri>Spintore.wrl</geometry-uri>
+                </ns2:geometry>
+                <ns2:children/>
+            </ns2:body>
+        </ns2:children>
+    </ns2:group>
+</ns2:environment>

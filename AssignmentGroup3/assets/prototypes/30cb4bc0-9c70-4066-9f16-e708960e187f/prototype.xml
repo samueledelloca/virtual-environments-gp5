@@ -1,0 +1,60 @@
+<prototype uuid="30cb4bc0-9c70-4066-9f16-e708960e187f" name="Pusher" version="1">	
+    <parameter name="upperLimit" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Upper limit [mm]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="lowerLimit" type="double" value="0">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Lower limit [mm]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="speed" type="double" value="1">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Speed [m/s]" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Marker" type="string"/>
+        <property name="affectGeometry" value="false" type="boolean"/>
+    </parameter>
+    <parameter name="infoContent" type="string" value="">
+        <property name="displayName" value="HUD content (HTML)" type="string"/>
+        <property name="affectGeometry" value="true" type="boolean"/>
+    </parameter>
+    <input name="from" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="Base.from" type="string"/>
+        <property name="logicsPort" value="fromConveyor" type="string"/>
+    </input>
+    <input name="to" type="com.ttsnetwork.modules.standard.ControlEndpoint">
+        <property name="frame" value="Base.to" type="string"/>
+        <property name="logicsPort" value="toConveyor" type="string"/>
+    </input>
+    <input name="cmdStable" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <input name="cmdExt" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <input name="cmdRet" type="com.ttsnetwork.heron.v5.InputSignal">
+    </input>
+    <output name="statusExt" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <output name="statusRet" type="com.ttsnetwork.heron.v5.OutputSignal">
+    </output>
+    <property name="displayName" value="Pusher" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="transport" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;250" type="double[]"/>
+    <property name="bounds_size" value="500;500;500" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.Pusher">
+        <param name="sensorGeometryId" type="string">${instance.name}.pc_geom</param>
+        <param name="marker" type="string">${marker}</param>
+        <param name="pusherId" type="string">${instance.name}.Spintore</param>
+        <param name="lowerLimit" type="double">${lowerLimit}</param>
+        <param name="upperLimit" type="double">${upperLimit}</param>
+        <param name="speed" type="double">${speed}</param>
+        <param name="infoContent" type="string">${infoContent}</param>
+        <param name="infoFrame" type="string">${instance.name}.Base.infoFrame</param>
+    </logics>
+</prototype>
