@@ -332,15 +332,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="">
+      <parameter name="sensorPositions" type="double[]" value="2000">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="">
+      <parameter name="sensorNames" type="string[]" value="S1ABD3">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="">
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -593,15 +593,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="">
+      <parameter name="sensorPositions" type="double[]" value="1600">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="">
+      <parameter name="sensorNames" type="string[]" value="S1D">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="">
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1116,7 +1116,6 @@
    <relationship sourcePortName="out" sourceInstanceUuid="c8bc44d9-c9d0-4141-8492-ad443ae76984" targetPortName="in" targetInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc"/>
    <relationship sourcePortName="out" sourceInstanceUuid="9404deb1-c1ba-4b63-908e-c40ebbe9a6e3" targetPortName="in" targetInstanceUuid="2acc446d-e350-41ee-bb0c-b4cececfb296"/>
    <relationship sourcePortName="out" sourceInstanceUuid="d5fcb7ed-b5dd-4dc3-ad18-882b51cf404f" targetPortName="in" targetInstanceUuid="29780008-4543-425a-86b7-1951ef3e402b"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="78fb0f05-4526-4698-a5a2-a3852c2caf8a" targetPortName="in" targetInstanceUuid="9e09a663-51ee-4cce-a593-71875ba23ea0"/>
    <relationship sourcePortName="out" sourceInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc" targetPortName="in" targetInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c"/>
    <relationship sourcePortName="out" sourceInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c" targetPortName="in" targetInstanceUuid="82699023-9e14-4f28-861c-5efa911a3671"/>
    <relationship sourcePortName="out" sourceInstanceUuid="2b24ef96-4472-459a-8071-cd72e84c1bd0" targetPortName="in" targetInstanceUuid="1803f4d3-9e7c-4de1-84d8-e3d5fdfa2397"/>
@@ -1127,4 +1126,5 @@
    <relationship sourcePortName="control" sourceInstanceUuid="14f4c041-9ecf-4439-897c-c497b2894c6b" targetPortName="from" targetInstanceUuid="217d823a-ac51-4fec-809c-f863a572a52e"/>
    <relationship sourcePortName="control" sourceInstanceUuid="b15e0135-e3e3-4007-9a96-1cc79febd3c2" targetPortName="to" targetInstanceUuid="217d823a-ac51-4fec-809c-f863a572a52e"/>
    <relationship sourcePortName="out" sourceInstanceUuid="ca15fa8c-7034-4b99-8003-45d0891f1d72" targetPortName="in" targetInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="78fb0f05-4526-4698-a5a2-a3852c2caf8a" targetPortName="in" targetInstanceUuid="9e09a663-51ee-4cce-a593-71875ba23ea0"/>
 </instances>

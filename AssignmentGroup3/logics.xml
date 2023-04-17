@@ -14,6 +14,18 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="A3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="-2134" y="-2329"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">A3.startFrame</param>
+            <param name="endFrame">A3.endFrame</param>
+            <param name="sensorNames">S1A3</param>
+            <param name="sensorPositions">850</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
         <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="343" y="1877"/>
             <param name="conveyorSpeed">1</param>
@@ -23,18 +35,6 @@
             <param name="sensorNames"></param>
             <param name="sensorPositions"></param>
             <param name="sensorsReveal"></param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
-        </module-instance>
-        <module-instance name="A3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-2134" y="-2329"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">A3.startFrame</param>
-            <param name="endFrame">A3.endFrame</param>
-            <param name="sensorNames">S1A3</param>
-            <param name="sensorPositions">850</param>
-            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -64,7 +64,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="R4" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-4403" y="3213"/>
+            <visual x="-3246" y="2742"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -98,7 +98,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="SD" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="-1767" y="4463"/>
+            <visual x="-1957" y="4463"/>
             <param name="modelName">SD</param>
             <param name="creationFrameName">SD.creationFrame</param>
             <param name="timeInterval">3000</param>
@@ -254,13 +254,13 @@
             <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="D" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-1767" y="3213"/>
+            <visual x="-1957" y="3213"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">D.startFrame</param>
             <param name="endFrame">D.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">S1D</param>
+            <param name="sensorPositions">1600</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -282,9 +282,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">ABD3.startFrame</param>
             <param name="endFrame">ABD3.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">S1ABD3</param>
+            <param name="sensorPositions">2000</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -321,10 +321,6 @@
         <connection>
             <port-out module="NC2" port="flowOut"/>
             <port-in module="SG" port="in"/>
-        </connection>
-        <connection>
-            <port-out module="SD" port="out"/>
-            <port-in module="D" port="flowIn"/>
         </connection>
         <connection>
             <port-out module="ABD3" port="flowOut"/>
@@ -365,6 +361,10 @@
         <connection>
             <port-out module="PlanSource1" port="out"/>
             <port-in module="A1" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="SD" port="out"/>
+            <port-in module="D" port="flowIn"/>
         </connection>
     </connections>
 </model>
