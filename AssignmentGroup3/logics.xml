@@ -203,7 +203,7 @@
         <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="-1912" y="-254"/>
             <param name="id">ProgrammableLogics1</param>
-            <param name="logicClassName">my.company.PLC</param>
+            <param name="logicClassName">my.company.PLCL1</param>
         </module-instance>
         <module-instance name="SE" type="com.ttsnetwork.modules.standard.Sink">
             <visual x="9866" y="-2329"/>

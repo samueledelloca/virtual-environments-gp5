@@ -834,7 +834,7 @@
       </parameter>
    </instance>
    <instance name="ProgrammableLogics1" uuid="e11f5d8c-2b0a-4118-9982-4c5827c7c61e" version="1" prototype="ffb20cba-6216-40c1-81f5-4d18313ca199">
-      <parameter name="plClass" type="string" value="my.company.PLC">
+      <parameter name="plClass" type="string" value="my.company.PLCL1">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Logics class"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1024,6 +1024,10 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
       <parameter name="marker" type="string" value="">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1031,10 +1035,6 @@
       <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
    </instance>
    <instance name="SC" uuid="7effde11-e2d3-4e63-a544-cac24203db39" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
@@ -1053,6 +1053,10 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
       <parameter name="marker" type="string" value="">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1060,10 +1064,6 @@
       <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
    </instance>
    <instance name="SD" uuid="78fb0f05-4526-4698-a5a2-a3852c2caf8a" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
@@ -1082,6 +1082,10 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
       <parameter name="marker" type="string" value="">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1089,10 +1093,6 @@
       <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
-      </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
    </instance>
    <instance name="SE" uuid="2acc446d-e350-41ee-bb0c-b4cececfb296" version="1" prototype="5a6af30b-a6c6-4d2f-8b59-55688f183628">
