@@ -3,7 +3,7 @@
     <variables/>
     <modules>
         <module-instance name="C" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-2311" y="-4245"/>
+            <visual x="-1957" y="-4245"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">C.startFrame</param>
             <param name="endFrame">C.endFrame</param>
@@ -117,7 +117,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="R3" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="3089" y="-3351"/>
+            <visual x="2788" y="-3351"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -158,7 +158,7 @@
             <param name="infoFrame">P1.Base.infoFrame</param>
         </module-instance>
         <module-instance name="R2" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-1429" y="-3359"/>
+            <visual x="-1119" y="-3359"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -211,7 +211,7 @@
             <param name="infoFrame">SE.creationFrame</param>
         </module-instance>
         <module-instance name="SC" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="-2311" y="-5995"/>
+            <visual x="-1957" y="-5995"/>
             <param name="modelName">SC</param>
             <param name="creationFrameName">SC.creationFrame</param>
             <param name="timeInterval">3000</param>
@@ -347,10 +347,6 @@
             <port-in module="ABC" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="SC" port="out"/>
-            <port-in module="C" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="A2" port="control"/>
             <port-in module="P1" port="fromConveyor"/>
         </connection>
@@ -365,6 +361,14 @@
         <connection>
             <port-out module="SD" port="out"/>
             <port-in module="D" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="ABC" port="control"/>
+            <port-in module="R2" port="tool"/>
+        </connection>
+        <connection>
+            <port-out module="SC" port="out"/>
+            <port-in module="C" port="flowIn"/>
         </connection>
     </connections>
 </model>
