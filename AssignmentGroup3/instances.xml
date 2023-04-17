@@ -1032,6 +1032,10 @@
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
    </instance>
    <instance name="SC" uuid="7effde11-e2d3-4e63-a544-cac24203db39" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
       <parameter name="creationtimeInterval" type="long" value="3000">
@@ -1057,6 +1061,10 @@
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
    </instance>
    <instance name="SD" uuid="78fb0f05-4526-4698-a5a2-a3852c2caf8a" version="1" prototype="afa70dcf-9016-4459-995a-69cadfff917e">
       <parameter name="creationtimeInterval" type="long" value="3000">
@@ -1081,6 +1089,10 @@
       <parameter name="color" type="string" value="0x999999">
          <property name="displayName" type="string" value="Color"/>
          <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+      <parameter name="minCreationDistance" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
    </instance>
    <instance name="SE" uuid="2acc446d-e350-41ee-bb0c-b4cececfb296" version="1" prototype="5a6af30b-a6c6-4d2f-8b59-55688f183628">
@@ -1126,6 +1138,5 @@
    <relationship sourcePortName="control" sourceInstanceUuid="b15e0135-e3e3-4007-9a96-1cc79febd3c2" targetPortName="to" targetInstanceUuid="217d823a-ac51-4fec-809c-f863a572a52e"/>
    <relationship sourcePortName="out" sourceInstanceUuid="ca15fa8c-7034-4b99-8003-45d0891f1d72" targetPortName="in" targetInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915"/>
    <relationship sourcePortName="out" sourceInstanceUuid="78fb0f05-4526-4698-a5a2-a3852c2caf8a" targetPortName="in" targetInstanceUuid="9e09a663-51ee-4cce-a593-71875ba23ea0"/>
-   <relationship sourcePortName="control" sourceInstanceUuid="1fdc793f-1fe8-4b91-9a0c-abc52dc241ea" targetPortName="TOOL" targetInstanceUuid="4bd601ac-3870-4683-8abe-876d9f477987"/>
    <relationship sourcePortName="out" sourceInstanceUuid="7effde11-e2d3-4e63-a544-cac24203db39" targetPortName="in" targetInstanceUuid="29a3426f-114e-4c55-9016-9c80f63fc266"/>
 </instances>

@@ -14,6 +14,10 @@
         <property name="constraints" value=">0" type="string"/>
         <property name="displayName" value="Entity height [mm]" type="string"/>
     </parameter>
+    <parameter name="minCreationDistance" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Min creation distance [mm]" type="string"/>
+    </parameter>
     <parameter name="marker" type="string" value="">
         <property name="displayName" value="Marker" type="string"/>
         <property name="affectGeometry" value="false" type="boolean"/>
@@ -40,6 +44,7 @@
         <param name="modelName" type="string">${instance.name}</param>
         <param name="creationFrameName" type="string">${instance.name}.creationFrame</param>
         <param name="timeInterval" type="long">${creationtimeInterval}</param>
+        <param name="minCreationDistance" type="double">${minCreationDistance}</param>
         <param name="marker" type="string">${marker}</param>
     </logics>
 </prototype>

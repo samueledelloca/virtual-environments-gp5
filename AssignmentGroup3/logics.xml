@@ -102,6 +102,7 @@
             <param name="modelName">SD</param>
             <param name="creationFrameName">SD.creationFrame</param>
             <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">100</param>
             <param name="marker"></param>
         </module-instance>
         <module-instance name="B" type="com.ttsnetwork.modules.standard.ConveyorLine2">
@@ -215,6 +216,7 @@
             <param name="modelName">SC</param>
             <param name="creationFrameName">SC.creationFrame</param>
             <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">100</param>
             <param name="marker"></param>
         </module-instance>
         <module-instance name="ABC" type="com.ttsnetwork.modules.standard.ConveyorLine2">
@@ -294,6 +296,7 @@
             <param name="modelName">SB</param>
             <param name="creationFrameName">SB.creationFrame</param>
             <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">100</param>
             <param name="marker"></param>
         </module-instance>
     </modules>
@@ -361,10 +364,6 @@
         <connection>
             <port-out module="SD" port="out"/>
             <port-in module="D" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="ABC" port="control"/>
-            <port-in module="R2" port="tool"/>
         </connection>
         <connection>
             <port-out module="SC" port="out"/>
