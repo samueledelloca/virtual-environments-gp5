@@ -116,18 +116,18 @@ public class PLCL1 extends ProgrammableLogics {
             schedule.waitTime(1000);
 //            srcCmd.create(null);
 //            schedule.waitTime(4000);
-            schedule.callFunction(this::extract);
+            schedule.callFunction(this::extractP1);
             schedule.waitTime(1000);
-            schedule.callFunction(this::retract);
+            schedule.callFunction(this::retractP1);
         }
         schedule.end();
     }
 
-    public void extract() {
+    public void extractP1() {
         P1.cmdStable.write(true);
     }
 
-    public void retract() {
+    public void retractP1() {
         P1.cmdStable.write(false);
     }
 

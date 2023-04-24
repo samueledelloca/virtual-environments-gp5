@@ -1911,100 +1911,6 @@
                             </ns2:body>
                         </ns2:children>
                     </ns2:body>
-                    <ns2:body visible="true" id="PlanSource1">
-                        <properties>
-                            <property name="#instance.uuid" type="string">ca15fa8c-7034-4b99-8003-45d0891f1d72</property>
-                            <property name="#prototype.uuid" type="string">9240bd1e-c461-4c38-bf34-e1c1780df195</property>
-                        </properties>
-                        <ns2:frames>
-                            <frame name="creationFrame">
-<location lengthUnit="mm">
-    <x>0.0</x>
-    <y>0.0</y>
-    <z>900.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </frame>
-                            <frame name="commandsFrame">
-<location lengthUnit="mm">
-    <x>0.0</x>
-    <y>250.0</y>
-    <z>900.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>0.0</x>
-    <y>0.0</y>
-    <z>1.0</z>
-    <w>90.0</w>
-</orientation>
-                            </frame>
-                            <frame name="outFrame">
-<location lengthUnit="mm">
-    <x>-250.0</x>
-    <y>0.0</y>
-    <z>900.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </frame>
-                        </ns2:frames>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-10133.538402035552</x>
-    <y>-2328.636958484061</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/source_ca15fa8c-7034-4b99-8003-45d0891f1d72.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children>
-                            <ns2:body visible="true" id="PlanSource1.entity">
-<properties>
-    <property name="#local.name" type="string">entity</property>
-    <property name="#instance.uuid" type="string">ca15fa8c-7034-4b99-8003-45d0891f1d72</property>
-    <property name="#prototype.element.expert_mode" type="boolean">true</property>
-</properties>
-<ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>900.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
-<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-    <geometry-uri>generated/source_ca15fa8c-7034-4b99-8003-45d0891f1d72_entity.ptx</geometry-uri>
-</ns2:geometry>
-<ns2:children/>
-                            </ns2:body>
-                        </ns2:children>
-                    </ns2:body>
                     <ns2:group id="R1">
                         <properties>
                             <property name="#instance.uuid" type="string">5ee5bdfb-48cf-411d-bb38-24fb02b63e2d</property>
@@ -7635,6 +7541,100 @@
                             </ns2:body>
                         </ns2:children>
                     </ns2:group>
+                    <ns2:body visible="true" id="SA">
+                        <properties>
+                            <property name="#instance.uuid" type="string">bab192ab-a1de-4090-8d07-45948cd68258</property>
+                            <property name="#prototype.uuid" type="string">9240bd1e-c461-4c38-bf34-e1c1780df195</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="creationFrame">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="commandsFrame">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>250.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>1.0</z>
+    <w>90.0</w>
+</orientation>
+                            </frame>
+                            <frame name="outFrame">
+<location lengthUnit="mm">
+    <x>-250.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>-10133.538402035552</x>
+    <y>-2328.636958484061</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                            <geometry-uri>generated/source_bab192ab-a1de-4090-8d07-45948cd68258.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                            <ns2:body visible="true" id="SA.entity">
+<properties>
+    <property name="#local.name" type="string">entity</property>
+    <property name="#instance.uuid" type="string">bab192ab-a1de-4090-8d07-45948cd68258</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/source_bab192ab-a1de-4090-8d07-45948cd68258_entity.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:body>
                 </ns2:children>
             </ns2:group>
             <ns2:group id="L2">
@@ -17429,7 +17429,7 @@
                             </ns2:body>
                         </ns2:children>
                     </ns2:group>
-                    <ns2:group id="E">
+                    <ns2:group id="E1">
                         <properties>
                             <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
                             <property name="#prototype.uuid" type="string">468e049a-e061-4e96-8ba8-32583dd93a0c</property>
@@ -17504,16 +17504,16 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:group id="E.E.root">
+                            <ns2:group id="E1.E1.root">
 <properties>
-    <property name="#local.name" type="string">E.root</property>
+    <property name="#local.name" type="string">E1.root</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
 </properties>
 <ns2:frames/>
 <ns2:children>
-    <ns2:group id="E.E.relocator">
+    <ns2:group id="E1.E1.relocator">
         <properties>
-            <property name="#local.name" type="string">E.relocator</property>
+            <property name="#local.name" type="string">E1.relocator</property>
             <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
         </properties>
         <ns2:frames/>
@@ -17533,9 +17533,9 @@
             </ns2:transform>
         </ns2:joint>
         <ns2:children>
-            <ns2:group id="E.E.relocatorA">
+            <ns2:group id="E1.E1.relocatorA">
                 <properties>
-                    <property name="#local.name" type="string">E.relocatorA</property>
+                    <property name="#local.name" type="string">E1.relocatorA</property>
                     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
                 </properties>
                 <ns2:frames/>
@@ -17555,9 +17555,9 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="E.E.latoA">
+                    <ns2:group id="E1.E1.latoA">
                         <properties>
-                            <property name="#local.name" type="string">E.latoA</property>
+                            <property name="#local.name" type="string">E1.latoA</property>
                             <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
                         </properties>
                         <ns2:frames/>
@@ -17577,9 +17577,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:body visible="true" id="E.E.carterA1">
+                            <ns2:body visible="true" id="E1.E1.carterA1">
 <properties>
-    <property name="#local.name" type="string">E.carterA1</property>
+    <property name="#local.name" type="string">E1.carterA1</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
 </properties>
 <ns2:frames/>
@@ -17603,9 +17603,9 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.E.carterA2">
+                            <ns2:body visible="true" id="E1.E1.carterA2">
 <properties>
-    <property name="#local.name" type="string">E.carterA2</property>
+    <property name="#local.name" type="string">E1.carterA2</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
 </properties>
 <ns2:frames/>
@@ -17633,9 +17633,9 @@
                     </ns2:group>
                 </ns2:children>
             </ns2:group>
-            <ns2:group id="E.E.relocatorB">
+            <ns2:group id="E1.E1.relocatorB">
                 <properties>
-                    <property name="#local.name" type="string">E.relocatorB</property>
+                    <property name="#local.name" type="string">E1.relocatorB</property>
                     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
                 </properties>
                 <ns2:frames/>
@@ -17655,9 +17655,9 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="E.E.latoB">
+                    <ns2:group id="E1.E1.latoB">
                         <properties>
-                            <property name="#local.name" type="string">E.latoB</property>
+                            <property name="#local.name" type="string">E1.latoB</property>
                             <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
                         </properties>
                         <ns2:frames/>
@@ -17677,9 +17677,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:body visible="true" id="E.E.carterB1">
+                            <ns2:body visible="true" id="E1.E1.carterB1">
 <properties>
-    <property name="#local.name" type="string">E.carterB1</property>
+    <property name="#local.name" type="string">E1.carterB1</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
 </properties>
 <ns2:frames/>
@@ -17703,9 +17703,9 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.E.carterB2">
+                            <ns2:body visible="true" id="E1.E1.carterB2">
 <properties>
-    <property name="#local.name" type="string">E.carterB2</property>
+    <property name="#local.name" type="string">E1.carterB2</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
 </properties>
 <ns2:frames/>
@@ -17737,7 +17737,7 @@
     </ns2:group>
 </ns2:children>
                             </ns2:group>
-                            <ns2:body visible="true" id="E.midStructure">
+                            <ns2:body visible="true" id="E1.midStructure">
 <properties>
     <property name="#local.name" type="string">midStructure</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17763,7 +17763,7 @@
     <geometry-uri>generated/9404deb1-c1ba-4b63-908e-c40ebbe9a6e3/midStructure.ptx</geometry-uri>
 </ns2:geometry>
 <ns2:children>
-    <ns2:body visible="true" id="E.tappeto">
+    <ns2:body visible="true" id="E1.tappeto">
         <properties>
             <property name="#local.name" type="string">tappeto</property>
             <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17792,7 +17792,7 @@
     </ns2:body>
 </ns2:children>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.tappA">
+                            <ns2:body visible="true" id="E1.tappA">
 <properties>
     <property name="#local.name" type="string">tappA</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17819,7 +17819,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.tappB">
+                            <ns2:body visible="true" id="E1.tappB">
 <properties>
     <property name="#local.name" type="string">tappB</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17846,7 +17846,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.cylA">
+                            <ns2:body visible="true" id="E1.cylA">
 <properties>
     <property name="#local.name" type="string">cylA</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17873,7 +17873,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.cylB">
+                            <ns2:body visible="true" id="E1.cylB">
 <properties>
     <property name="#local.name" type="string">cylB</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17900,7 +17900,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.leg1">
+                            <ns2:body visible="true" id="E1.leg1">
 <properties>
     <property name="#local.name" type="string">leg1</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17927,7 +17927,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCone1">
+                            <ns2:body visible="true" id="E1.legCone1">
 <properties>
     <property name="#local.name" type="string">legCone1</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17954,7 +17954,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCyl1">
+                            <ns2:body visible="true" id="E1.legCyl1">
 <properties>
     <property name="#local.name" type="string">legCyl1</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -17981,7 +17981,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.leg2">
+                            <ns2:body visible="true" id="E1.leg2">
 <properties>
     <property name="#local.name" type="string">leg2</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18008,7 +18008,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCone2">
+                            <ns2:body visible="true" id="E1.legCone2">
 <properties>
     <property name="#local.name" type="string">legCone2</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18035,7 +18035,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCyl2">
+                            <ns2:body visible="true" id="E1.legCyl2">
 <properties>
     <property name="#local.name" type="string">legCyl2</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18062,7 +18062,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.leg3">
+                            <ns2:body visible="true" id="E1.leg3">
 <properties>
     <property name="#local.name" type="string">leg3</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18089,7 +18089,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCone3">
+                            <ns2:body visible="true" id="E1.legCone3">
 <properties>
     <property name="#local.name" type="string">legCone3</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18116,7 +18116,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCyl3">
+                            <ns2:body visible="true" id="E1.legCyl3">
 <properties>
     <property name="#local.name" type="string">legCyl3</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18143,7 +18143,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.leg4">
+                            <ns2:body visible="true" id="E1.leg4">
 <properties>
     <property name="#local.name" type="string">leg4</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18170,7 +18170,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCone4">
+                            <ns2:body visible="true" id="E1.legCone4">
 <properties>
     <property name="#local.name" type="string">legCone4</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18197,7 +18197,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.legCyl4">
+                            <ns2:body visible="true" id="E1.legCyl4">
 <properties>
     <property name="#local.name" type="string">legCyl4</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18224,7 +18224,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.cross1">
+                            <ns2:body visible="true" id="E1.cross1">
 <properties>
     <property name="#local.name" type="string">cross1</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18251,7 +18251,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.cross2">
+                            <ns2:body visible="true" id="E1.cross2">
 <properties>
     <property name="#local.name" type="string">cross2</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18278,7 +18278,7 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="E.sensor_0">
+                            <ns2:body visible="true" id="E1.sensor_0">
 <properties>
     <property name="#local.name" type="string">sensor_0</property>
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
@@ -18289,6 +18289,33 @@
     <ns2:transform>
         <location lengthUnit="mm">
             <x>-500.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_9404deb1-c1ba-4b63-908e-c40ebbe9a6e3_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E1.sensor_1">
+<properties>
+    <property name="#local.name" type="string">sensor_1</property>
+    <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>500.0</x>
             <y>0.0</y>
             <z>900.0</z>
         </location>
@@ -18316,8 +18343,8 @@
                         <ns2:joint type="RIGID">
                             <ns2:transform>
 <location lengthUnit="mm">
-    <x>2787.9704751644986</x>
-    <y>-3351.453953101435</y>
+    <x>2787.97</x>
+    <y>-3351.45</y>
     <z>0.0</z>
 </location>
 <orientation angleUnit="deg">
@@ -21353,6 +21380,33 @@
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
+            <x>-960.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_fc1d78f1-777f-43ff-b10e-89ee80a4b641_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E2.sensor_1">
+<properties>
+    <property name="#local.name" type="string">sensor_1</property>
+    <property name="#instance.uuid" type="string">fc1d78f1-777f-43ff-b10e-89ee80a4b641</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
             <x>540.0</x>
             <y>0.0</y>
             <z>900.0</z>
@@ -21372,72 +21426,121 @@
                             </ns2:body>
                         </ns2:children>
                     </ns2:group>
-                </ns2:children>
-            </ns2:group>
-            <ns2:group id="E3">
+                    <ns2:group id="E3">
+                        <properties>
+                            <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+                            <property name="#prototype.uuid" type="string">468e049a-e061-4e96-8ba8-32583dd93a0c</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="startFrame">
+<location lengthUnit="mm">
+    <x>-500.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="endFrame">
+<location lengthUnit="mm">
+    <x>500.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="commandsInFrame">
+<location lengthUnit="mm">
+    <x>500.0</x>
+    <y>400.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="sensorsOutFrame">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>7366.461597964448</x>
+    <y>-2328.636958484061</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:children>
+                            <ns2:group id="E3.ConveyorV2.root">
+<properties>
+    <property name="#local.name" type="string">ConveyorV2.root</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+</properties>
+<ns2:frames/>
+<ns2:children>
+    <ns2:group id="E3.ConveyorV2.relocator">
+        <properties>
+            <property name="#local.name" type="string">ConveyorV2.relocator</property>
+            <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+        </properties>
+        <ns2:frames/>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>2507.63</x>
+                    <y>-508.5</y>
+                    <z>1499.000015258789</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:children>
+            <ns2:group id="E3.ConveyorV2.relocatorA">
                 <properties>
-                    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                    <property name="#prototype.uuid" type="string">468e049a-e061-4e96-8ba8-32583dd93a0c</property>
+                    <property name="#local.name" type="string">ConveyorV2.relocatorA</property>
+                    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
                 </properties>
-                <ns2:frames>
-                    <frame name="startFrame">
-                        <location lengthUnit="mm">
-                            <x>-1500.0</x>
-                            <y>0.0</y>
-                            <z>900.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </frame>
-                    <frame name="endFrame">
-                        <location lengthUnit="mm">
-                            <x>1500.0</x>
-                            <y>0.0</y>
-                            <z>900.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </frame>
-                    <frame name="commandsInFrame">
-                        <location lengthUnit="mm">
-                            <x>1500.0</x>
-                            <y>400.0</y>
-                            <z>900.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </frame>
-                    <frame name="sensorsOutFrame">
-                        <location lengthUnit="mm">
-                            <x>0.0</x>
-                            <y>0.0</y>
-                            <z>900.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </frame>
-                </ns2:frames>
+                <ns2:frames/>
                 <ns2:joint type="RIGID">
                     <ns2:transform>
                         <location lengthUnit="mm">
-                            <x>8366.461597964448</x>
-                            <y>-2328.636958484061</y>
+                            <x>200.0</x>
+                            <y>0.0</y>
                             <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
@@ -21449,25 +21552,40 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="E3.E3.root">
+                    <ns2:group id="E3.ConveyorV2.latoA">
                         <properties>
-                            <property name="#local.name" type="string">E3.root</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                            <property name="#local.name" type="string">ConveyorV2.latoA</property>
+                            <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
                         </properties>
                         <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>-4789.5</x>
+    <y>671.82</y>
+    <z>-1574.7</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-1.0</z>
+    <w>90.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
                         <ns2:children>
-                            <ns2:group id="E3.E3.relocator">
+                            <ns2:body visible="true" id="E3.ConveyorV2.carterA1">
 <properties>
-    <property name="#local.name" type="string">E3.relocator</property>
-    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#local.name" type="string">ConveyorV2.carterA1</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
 </properties>
 <ns2:frames/>
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
-            <x>2507.63</x>
-            <y>-508.5</y>
-            <z>1499.000015258789</z>
+            <x>-150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
         </location>
         <orientation angleUnit="deg">
             <x>1.0</x>
@@ -21477,249 +21595,347 @@
         </orientation>
     </ns2:transform>
 </ns2:joint>
-<ns2:children>
-    <ns2:group id="E3.E3.relocatorA">
-        <properties>
-            <property name="#local.name" type="string">E3.relocatorA</property>
-            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-        </properties>
-        <ns2:frames/>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>1200.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:children>
-            <ns2:group id="E3.E3.latoA">
-                <properties>
-                    <property name="#local.name" type="string">E3.latoA</property>
-                    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                </properties>
-                <ns2:frames/>
-                <ns2:joint type="RIGID">
-                    <ns2:transform>
-                        <location lengthUnit="mm">
-                            <x>-4789.5</x>
-                            <y>671.82</y>
-                            <z>-1574.7</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>0.0</x>
-                            <y>0.0</y>
-                            <z>-1.0</z>
-                            <w>90.0</w>
-                        </orientation>
-                    </ns2:transform>
-                </ns2:joint>
-                <ns2:children>
-                    <ns2:body visible="true" id="E3.E3.carterA1">
-                        <properties>
-                            <property name="#local.name" type="string">E3.carterA1</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-150.0</x>
-    <y>0.0</y>
-    <z>-58.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="VRML">
-                            <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterA1.wrl</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.E3.carterA2">
-                        <properties>
-                            <property name="#local.name" type="string">E3.carterA2</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>150.0</x>
-    <y>0.0</y>
-    <z>-58.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="VRML">
-                            <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterA2.wrl</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterA1.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.ConveyorV2.carterA2">
+<properties>
+    <property name="#local.name" type="string">ConveyorV2.carterA2</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterA2.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
                 </ns2:children>
             </ns2:group>
-        </ns2:children>
-    </ns2:group>
-    <ns2:group id="E3.E3.relocatorB">
-        <properties>
-            <property name="#local.name" type="string">E3.relocatorB</property>
-            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-        </properties>
-        <ns2:frames/>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>-1200.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:children>
-            <ns2:group id="E3.E3.latoB">
+            <ns2:group id="E3.ConveyorV2.relocatorB">
                 <properties>
-                    <property name="#local.name" type="string">E3.latoB</property>
-                    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                    <property name="#local.name" type="string">ConveyorV2.relocatorB</property>
+                    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
                 </properties>
                 <ns2:frames/>
                 <ns2:joint type="RIGID">
                     <ns2:transform>
                         <location lengthUnit="mm">
-                            <x>-3947.5</x>
-                            <y>671.82</y>
-                            <z>-1574.7</z>
+                            <x>-200.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.0</x>
+                            <x>1.0</x>
                             <y>0.0</y>
-                            <z>-1.0</z>
-                            <w>90.0</w>
+                            <z>0.0</z>
+                            <w>0.0</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:body visible="true" id="E3.E3.carterB1">
+                    <ns2:group id="E3.ConveyorV2.latoB">
                         <properties>
-                            <property name="#local.name" type="string">E3.carterB1</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                            <property name="#local.name" type="string">ConveyorV2.latoB</property>
+                            <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
                         </properties>
                         <ns2:frames/>
                         <ns2:joint type="RIGID">
                             <ns2:transform>
 <location lengthUnit="mm">
-    <x>-150.0</x>
-    <y>0.0</y>
-    <z>-58.0</z>
+    <x>-3947.5</x>
+    <y>671.82</y>
+    <z>-1574.7</z>
 </location>
 <orientation angleUnit="deg">
-    <x>1.0</x>
+    <x>0.0</x>
     <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
+    <z>-1.0</z>
+    <w>90.0</w>
 </orientation>
                             </ns2:transform>
                         </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="VRML">
-                            <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterB1.wrl</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.E3.carterB2">
-                        <properties>
-                            <property name="#local.name" type="string">E3.carterB2</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>150.0</x>
-    <y>0.0</y>
-    <z>-58.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="VRML">
-                            <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterB2.wrl</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
+                        <ns2:children>
+                            <ns2:body visible="true" id="E3.ConveyorV2.carterB1">
+<properties>
+    <property name="#local.name" type="string">ConveyorV2.carterB1</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterB1.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.ConveyorV2.carterB2">
+<properties>
+    <property name="#local.name" type="string">ConveyorV2.carterB2</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterB2.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
                 </ns2:children>
             </ns2:group>
         </ns2:children>
     </ns2:group>
 </ns2:children>
                             </ns2:group>
-                        </ns2:children>
-                    </ns2:group>
-                    <ns2:body visible="true" id="E3.midStructure">
-                        <properties>
-                            <property name="#local.name" type="string">midStructure</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1500.0</x>
-    <y>-400.0</y>
-    <z>847.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>0.5773502691896257</x>
-    <y>0.5773502691896257</y>
-    <z>0.5773502691896257</z>
-    <w>119.99999999999999</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/midStructure.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children>
-                            <ns2:body visible="true" id="E3.tappeto">
+                            <ns2:body visible="true" id="E3.midStructure">
 <properties>
-    <property name="#local.name" type="string">tappeto</property>
-    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#local.name" type="string">midStructure</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
     <property name="#prototype.element.expert_mode" type="boolean">true</property>
 </properties>
 <ns2:frames/>
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
-            <x>400.0</x>
-            <y>52.25</y>
+            <x>-500.0</x>
+            <y>-400.0</y>
+            <z>847.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/midStructure.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children>
+    <ns2:body visible="true" id="E3.tappeto">
+        <properties>
+            <property name="#local.name" type="string">tappeto</property>
+            <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+            <property name="#prototype.element.expert_mode" type="boolean">true</property>
+        </properties>
+        <ns2:frames/>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>52.25</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+            <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/tappeto.ptx</geometry-uri>
+        </ns2:geometry>
+        <ns2:children/>
+    </ns2:body>
+</ns2:children>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.tappA">
+<properties>
+    <property name="#local.name" type="string">tappA</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>500.0</x>
+            <y>394.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/tappA.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.tappB">
+<properties>
+    <property name="#local.name" type="string">tappB</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-500.0</x>
+            <y>-394.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.0</x>
+            <y>0.7071067811865476</y>
+            <z>0.7071067811865475</z>
+            <w>180.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/tappB.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.cylA">
+<properties>
+    <property name="#local.name" type="string">cylA</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-500.0</x>
+            <y>400.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/cylA.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.cylB">
+<properties>
+    <property name="#local.name" type="string">cylB</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>500.0</x>
+            <y>400.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/cylB.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.leg1">
+<properties>
+    <property name="#local.name" type="string">leg1</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/leg1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCone1">
+<properties>
+    <property name="#local.name" type="string">legCone1</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>387.5</y>
             <z>0.0</z>
         </location>
         <orientation angleUnit="deg">
@@ -21731,509 +21947,345 @@
     </ns2:transform>
 </ns2:joint>
 <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/tappeto.ptx</geometry-uri>
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCone1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCyl1">
+<properties>
+    <property name="#local.name" type="string">legCyl1</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCyl1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.leg2">
+<properties>
+    <property name="#local.name" type="string">leg2</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>-387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/leg2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCone2">
+<properties>
+    <property name="#local.name" type="string">legCone2</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCone2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCyl2">
+<properties>
+    <property name="#local.name" type="string">legCyl2</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCyl2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.leg3">
+<properties>
+    <property name="#local.name" type="string">leg3</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>-387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/leg3.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCone3">
+<properties>
+    <property name="#local.name" type="string">legCone3</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCone3.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCyl3">
+<properties>
+    <property name="#local.name" type="string">legCyl3</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCyl3.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.leg4">
+<properties>
+    <property name="#local.name" type="string">leg4</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/leg4.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCone4">
+<properties>
+    <property name="#local.name" type="string">legCone4</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCone4.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.legCyl4">
+<properties>
+    <property name="#local.name" type="string">legCyl4</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/legCyl4.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.cross1">
+<properties>
+    <property name="#local.name" type="string">cross1</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-350.0</x>
+            <y>0.0</y>
+            <z>180.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/cross1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E3.cross2">
+<properties>
+    <property name="#local.name" type="string">cross2</property>
+    <property name="#instance.uuid" type="string">3633a887-e8c5-4281-acb2-3dc9b3c73b2f</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>350.0</x>
+            <y>0.0</y>
+            <z>180.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/3633a887-e8c5-4281-acb2-3dc9b3c73b2f/cross2.ptx</geometry-uri>
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
                         </ns2:children>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.tappA">
+                    </ns2:group>
+                    <ns2:group id="E4">
                         <properties>
-                            <property name="#local.name" type="string">tappA</property>
                             <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                            <property name="#prototype.uuid" type="string">468e049a-e061-4e96-8ba8-32583dd93a0c</property>
                         </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
+                        <ns2:frames>
+                            <frame name="startFrame">
 <location lengthUnit="mm">
-    <x>1500.0</x>
-    <y>394.0</y>
-    <z>872.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>90.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/tappA.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.tappB">
-                        <properties>
-                            <property name="#local.name" type="string">tappB</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1500.0</x>
-    <y>-394.0</y>
-    <z>872.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>0.0</x>
-    <y>0.7071067811865476</y>
-    <z>0.7071067811865475</z>
-    <w>180.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/tappB.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.cylA">
-                        <properties>
-                            <property name="#local.name" type="string">cylA</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1500.0</x>
-    <y>400.0</y>
-    <z>872.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>90.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cylA.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.cylB">
-                        <properties>
-                            <property name="#local.name" type="string">cylB</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1500.0</x>
-    <y>400.0</y>
-    <z>872.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>90.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cylB.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.leg1">
-                        <properties>
-                            <property name="#local.name" type="string">leg1</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>387.5</y>
-    <z>30.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg1.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCone1">
-                        <properties>
-                            <property name="#local.name" type="string">legCone1</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone1.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCyl1">
-                        <properties>
-                            <property name="#local.name" type="string">legCyl1</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl1.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.leg2">
-                        <properties>
-                            <property name="#local.name" type="string">leg2</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>-387.5</y>
-    <z>30.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg2.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCone2">
-                        <properties>
-                            <property name="#local.name" type="string">legCone2</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>-387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone2.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCyl2">
-                        <properties>
-                            <property name="#local.name" type="string">legCyl2</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>-387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl2.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.leg3">
-                        <properties>
-                            <property name="#local.name" type="string">leg3</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>-387.5</y>
-    <z>30.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg3.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCone3">
-                        <properties>
-                            <property name="#local.name" type="string">legCone3</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>-387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone3.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCyl3">
-                        <properties>
-                            <property name="#local.name" type="string">legCyl3</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>-387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl3.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.leg4">
-                        <properties>
-                            <property name="#local.name" type="string">leg4</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>387.5</y>
-    <z>30.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg4.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCone4">
-                        <properties>
-                            <property name="#local.name" type="string">legCone4</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone4.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.legCyl4">
-                        <properties>
-                            <property name="#local.name" type="string">legCyl4</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>387.5</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl4.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.cross1">
-                        <properties>
-                            <property name="#local.name" type="string">cross1</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>-1350.0</x>
-    <y>0.0</y>
-    <z>180.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cross1.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.cross2">
-                        <properties>
-                            <property name="#local.name" type="string">cross2</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>1350.0</x>
-    <y>0.0</y>
-    <z>180.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cross2.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                    <ns2:body visible="true" id="E3.sensor_0">
-                        <properties>
-                            <property name="#local.name" type="string">sensor_0</property>
-                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
-                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>550.0</x>
+    <x>-1000.0</x>
     <y>0.0</y>
     <z>900.0</z>
 </location>
@@ -22243,13 +22295,893 @@
     <z>0.0</z>
     <w>0.0</w>
 </orientation>
+                            </frame>
+                            <frame name="endFrame">
+<location lengthUnit="mm">
+    <x>1000.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="commandsInFrame">
+<location lengthUnit="mm">
+    <x>1000.0</x>
+    <y>400.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="sensorsOutFrame">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>900.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>8866.461597964448</x>
+    <y>-2328.636958484061</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
                             </ns2:transform>
                         </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>generated/conv_1cada141-bacc-4ea6-bbdf-2aee097b60a9_snesor.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
+                        <ns2:children>
+                            <ns2:group id="E4.E4.root">
+<properties>
+    <property name="#local.name" type="string">E4.root</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+</properties>
+<ns2:frames/>
+<ns2:children>
+    <ns2:group id="E4.E4.relocator">
+        <properties>
+            <property name="#local.name" type="string">E4.relocator</property>
+            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+        </properties>
+        <ns2:frames/>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>2507.63</x>
+                    <y>-508.5</y>
+                    <z>1499.000015258789</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:children>
+            <ns2:group id="E4.E4.relocatorA">
+                <properties>
+                    <property name="#local.name" type="string">E4.relocatorA</property>
+                    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>700.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:group id="E4.E4.latoA">
+                        <properties>
+                            <property name="#local.name" type="string">E4.latoA</property>
+                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>-4789.5</x>
+    <y>671.82</y>
+    <z>-1574.7</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-1.0</z>
+    <w>90.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:children>
+                            <ns2:body visible="true" id="E4.E4.carterA1">
+<properties>
+    <property name="#local.name" type="string">E4.carterA1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterA1.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.E4.carterA2">
+<properties>
+    <property name="#local.name" type="string">E4.carterA2</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterA2.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
+                </ns2:children>
+            </ns2:group>
+            <ns2:group id="E4.E4.relocatorB">
+                <properties>
+                    <property name="#local.name" type="string">E4.relocatorB</property>
+                    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>-700.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:group id="E4.E4.latoB">
+                        <properties>
+                            <property name="#local.name" type="string">E4.latoB</property>
+                            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>-3947.5</x>
+    <y>671.82</y>
+    <z>-1574.7</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-1.0</z>
+    <w>90.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:children>
+                            <ns2:body visible="true" id="E4.E4.carterB1">
+<properties>
+    <property name="#local.name" type="string">E4.carterB1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterB1.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.E4.carterB2">
+<properties>
+    <property name="#local.name" type="string">E4.carterB2</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>150.0</x>
+            <y>0.0</y>
+            <z>-58.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/468e049a-e061-4e96-8ba8-32583dd93a0c/conveyor/carterB2.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
+                </ns2:children>
+            </ns2:group>
+        </ns2:children>
+    </ns2:group>
+</ns2:children>
+                            </ns2:group>
+                            <ns2:body visible="true" id="E4.midStructure">
+<properties>
+    <property name="#local.name" type="string">midStructure</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-1000.0</x>
+            <y>-400.0</y>
+            <z>847.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/midStructure.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children>
+    <ns2:body visible="true" id="E4.tappeto">
+        <properties>
+            <property name="#local.name" type="string">tappeto</property>
+            <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+            <property name="#prototype.element.expert_mode" type="boolean">true</property>
+        </properties>
+        <ns2:frames/>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>52.25</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+            <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/tappeto.ptx</geometry-uri>
+        </ns2:geometry>
+        <ns2:children/>
+    </ns2:body>
+</ns2:children>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.tappA">
+<properties>
+    <property name="#local.name" type="string">tappA</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>1000.0</x>
+            <y>394.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/tappA.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.tappB">
+<properties>
+    <property name="#local.name" type="string">tappB</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-1000.0</x>
+            <y>-394.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.0</x>
+            <y>0.7071067811865476</y>
+            <z>0.7071067811865475</z>
+            <w>180.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/tappB.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.cylA">
+<properties>
+    <property name="#local.name" type="string">cylA</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-1000.0</x>
+            <y>400.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cylA.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.cylB">
+<properties>
+    <property name="#local.name" type="string">cylB</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>1000.0</x>
+            <y>400.0</y>
+            <z>872.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>90.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cylB.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.leg1">
+<properties>
+    <property name="#local.name" type="string">leg1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCone1">
+<properties>
+    <property name="#local.name" type="string">legCone1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCyl1">
+<properties>
+    <property name="#local.name" type="string">legCyl1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.leg2">
+<properties>
+    <property name="#local.name" type="string">leg2</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>-387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCone2">
+<properties>
+    <property name="#local.name" type="string">legCone2</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCyl2">
+<properties>
+    <property name="#local.name" type="string">legCyl2</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.leg3">
+<properties>
+    <property name="#local.name" type="string">leg3</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>-387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg3.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCone3">
+<properties>
+    <property name="#local.name" type="string">legCone3</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone3.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCyl3">
+<properties>
+    <property name="#local.name" type="string">legCyl3</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>-387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl3.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.leg4">
+<properties>
+    <property name="#local.name" type="string">leg4</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>387.5</y>
+            <z>30.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/leg4.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCone4">
+<properties>
+    <property name="#local.name" type="string">legCone4</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCone4.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.legCyl4">
+<properties>
+    <property name="#local.name" type="string">legCyl4</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>387.5</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/legCyl4.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.cross1">
+<properties>
+    <property name="#local.name" type="string">cross1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-850.0</x>
+            <y>0.0</y>
+            <z>180.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cross1.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.cross2">
+<properties>
+    <property name="#local.name" type="string">cross2</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>850.0</x>
+            <y>0.0</y>
+            <z>180.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/1cada141-bacc-4ea6-bbdf-2aee097b60a9/cross2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.sensor_0">
+<properties>
+    <property name="#local.name" type="string">sensor_0</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-750.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_1cada141-bacc-4ea6-bbdf-2aee097b60a9_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E4.sensor_1">
+<properties>
+    <property name="#local.name" type="string">sensor_1</property>
+    <property name="#instance.uuid" type="string">1cada141-bacc-4ea6-bbdf-2aee097b60a9</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>50.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_1cada141-bacc-4ea6-bbdf-2aee097b60a9_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
                 </ns2:children>
             </ns2:group>
         </ns2:children>
