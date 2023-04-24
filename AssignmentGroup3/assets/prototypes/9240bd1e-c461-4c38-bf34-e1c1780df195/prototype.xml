@@ -4,6 +4,10 @@
         <property name="file_chooser" value="file" type="string"/>
         <property name="file_edit" value="true" type="boolean"/>
     </parameter>
+    <parameter name="minCreationDistance" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Min creation distance [mm]" type="string"/>
+    </parameter>
     <parameter name="marker" type="string" value="">
         <property name="displayName" value="Marker" type="string"/>
         <property name="affectGeometry" value="false" type="boolean"/>
@@ -54,5 +58,8 @@
         <param name="marker" type="string">${marker}</param>
         <param name="infoContent" type="string">${infoContent}</param>
         <param name="automatic" type="boolean">${automatic}</param>
+    	<param name="minCreationDistance" type="double">${minCreationDistance}</param>
+        
+    
     </logics>
 </prototype>

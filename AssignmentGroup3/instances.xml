@@ -1195,6 +1195,10 @@
          <property name="file_chooser" type="string" value="file"/>
          <property name="file_edit" type="boolean" value="true"/>
       </parameter>
+      <parameter name="minCreationDistance" type="double" value="550">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Min creation distance [mm]"/>
+      </parameter>
       <parameter name="marker" type="string" value="">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>

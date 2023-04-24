@@ -86,18 +86,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="R4" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-3246" y="2742"/>
-            <param name="translationSpeed">1000</param>
-            <param name="translationAcceleration">1000</param>
-            <param name="rotationSpeed">360</param>
-            <param name="rotationAcceleration">180</param>
-            <param name="modelName">R4</param>
-            <param name="jerkTime">32</param>
-            <param name="showAllGhosts">false</param>
-            <param name="script"></param>
-            <param name="logicClassName"></param>
-        </module-instance>
         <module-instance name="E4" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="8866" y="-2329"/>
             <param name="conveyorSpeed">1</param>
@@ -109,6 +97,18 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="R4" type="com.ttsnetwork.modules.standard.Robot6DOF2">
+            <visual x="-3246" y="2742"/>
+            <param name="translationSpeed">1000</param>
+            <param name="translationAcceleration">1000</param>
+            <param name="rotationSpeed">360</param>
+            <param name="rotationAcceleration">180</param>
+            <param name="modelName">R4</param>
+            <param name="jerkTime">32</param>
+            <param name="showAllGhosts">false</param>
+            <param name="script"></param>
+            <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="ABD2" type="com.ttsnetwork.modules.standard.ConveyorArc">
             <visual x="-5757" y="377"/>
@@ -147,6 +147,7 @@
             <param name="marker"></param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
+            <param name="minCreationDistance">550</param>
         </module-instance>
         <module-instance name="SD" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-1957" y="4463"/>

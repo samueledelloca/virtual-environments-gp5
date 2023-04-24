@@ -121,7 +121,7 @@
                         <limits>
                             <home>0.0</home>
                             <low>0.0</low>
-                            <high>500.0</high>
+                            <high>600.0</high>
                         </limits>
                     </ns2:translation-axis>
                 </ns2:joint>
