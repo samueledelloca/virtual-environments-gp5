@@ -5,7 +5,7 @@
  */
 package my.company;
 
-import com.ttsnetwork.modules.standard.BoxUtils;
+
 import com.ttsnetwork.modules.standard.ConveyorLine2;
 import com.ttsnetwork.modules.standard.IConveyorCommands;
 import com.ttsnetwork.modules.standard.IRobotCommands;
@@ -19,7 +19,7 @@ import org.apache.commons.math3.distribution.RealDistribution;
 
 /**
  *
- * @author jovi
+ * @author samu
  */
 public class PLCL3 extends ProgrammableLogics {
 
@@ -157,7 +157,7 @@ public class PLCL3 extends ProgrammableLogics {
         
         r3Cmd = R3.create(module);
         
-       s1e1Sens.registerOnSensors(this::Sensor1, "S1E1");
+      // s1e1Sens.registerOnSensors(this::Sensor1, "S1E1");
        
         
         schedule.startSerial();
