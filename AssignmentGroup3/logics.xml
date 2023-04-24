@@ -39,28 +39,28 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="E" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="5366" y="-2329"/>
+        <module-instance name="E1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="2366" y="-2329"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">E.startFrame</param>
-            <param name="endFrame">E.endFrame</param>
-            <param name="sensorNames">S1E;S2E;S3E</param>
-            <param name="sensorPositions">1000;5040;8050</param>
-            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
+            <param name="startFrame">E1.startFrame</param>
+            <param name="endFrame">E1.endFrame</param>
+            <param name="sensorNames">S1E1</param>
+            <param name="sensorPositions">1000</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
-            <param name="idleOnStart">true</param>
+            <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="Pusher1" type="com.ttsnetwork.modules.standard.Pusher">
+        <module-instance name="P2" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="5916" y="-2821"/>
-            <param name="sensorGeometryId">Pusher1.pc_geom</param>
+            <param name="sensorGeometryId">P2.pc_geom</param>
             <param name="marker"></param>
-            <param name="pusherId">Pusher1.Spintore</param>
+            <param name="pusherId">P2.Spintore</param>
             <param name="lowerLimit">0</param>
             <param name="upperLimit">500</param>
             <param name="speed">1</param>
             <param name="infoContent"></param>
-            <param name="infoFrame">Pusher1.Base.infoFrame</param>
+            <param name="infoFrame">P2.Base.infoFrame</param>
         </module-instance>
         <module-instance name="ABD1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="-5757" y="-1173"/>
@@ -86,6 +86,18 @@
             <param name="script"></param>
             <param name="logicClassName"></param>
         </module-instance>
+        <module-instance name="E3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="8366" y="-2329"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">E3.startFrame</param>
+            <param name="endFrame">E3.endFrame</param>
+            <param name="sensorNames">S1E3</param>
+            <param name="sensorPositions">2050</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
         <module-instance name="PlanSource1" type="com.ttsnetwork.modules.standard.PlanSource">
             <visual x="-10134" y="-2329"/>
             <param name="modelName">PlanSource1</param>
@@ -108,21 +120,21 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="ProgrammableLogics2" type="com.ttsnetwork.modules.standard.PLModule">
+        <module-instance name="PL2" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="-1942" y="-213"/>
-            <param name="id">ProgrammableLogics2</param>
+            <param name="id">PL2</param>
             <param name="logicClassName">my.company.PLCL2</param>
         </module-instance>
-        <module-instance name="Pusher2" type="com.ttsnetwork.modules.standard.Pusher">
+        <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="8909" y="-2806"/>
-            <param name="sensorGeometryId">Pusher2.pc_geom</param>
+            <param name="sensorGeometryId">P3.pc_geom</param>
             <param name="marker"></param>
-            <param name="pusherId">Pusher2.Spintore</param>
+            <param name="pusherId">P3.Spintore</param>
             <param name="lowerLimit">0</param>
             <param name="upperLimit">500</param>
             <param name="speed">1</param>
             <param name="infoContent"></param>
-            <param name="infoFrame">Pusher2.Base.infoFrame</param>
+            <param name="infoFrame">P3.Base.infoFrame</param>
         </module-instance>
         <module-instance name="SD" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-1957" y="4463"/>
@@ -171,7 +183,19 @@
             <param name="sensorPositions">1900</param>
             <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
-            <param name="idleOnStart">true</param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="E2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="5366" y="-2329"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">E2.startFrame</param>
+            <param name="endFrame">E2.endFrame</param>
+            <param name="sensorNames">S1E2</param>
+            <param name="sensorPositions">2040</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="P1" type="com.ttsnetwork.modules.standard.Pusher">
@@ -227,9 +251,9 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
+        <module-instance name="PL1" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="-7819" y="-254"/>
-            <param name="id">ProgrammableLogics1</param>
+            <param name="id">PL1</param>
             <param name="logicClassName">my.company.PLCL1</param>
         </module-instance>
         <module-instance name="SE" type="com.ttsnetwork.modules.standard.Sink">
@@ -318,9 +342,9 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="ProgrammableLogics3" type="com.ttsnetwork.modules.standard.PLModule">
+        <module-instance name="PL3" type="com.ttsnetwork.modules.standard.PLModule">
             <visual x="7700" y="-824"/>
-            <param name="id">ProgrammableLogics3</param>
+            <param name="id">PL3</param>
             <param name="logicClassName">my.company.PLCL3</param>
         </module-instance>
         <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
@@ -334,10 +358,6 @@
     </modules>
     <connections>
         <connection>
-            <port-out module="ABC" port="flowOut"/>
-            <port-in module="E" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="SB" port="out"/>
             <port-in module="B" port="flowIn"/>
         </connection>
@@ -348,10 +368,6 @@
         <connection>
             <port-out module="ABD2" port="flowOut"/>
             <port-in module="ABD3" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="E" port="flowOut"/>
-            <port-in module="SE" port="in"/>
         </connection>
         <connection>
             <port-out module="NC2" port="flowOut"/>
@@ -402,8 +418,36 @@
             <port-in module="C" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="E" port="control"/>
-            <port-in module="Pusher1" port="toConveyor"/>
+            <port-out module="E1" port="flowOut"/>
+            <port-in module="E2" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E2" port="flowOut"/>
+            <port-in module="E3" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E2" port="control"/>
+            <port-in module="P2" port="fromConveyor"/>
+        </connection>
+        <connection>
+            <port-out module="NC1" port="control"/>
+            <port-in module="P2" port="toConveyor"/>
+        </connection>
+        <connection>
+            <port-out module="E3" port="control"/>
+            <port-in module="P3" port="fromConveyor"/>
+        </connection>
+        <connection>
+            <port-out module="NC2" port="control"/>
+            <port-in module="P3" port="toConveyor"/>
+        </connection>
+        <connection>
+            <port-out module="E3" port="flowOut"/>
+            <port-in module="SE" port="in"/>
+        </connection>
+        <connection>
+            <port-out module="ABC" port="flowOut"/>
+            <port-in module="E1" port="flowIn"/>
         </connection>
     </connections>
 </model>
