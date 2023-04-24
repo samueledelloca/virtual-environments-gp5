@@ -20,7 +20,7 @@
             <param name="startFrame">A3.startFrame</param>
             <param name="endFrame">A3.endFrame</param>
             <param name="sensorNames">S1A3</param>
-            <param name="sensorPositions">850</param>
+            <param name="sensorPositions">1150</param>
             <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -144,7 +144,7 @@
             <param name="modelName">SA</param>
             <param name="prodPlanFileName">inputSource/bab192ab-a1de-4090-8d07-45948cd68258/PlanSource2_prodPlan.csv</param>
             <param name="creationFrameName">SA.creationFrame</param>
-            <param name="marker"></param>
+            <param name="marker">box</param>
             <param name="infoContent"></param>
             <param name="automatic">true</param>
             <param name="minCreationDistance">550</param>
@@ -214,7 +214,7 @@
         <module-instance name="P1" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="-5757" y="-2807"/>
             <param name="sensorGeometryId">P1.pc_geom</param>
-            <param name="marker">A2</param>
+            <param name="marker">box</param>
             <param name="pusherId">P1.Spintore</param>
             <param name="lowerLimit">0</param>
             <param name="upperLimit">900</param>
@@ -280,7 +280,7 @@
             <param name="modelName">SC</param>
             <param name="creationFrameName">SC.creationFrame</param>
             <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">100</param>
+            <param name="minCreationDistance">200</param>
             <param name="marker"></param>
         </module-instance>
         <module-instance name="ABC" type="com.ttsnetwork.modules.standard.ConveyorLine2">
@@ -365,7 +365,7 @@
             <param name="modelName">SB</param>
             <param name="creationFrameName">SB.creationFrame</param>
             <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">100</param>
+            <param name="minCreationDistance">200</param>
             <param name="marker"></param>
         </module-instance>
     </modules>
@@ -385,14 +385,6 @@
         <connection>
             <port-out module="NC2" port="flowOut"/>
             <port-in module="SG" port="in"/>
-        </connection>
-        <connection>
-            <port-out module="ABD3" port="flowOut"/>
-            <port-in module="ABD4" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="ABD4" port="flowOut"/>
-            <port-in module="ABD4" port="flowIn"/>
         </connection>
         <connection>
             <port-out module="NC1" port="flowOut"/>
@@ -423,10 +415,6 @@
             <port-in module="D" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="SC" port="out"/>
-            <port-in module="C" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="NC1" port="control"/>
             <port-in module="P2" port="toConveyor"/>
         </connection>
@@ -437,10 +425,6 @@
         <connection>
             <port-out module="ABC" port="flowOut"/>
             <port-in module="E1" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="SA" port="out"/>
-            <port-in module="A1" port="flowIn"/>
         </connection>
         <connection>
             <port-out module="E1" port="flowOut"/>
@@ -465,6 +449,22 @@
         <connection>
             <port-out module="E4" port="control"/>
             <port-in module="P3" port="fromConveyor"/>
+        </connection>
+        <connection>
+            <port-out module="ABD3" port="flowOut"/>
+            <port-in module="ABD4" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="ABD4" port="flowOut"/>
+            <port-in module="ABD4" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="SA" port="out"/>
+            <port-in module="A1" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="SC" port="out"/>
+            <port-in module="C" port="flowIn"/>
         </connection>
     </connections>
 </model>

@@ -26,99 +26,174 @@ public class PLCL1 extends ProgrammableLogics {
 
 //    public ParametricSource2 SA;
 //    ISource srcCmd;
-
     public Pusher P1;
-    
+
     public ConveyorLine2 A1;
     public ConveyorLine2 A2;
     public ConveyorLine2 A3;
     public ConveyorLine2 B;
+    public ConveyorLine2 ABD1;
+    public ConveyorLine2 C;
     public Robot6DOF2 R1;
-    
+    public Robot6DOF2 R2;
 
     private ISensorProvider s1a1Sens;
+    private ISensorProvider s1a2Sens;
+    private ISensorProvider s1a3Sens;
     private ISensorProvider s1bSens;
+    private ISensorProvider s1cSens;
 
     private IConveyorCommands a1Cmd;
     private IConveyorCommands a2Cmd;
     private IConveyorCommands a3Cmd;
     private IConveyorCommands bCmd;
+    private IConveyorCommands abd1Cmd;
+    private IConveyorCommands cCmd;
 
-    private ConveyorBox boxOn1;
-    private ConveyorBox boxOn2;
-    
+    private ConveyorBox boxOnA;
+    private ConveyorBox boxOnB;
+    private ConveyorBox boxOnAB;
+    private ConveyorBox boxOnC;
+
     private IRobotCommands r1Cmd;
+    private IRobotCommands r2Cmd;
 
-    private void box1Arrived(SensorCatch sc) {
+    private void boxAArrived(SensorCatch sc) {
         // record the arrived box
-        boxOn1 = sc.box;
+        boxOnA = sc.box;
         schedule.startSerial();
         {
             // immediately stop conveyor
             a1Cmd.speedSet(0);
-            doAssembly();
+            doABAssembly();
         }
         schedule.end();
     }
-    
-    private void box2Arrived(SensorCatch sc) {
-        boxOn2 = sc.box;
+
+    private void boxBArrived(SensorCatch sc) {
+        boxOnB = sc.box;
         schedule.startSerial();
         {
             bCmd.speedSet(0);
-            doAssembly();
+            doABAssembly();
         }
         schedule.end();
     }
     
-    private void doAssembly(){
+    private void boxABArrived(SensorCatch sc) {
+        // record the arrived box
+        boxOnAB = sc.box;
+        schedule.startSerial();
+        {
+            // immediately stop conveyor
+            a3Cmd.speedSet(0);
+            doABCAssembly();
+        }
+        schedule.end();
+    }
+
+    private void boxCArrived(SensorCatch sc) {
+        boxOnC = sc.box;
+        schedule.startSerial();
+        {
+            cCmd.speedSet(0);
+            doABCAssembly();
+        }
+        schedule.end();
+    }
+
+    private void pushA2Box(SensorCatch sc) {
+        if ("A1".equals(sc.box.entity.getProperty("rfid"))) {
+            schedule.startSerial();
+            {
+                a2Cmd.speedSet(0);
+                schedule.callFunction(this::extractP1);
+                schedule.waitTime(1000);
+                schedule.callFunction(this::retractP1);
+                a2Cmd.speedSet(1);
+            }
+            schedule.end();
+        }
+    }
+
+    private void doABAssembly() {
         // assembly can be performed only if both boxes are present
-        if(boxOn1 != null && boxOn2 != null){
+        if (boxOnA != null && boxOnB != null) {
             // execute the series of assembly operations
             schedule.startSerial();
             {
-                r1Cmd.move(BoxUtils.targetTop(boxOn2), 2000);
-                r1Cmd.pick(boxOn2.entity);
+                r1Cmd.move(BoxUtils.targetTop(boxOnB), 2000);
+                r1Cmd.pick(boxOnB.entity);
                 // remove the box that is no more on the conveyor
-                bCmd.remove(boxOn2);
-                r1Cmd.move(BoxUtils.targetOffset(boxOn1, 0, 0, BoxUtils.zSize(boxOn1) + BoxUtils.zSize(boxOn2), 0, 0, 90), 2000);
+                bCmd.remove(boxOnB);
+                r1Cmd.move(BoxUtils.targetOffset(boxOnA, 0, 0, BoxUtils.zSize(boxOnA) + BoxUtils.zSize(boxOnB), 0, 0, 90), 2000);
                 r1Cmd.release();
-                schedule.attach(boxOn2.entity, boxOn1.entity);
+                schedule.attach(boxOnB.entity, boxOnA.entity);
                 // reset the speed of the conveyors
                 a1Cmd.speedSet(1);
                 bCmd.speedSet(1);
             }
             schedule.end();
             // forget the operated boxes
-            boxOn1 = null;
-            boxOn2 = null;
+            boxOnA = null;
+            boxOnB = null;
+        }
+    }
+    
+    private void doABCAssembly() {
+        // assembly can be performed only if both boxes are present
+        if (boxOnAB != null && boxOnC != null) {
+            // execute the series of assembly operations
+            schedule.startSerial();
+            {
+                r2Cmd.move(BoxUtils.targetTop(boxOnC), 2000);
+                r2Cmd.pick(boxOnC.entity);
+                // remove the box that is no more on the conveyor
+                cCmd.remove(boxOnC);
+                r2Cmd.move(BoxUtils.targetOffset(boxOnAB, 0, 0, BoxUtils.zSize(boxOnAB) + BoxUtils.zSize(boxOnC), 0, 0, 90), 2000);
+                r2Cmd.release();
+                schedule.attach(boxOnC.entity, boxOnAB.entity);
+                // reset the speed of the conveyors
+                a3Cmd.speedSet(1);
+                cCmd.speedSet(1);
+            }
+            schedule.end();
+            // forget the operated boxes
+            boxOnAB = null;
+            boxOnC = null;
         }
     }
 
     @Override
     public void onInit() {
 //        srcCmd = SA.createSkill(module);
-        
+
         a1Cmd = A1.createCommands(module);
         a2Cmd = A2.createCommands(module);
         a3Cmd = A3.createCommands(module);
         bCmd = B.createCommands(module);
-        
+        abd1Cmd = ABD1.createCommands(module);
+        cCmd = C.createCommands(module);
+
         s1a1Sens = A1.createSensors(module);
+        s1a2Sens = A2.createSensors(module);
+        s1a3Sens = A3.createSensors(module);
         s1bSens = B.createSensors(module);
+        s1cSens = C.createSensors(module);
         r1Cmd = R1.create(module);
-        
-        s1a1Sens.registerOnSensors(this::box1Arrived, "S1A1");
-        s1bSens.registerOnSensors(this::box2Arrived, "S1B");
+        r2Cmd = R2.create(module);
+
+        s1a1Sens.registerOnSensors(this::boxAArrived, "S1A1");
+        s1a2Sens.registerOnSensors(this::pushA2Box, "S1A2");
+        s1a3Sens.registerOnSensors(this::boxABArrived, "S1A3");
+        s1bSens.registerOnSensors(this::boxBArrived, "S1B");
+        s1cSens.registerOnSensors(this::boxCArrived, "S1C");
 
         schedule.startSerial();
         {
             schedule.waitTime(1000);
 //            srcCmd.create(null);
 //            schedule.waitTime(4000);
-            schedule.callFunction(this::extractP1);
-            schedule.waitTime(1000);
-            schedule.callFunction(this::retractP1);
         }
         schedule.end();
     }

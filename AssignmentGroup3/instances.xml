@@ -121,7 +121,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="850">
+      <parameter name="sensorPositions" type="double[]" value="1150">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -938,7 +938,7 @@
          <property name="displayName" type="string" value="Speed [m/s]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="marker" type="string" value="A2">
+      <parameter name="marker" type="string" value="box">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1199,7 +1199,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
-      <parameter name="marker" type="string" value="">
+      <parameter name="marker" type="string" value="box">
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1244,7 +1244,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
+      <parameter name="minCreationDistance" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -1273,7 +1273,7 @@
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Entity height [mm]"/>
       </parameter>
-      <parameter name="minCreationDistance" type="double" value="100">
+      <parameter name="minCreationDistance" type="double" value="200">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Min creation distance [mm]"/>
       </parameter>
@@ -1346,8 +1346,6 @@
    <relationship sourcePortName="out" sourceInstanceUuid="b15e0135-e3e3-4007-9a96-1cc79febd3c2" targetPortName="in" targetInstanceUuid="c8bc44d9-c9d0-4141-8492-ad443ae76984"/>
    <relationship sourcePortName="out" sourceInstanceUuid="c8bc44d9-c9d0-4141-8492-ad443ae76984" targetPortName="in" targetInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc"/>
    <relationship sourcePortName="out" sourceInstanceUuid="d5fcb7ed-b5dd-4dc3-ad18-882b51cf404f" targetPortName="in" targetInstanceUuid="29780008-4543-425a-86b7-1951ef3e402b"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc" targetPortName="in" targetInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c" targetPortName="in" targetInstanceUuid="82699023-9e14-4f28-861c-5efa911a3671"/>
    <relationship sourcePortName="out" sourceInstanceUuid="2b24ef96-4472-459a-8071-cd72e84c1bd0" targetPortName="in" targetInstanceUuid="1803f4d3-9e7c-4de1-84d8-e3d5fdfa2397"/>
    <relationship sourcePortName="out" sourceInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915" targetPortName="in" targetInstanceUuid="14f4c041-9ecf-4439-897c-c497b2894c6b"/>
    <relationship sourcePortName="out" sourceInstanceUuid="14f4c041-9ecf-4439-897c-c497b2894c6b" targetPortName="in" targetInstanceUuid="e9fe2032-4024-4682-a688-00bad708c6c8"/>
@@ -1355,15 +1353,17 @@
    <relationship sourcePortName="control" sourceInstanceUuid="14f4c041-9ecf-4439-897c-c497b2894c6b" targetPortName="from" targetInstanceUuid="217d823a-ac51-4fec-809c-f863a572a52e"/>
    <relationship sourcePortName="control" sourceInstanceUuid="b15e0135-e3e3-4007-9a96-1cc79febd3c2" targetPortName="to" targetInstanceUuid="217d823a-ac51-4fec-809c-f863a572a52e"/>
    <relationship sourcePortName="out" sourceInstanceUuid="78fb0f05-4526-4698-a5a2-a3852c2caf8a" targetPortName="in" targetInstanceUuid="9e09a663-51ee-4cce-a593-71875ba23ea0"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="7effde11-e2d3-4e63-a544-cac24203db39" targetPortName="in" targetInstanceUuid="29a3426f-114e-4c55-9016-9c80f63fc266"/>
    <relationship sourcePortName="control" sourceInstanceUuid="2b24ef96-4472-459a-8071-cd72e84c1bd0" targetPortName="to" targetInstanceUuid="58ca01fe-b24b-4820-8694-2f30aeb38366"/>
    <relationship sourcePortName="control" sourceInstanceUuid="d5fcb7ed-b5dd-4dc3-ad18-882b51cf404f" targetPortName="to" targetInstanceUuid="a6cc72a9-3722-435e-a6b4-3f5c85d66c27"/>
    <relationship sourcePortName="out" sourceInstanceUuid="1fdc793f-1fe8-4b91-9a0c-abc52dc241ea" targetPortName="in" targetInstanceUuid="9404deb1-c1ba-4b63-908e-c40ebbe9a6e3"/>
-   <relationship sourcePortName="out" sourceInstanceUuid="bab192ab-a1de-4090-8d07-45948cd68258" targetPortName="in" targetInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915"/>
    <relationship sourcePortName="out" sourceInstanceUuid="9404deb1-c1ba-4b63-908e-c40ebbe9a6e3" targetPortName="in" targetInstanceUuid="fc1d78f1-777f-43ff-b10e-89ee80a4b641"/>
    <relationship sourcePortName="out" sourceInstanceUuid="1cada141-bacc-4ea6-bbdf-2aee097b60a9" targetPortName="in" targetInstanceUuid="2acc446d-e350-41ee-bb0c-b4cececfb296"/>
    <relationship sourcePortName="out" sourceInstanceUuid="fc1d78f1-777f-43ff-b10e-89ee80a4b641" targetPortName="in" targetInstanceUuid="3633a887-e8c5-4281-acb2-3dc9b3c73b2f"/>
    <relationship sourcePortName="out" sourceInstanceUuid="3633a887-e8c5-4281-acb2-3dc9b3c73b2f" targetPortName="in" targetInstanceUuid="1cada141-bacc-4ea6-bbdf-2aee097b60a9"/>
    <relationship sourcePortName="control" sourceInstanceUuid="fc1d78f1-777f-43ff-b10e-89ee80a4b641" targetPortName="from" targetInstanceUuid="58ca01fe-b24b-4820-8694-2f30aeb38366"/>
    <relationship sourcePortName="control" sourceInstanceUuid="1cada141-bacc-4ea6-bbdf-2aee097b60a9" targetPortName="from" targetInstanceUuid="a6cc72a9-3722-435e-a6b4-3f5c85d66c27"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc" targetPortName="in" targetInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c" targetPortName="in" targetInstanceUuid="82699023-9e14-4f28-861c-5efa911a3671"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="bab192ab-a1de-4090-8d07-45948cd68258" targetPortName="in" targetInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915"/>
+   <relationship sourcePortName="out" sourceInstanceUuid="7effde11-e2d3-4e63-a544-cac24203db39" targetPortName="in" targetInstanceUuid="29a3426f-114e-4c55-9016-9c80f63fc266"/>
 </instances>
