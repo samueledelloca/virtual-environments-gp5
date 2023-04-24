@@ -35,7 +35,7 @@
                 <ns2:joint type="RIGID">
                     <ns2:transform>
                         <location lengthUnit="mm">
-                            <x>-1911.5274897370737</x>
+                            <x>-7818.9613870384765</x>
                             <y>-254.21382732334337</y>
                             <z>0.0</z>
                         </location>
@@ -447,10 +447,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -1340,10 +1340,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -4120,10 +4120,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -5094,10 +5094,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -5960,10 +5960,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -6880,10 +6880,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -7793,10 +7793,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -8891,10 +8891,10 @@
                             <z>-53.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.5773502691896257</x>
-                            <y>0.5773502691896257</y>
-                            <z>0.5773502691896257</z>
-                            <w>119.99999999999999</w>
+                            <x>0.5773502691896258</x>
+                            <y>0.5773502691896258</y>
+                            <z>0.5773502691896258</z>
+                            <w>120.00000000000001</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
@@ -9024,10 +9024,10 @@
                             <z>-53.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.5773502691896257</x>
-                            <y>0.5773502691896257</y>
-                            <z>0.5773502691896257</z>
-                            <w>119.99999999999999</w>
+                            <x>0.5773502691896258</x>
+                            <y>0.5773502691896258</y>
+                            <z>0.5773502691896258</z>
+                            <w>120.00000000000001</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
@@ -10777,10 +10777,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -11902,10 +11902,10 @@
                             <z>-53.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.5773502691896257</x>
-                            <y>0.5773502691896257</y>
-                            <z>0.5773502691896257</z>
-                            <w>119.99999999999999</w>
+                            <x>0.5773502691896258</x>
+                            <y>0.5773502691896258</y>
+                            <z>0.5773502691896258</z>
+                            <w>120.00000000000001</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
@@ -12035,10 +12035,10 @@
                             <z>-53.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.5773502691896257</x>
-                            <y>0.5773502691896257</y>
-                            <z>0.5773502691896257</z>
-                            <w>119.99999999999999</w>
+                            <x>0.5773502691896258</x>
+                            <y>0.5773502691896258</y>
+                            <z>0.5773502691896258</z>
+                            <w>120.00000000000001</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
@@ -13531,21 +13531,6 @@
     <property name="#instance.uuid" type="string">82699023-9e14-4f28-861c-5efa911a3671</property>
 </properties>
 <ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
 <ns2:children>
     <ns2:group id="ABD4.ABD4.relocator">
         <properties>
@@ -14314,6 +14299,33 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
+                            <ns2:body visible="true" id="ABD4.sensor_0">
+<properties>
+    <property name="#local.name" type="string">sensor_0</property>
+    <property name="#instance.uuid" type="string">82699023-9e14-4f28-861c-5efa911a3671</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>650.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_82699023-9e14-4f28-861c-5efa911a3671_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
                         </ns2:children>
                     </ns2:group>
                     <ns2:group id="D">
@@ -14654,10 +14666,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -16624,10 +16636,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -17214,8 +17226,8 @@
                         <ns2:joint type="RIGID">
                             <ns2:transform>
 <location lengthUnit="mm">
-    <x>5366.461597964448</x>
-    <y>-2328.636958484061</y>
+    <x>5366.46</x>
+    <y>-2328.64</y>
     <z>0.0</z>
 </location>
 <orientation angleUnit="deg">
@@ -17233,21 +17245,6 @@
     <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
 </properties>
 <ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
 <ns2:children>
     <ns2:group id="E.E.relocator">
         <properties>
@@ -18013,6 +18010,87 @@
 </ns2:joint>
 <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
     <geometry-uri>generated/9404deb1-c1ba-4b63-908e-c40ebbe9a6e3/cross2.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E.sensor_0">
+<properties>
+    <property name="#local.name" type="string">sensor_0</property>
+    <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>-3500.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_9404deb1-c1ba-4b63-908e-c40ebbe9a6e3_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E.sensor_1">
+<properties>
+    <property name="#local.name" type="string">sensor_1</property>
+    <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>540.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_9404deb1-c1ba-4b63-908e-c40ebbe9a6e3_snesor.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="E.sensor_2">
+<properties>
+    <property name="#local.name" type="string">sensor_2</property>
+    <property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>3550.0</x>
+            <y>0.0</y>
+            <z>900.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/conv_9404deb1-c1ba-4b63-908e-c40ebbe9a6e3_snesor.ptx</geometry-uri>
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
@@ -19212,10 +19290,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -19935,6 +20013,536 @@
 </ns2:joint>
 <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
     <geometry-uri>generated/pusher_217d823a-ac51-4fec-809c-f863a572a52e.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
+                </ns2:children>
+            </ns2:group>
+            <ns2:group id="ProgrammableLogics2">
+                <properties>
+                    <property name="#instance.uuid" type="string">0ffc2f80-1317-4581-9f9f-621041a85d0a</property>
+                    <property name="#prototype.uuid" type="string">ffb20cba-6216-40c1-81f5-4d18313ca199</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>-1941.9275964723172</x>
+                            <y>-212.9650276343635</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:body visible="true" id="ProgrammableLogics2.pl_geom">
+                        <properties>
+                            <property name="#local.name" type="string">pl_geom</property>
+                            <property name="#instance.uuid" type="string">0ffc2f80-1317-4581-9f9f-621041a85d0a</property>
+                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="control">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>300.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+    <w>90.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                            <geometry-uri>generated/pl_0ffc2f80-1317-4581-9f9f-621041a85d0a.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:group>
+            <ns2:group id="ProgrammableLogics3">
+                <properties>
+                    <property name="#instance.uuid" type="string">96b3929d-87ad-4c7f-afcb-95d0f0843df8</property>
+                    <property name="#prototype.uuid" type="string">ffb20cba-6216-40c1-81f5-4d18313ca199</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>7699.888703107551</x>
+                            <y>-824.3120657438544</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:body visible="true" id="ProgrammableLogics3.pl_geom">
+                        <properties>
+                            <property name="#local.name" type="string">pl_geom</property>
+                            <property name="#instance.uuid" type="string">96b3929d-87ad-4c7f-afcb-95d0f0843df8</property>
+                            <property name="#prototype.element.expert_mode" type="boolean">true</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="control">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>300.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+    <w>90.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                            <geometry-uri>generated/pl_96b3929d-87ad-4c7f-afcb-95d0f0843df8.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:group>
+            <ns2:group id="Pusher1">
+                <properties>
+                    <property name="#instance.uuid" type="string">58ca01fe-b24b-4820-8694-2f30aeb38366</property>
+                    <property name="#prototype.uuid" type="string">30cb4bc0-9c70-4066-9f16-e708960e187f</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>5916.359622607236</x>
+                            <y>-2820.9446611280127</y>
+                            <z>958.31</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>180.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:group id="Pusher1.Base">
+                        <properties>
+                            <property name="#local.name" type="string">Base</property>
+                            <property name="#instance.uuid" type="string">58ca01fe-b24b-4820-8694-2f30aeb38366</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="from">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-600.6549712271942</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="to">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-132.2704480194533</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="infoFrame">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>100.0</y>
+    <z>-300.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>90.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:children>
+                            <ns2:body visible="true" id="Pusher1.ElementiFissi">
+<properties>
+    <property name="#local.name" type="string">ElementiFissi</property>
+    <property name="#instance.uuid" type="string">58ca01fe-b24b-4820-8694-2f30aeb38366</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>80.0</y>
+            <z>10.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="m" type="VRML">
+    <geometry-uri>prototypes/30cb4bc0-9c70-4066-9f16-e708960e187f/ElementiFissi.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="Pusher1.Spintore">
+<properties>
+    <property name="#local.name" type="string">Spintore</property>
+    <property name="#instance.uuid" type="string">58ca01fe-b24b-4820-8694-2f30aeb38366</property>
+</properties>
+<ns2:frames>
+    <frame name="spFr">
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>68.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </frame>
+</ns2:frames>
+<ns2:joint type="TRANSLATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>80.0</y>
+            <z>10.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:translation-axis name="T">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </origin>
+            <versor>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>1.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home>0.0</home>
+            <low>0.0</low>
+            <high>500.0</high>
+        </limits>
+    </ns2:translation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="m" type="VRML">
+    <geometry-uri>prototypes/30cb4bc0-9c70-4066-9f16-e708960e187f/Spintore.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="Pusher1.pc_geom">
+<properties>
+    <property name="#local.name" type="string">pc_geom</property>
+    <property name="#instance.uuid" type="string">58ca01fe-b24b-4820-8694-2f30aeb38366</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/pusher_58ca01fe-b24b-4820-8694-2f30aeb38366.ptx</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:group>
+                </ns2:children>
+            </ns2:group>
+            <ns2:group id="Pusher2">
+                <properties>
+                    <property name="#instance.uuid" type="string">a6cc72a9-3722-435e-a6b4-3f5c85d66c27</property>
+                    <property name="#prototype.uuid" type="string">30cb4bc0-9c70-4066-9f16-e708960e187f</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>8909.334339514959</x>
+                            <y>-2806.2699999999995</y>
+                            <z>958.31</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>1.0</z>
+                            <w>180.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:children>
+                    <ns2:group id="Pusher2.Base">
+                        <properties>
+                            <property name="#local.name" type="string">Base</property>
+                            <property name="#instance.uuid" type="string">a6cc72a9-3722-435e-a6b4-3f5c85d66c27</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="from">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-600.6549712271942</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="to">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>-132.2704480194533</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                            <frame name="infoFrame">
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>100.0</y>
+    <z>-300.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>90.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:children>
+                            <ns2:body visible="true" id="Pusher2.ElementiFissi">
+<properties>
+    <property name="#local.name" type="string">ElementiFissi</property>
+    <property name="#instance.uuid" type="string">a6cc72a9-3722-435e-a6b4-3f5c85d66c27</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>80.0</y>
+            <z>10.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="m" type="VRML">
+    <geometry-uri>prototypes/30cb4bc0-9c70-4066-9f16-e708960e187f/ElementiFissi.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="Pusher2.Spintore">
+<properties>
+    <property name="#local.name" type="string">Spintore</property>
+    <property name="#instance.uuid" type="string">a6cc72a9-3722-435e-a6b4-3f5c85d66c27</property>
+</properties>
+<ns2:frames>
+    <frame name="spFr">
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>68.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </frame>
+</ns2:frames>
+<ns2:joint type="TRANSLATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>80.0</y>
+            <z>10.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:translation-axis name="T">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </origin>
+            <versor>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>1.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home>0.0</home>
+            <low>0.0</low>
+            <high>500.0</high>
+        </limits>
+    </ns2:translation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="m" type="VRML">
+    <geometry-uri>prototypes/30cb4bc0-9c70-4066-9f16-e708960e187f/Spintore.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children/>
+                            </ns2:body>
+                            <ns2:body visible="true" id="Pusher2.pc_geom">
+<properties>
+    <property name="#local.name" type="string">pc_geom</property>
+    <property name="#instance.uuid" type="string">a6cc72a9-3722-435e-a6b4-3f5c85d66c27</property>
+    <property name="#prototype.element.expert_mode" type="boolean">true</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+    <geometry-uri>generated/pusher_a6cc72a9-3722-435e-a6b4-3f5c85d66c27.ptx</geometry-uri>
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>

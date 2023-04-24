@@ -44,12 +44,23 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">E.startFrame</param>
             <param name="endFrame">E.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">S1E;S2E;S3E</param>
+            <param name="sensorPositions">1000;5040;8050</param>
+            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
             <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
+            <param name="idleOnStart">true</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="Pusher1" type="com.ttsnetwork.modules.standard.Pusher">
+            <visual x="5916" y="-2821"/>
+            <param name="sensorGeometryId">Pusher1.pc_geom</param>
+            <param name="marker"></param>
+            <param name="pusherId">Pusher1.Spintore</param>
+            <param name="lowerLimit">0</param>
+            <param name="upperLimit">500</param>
+            <param name="speed">1</param>
+            <param name="infoContent"></param>
+            <param name="infoFrame">Pusher1.Base.infoFrame</param>
         </module-instance>
         <module-instance name="ABD1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="-5757" y="-1173"/>
@@ -97,6 +108,22 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="ProgrammableLogics2" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="-1942" y="-213"/>
+            <param name="id">ProgrammableLogics2</param>
+            <param name="logicClassName">my.company.PLCL2</param>
+        </module-instance>
+        <module-instance name="Pusher2" type="com.ttsnetwork.modules.standard.Pusher">
+            <visual x="8909" y="-2806"/>
+            <param name="sensorGeometryId">Pusher2.pc_geom</param>
+            <param name="marker"></param>
+            <param name="pusherId">Pusher2.Spintore</param>
+            <param name="lowerLimit">0</param>
+            <param name="upperLimit">500</param>
+            <param name="speed">1</param>
+            <param name="infoContent"></param>
+            <param name="infoFrame">Pusher2.Base.infoFrame</param>
+        </module-instance>
         <module-instance name="SD" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-1957" y="4463"/>
             <param name="modelName">SD</param>
@@ -140,11 +167,11 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">ABD4.startFrame</param>
             <param name="endFrame">ABD4.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">S1ABD4</param>
+            <param name="sensorPositions">1900</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
+            <param name="idleOnStart">true</param>
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="P1" type="com.ttsnetwork.modules.standard.Pusher">
@@ -201,7 +228,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="ProgrammableLogics1" type="com.ttsnetwork.modules.standard.PLModule">
-            <visual x="-1912" y="-254"/>
+            <visual x="-7819" y="-254"/>
             <param name="id">ProgrammableLogics1</param>
             <param name="logicClassName">my.company.PLCL1</param>
         </module-instance>
@@ -291,6 +318,11 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="ProgrammableLogics3" type="com.ttsnetwork.modules.standard.PLModule">
+            <visual x="7700" y="-824"/>
+            <param name="id">ProgrammableLogics3</param>
+            <param name="logicClassName">my.company.PLCL3</param>
+        </module-instance>
         <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-9191" y="988"/>
             <param name="modelName">SB</param>
@@ -368,6 +400,10 @@
         <connection>
             <port-out module="SC" port="out"/>
             <port-in module="C" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E" port="control"/>
+            <port-in module="Pusher1" port="toConveyor"/>
         </connection>
     </connections>
 </model>
