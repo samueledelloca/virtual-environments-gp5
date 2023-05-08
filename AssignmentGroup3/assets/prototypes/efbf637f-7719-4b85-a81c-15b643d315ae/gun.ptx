@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><parametric-object>
+    <revolution-object>
+        
+        <linear width="60.0" height="0.0"/>
+        <linear width="60.0" height="10.0"/>
+        <linear width="45.0" height="0.0"/>
+        <linear width="45.0" height="60.0"/>
+        <linear width="30.0" height="40.0"/>
+        <linear width="25.0" height="0.0"/>
+        <linear width="15.0" height="15.0"/>
+        <linear width="10.0" height="0.0"/>
+        <linear width="10.0" height="70.0"/>
+      
+
+    </revolution-object>
+    <appearance>
+        <ambientIntensity value="0.22527473"/>
+        <diffuseColor r="0.22" g="0.48" b="0.9"/>
+        <emissiveColor r="0.0" g="0.0" b="0.0"/>
+        <shininess value="0.0"/>
+        <specularColor r="0.0" g="0.0" b="0.0"/>
+        <transparency value="0.0"/>
+    </appearance>
+</parametric-object>

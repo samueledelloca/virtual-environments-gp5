@@ -31,9 +31,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">E1.startFrame</param>
             <param name="endFrame">E1.endFrame</param>
-            <param name="sensorNames">S1E1;S2E1</param>
-            <param name="sensorPositions">100;2000</param>
-            <param name="sensorsReveal">CENTER;CENTER</param>
+            <param name="sensorNames">S12E1</param>
+            <param name="sensorPositions">2000</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -115,6 +115,10 @@
             <param name="id">PL2</param>
             <param name="logicClassName">my.company.PLCL2</param>
         </module-instance>
+        <module-instance name="W1" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
+            <visual x="871" y="-2062"/>
+            <param name="tcpFrameId">W1.gun.tcp</param>
+        </module-instance>
         <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="8909" y="-2806"/>
             <param name="sensorGeometryId">P3.pc_geom</param>
@@ -157,7 +161,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="R3" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="2788" y="-3351"/>
+            <visual x="871" y="-3351"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -174,14 +178,14 @@
             <param name="infoContent"></param>
             <param name="infoFrame">SF.creationFrame</param>
         </module-instance>
-        <module-instance name="ABD5" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="1843" y="-1123"/>
+        <module-instance name="ABD6" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="2843" y="-1123"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">ABD5.startFrame</param>
-            <param name="endFrame">ABD5.endFrame</param>
-            <param name="sensorNames">S1ABD4</param>
-            <param name="sensorPositions">1600</param>
-            <param name="sensorsReveal">CENTER</param>
+            <param name="startFrame">ABD6.startFrame</param>
+            <param name="endFrame">ABD6.endFrame</param>
+            <param name="sensorNames">S1ABD6;S2ABD6;S3ABD6</param>
+            <param name="sensorPositions">1;1600;2400</param>
+            <param name="sensorsReveal">LEAD;CENTER;CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -275,9 +279,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">ABC.startFrame</param>
             <param name="endFrame">ABC.endFrame</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
+            <param name="sensorNames">S1ABC</param>
+            <param name="sensorPositions">2000</param>
+            <param name="sensorsReveal">LEAD</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -330,8 +334,24 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="R5" type="com.ttsnetwork.modules.standard.Robot6DOF2">
+            <visual x="-381" y="588"/>
+            <param name="translationSpeed">1000</param>
+            <param name="translationAcceleration">1000</param>
+            <param name="rotationSpeed">360</param>
+            <param name="rotationAcceleration">180</param>
+            <param name="modelName">R5</param>
+            <param name="jerkTime">32</param>
+            <param name="showAllGhosts">false</param>
+            <param name="script"></param>
+            <param name="logicClassName"></param>
+        </module-instance>
+        <module-instance name="W2" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
+            <visual x="-381" y="1877"/>
+            <param name="tcpFrameId">W2.gun.tcp</param>
+        </module-instance>
         <module-instance name="ABD3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-1957" y="1877"/>
+            <visual x="-2207" y="1877"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">ABD3.startFrame</param>
             <param name="endFrame">ABD3.endFrame</param>
@@ -347,11 +367,11 @@
             <param name="id">PL3</param>
             <param name="logicClassName">my.company.PLCL3</param>
         </module-instance>
-        <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorArc">
-            <visual x="343" y="1877"/>
+        <module-instance name="ABD5" type="com.ttsnetwork.modules.standard.ConveyorArc">
+            <visual x="1343" y="1877"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">ABD4.startFrame</param>
-            <param name="endFrame">ABD4.endFrame</param>
+            <param name="startFrame">ABD5.startFrame</param>
+            <param name="endFrame">ABD5.endFrame</param>
             <param name="direction">right</param>
             <param name="sensorNames"></param>
             <param name="sensorPositions"></param>
@@ -368,6 +388,18 @@
             <param name="minCreationDistance">200</param>
             <param name="marker"></param>
         </module-instance>
+        <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="293" y="1877"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">ABD4.startFrame</param>
+            <param name="endFrame">ABD4.endFrame</param>
+            <param name="sensorNames">S1ABD4</param>
+            <param name="sensorPositions">0</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
     </modules>
     <connections>
         <connection>
@@ -377,10 +409,6 @@
         <connection>
             <port-out module="ABD1" port="flowOut"/>
             <port-in module="ABD2" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="ABD2" port="flowOut"/>
-            <port-in module="ABD3" port="flowIn"/>
         </connection>
         <connection>
             <port-out module="NC2" port="flowOut"/>
@@ -451,10 +479,6 @@
             <port-in module="C" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="ABD3" port="flowOut"/>
-            <port-in module="ABD4" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="SD" port="out"/>
             <port-in module="D" port="flowIn"/>
         </connection>
@@ -463,8 +487,24 @@
             <port-in module="A1" port="flowIn"/>
         </connection>
         <connection>
+            <port-out module="ABD5" port="flowOut"/>
+            <port-in module="ABD6" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="ABD2" port="flowOut"/>
+            <port-in module="ABD3" port="flowIn"/>
+        </connection>
+        <connection>
             <port-out module="ABD4" port="flowOut"/>
             <port-in module="ABD5" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="ABD3" port="flowOut"/>
+            <port-in module="ABD4" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="W2" port="control"/>
+            <port-in module="R5" port="tool"/>
         </connection>
     </connections>
 </model>
