@@ -26,19 +26,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorArc">
-            <visual x="343" y="1877"/>
-            <param name="conveyorSpeed">1</param>
-            <param name="startFrame">ABD4.startFrame</param>
-            <param name="endFrame">ABD4.endFrame</param>
-            <param name="direction">right</param>
-            <param name="sensorNames"></param>
-            <param name="sensorPositions"></param>
-            <param name="sensorsReveal"></param>
-            <param name="sensorFrames"></param>
-            <param name="idleOnStart">false</param>
-            <param name="infoContent"></param>
-        </module-instance>
         <module-instance name="E1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="2366" y="-2329"/>
             <param name="conveyorSpeed">1</param>
@@ -187,11 +174,11 @@
             <param name="infoContent"></param>
             <param name="infoFrame">SF.creationFrame</param>
         </module-instance>
-        <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="1843" y="-1173"/>
+        <module-instance name="ABD5" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="1843" y="-1123"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">ABD4.startFrame</param>
-            <param name="endFrame">ABD4.endFrame</param>
+            <param name="startFrame">ABD5.startFrame</param>
+            <param name="endFrame">ABD5.endFrame</param>
             <param name="sensorNames">S1ABD4</param>
             <param name="sensorPositions">1900</param>
             <param name="sensorsReveal">CENTER</param>
@@ -360,6 +347,19 @@
             <param name="id">PL3</param>
             <param name="logicClassName">my.company.PLCL3</param>
         </module-instance>
+        <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorArc">
+            <visual x="343" y="1877"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">ABD4.startFrame</param>
+            <param name="endFrame">ABD4.endFrame</param>
+            <param name="direction">right</param>
+            <param name="sensorNames"></param>
+            <param name="sensorPositions"></param>
+            <param name="sensorsReveal"></param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
         <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-9191" y="988"/>
             <param name="modelName">SB</param>
@@ -411,10 +411,6 @@
             <port-in module="P1" port="toConveyor"/>
         </connection>
         <connection>
-            <port-out module="SD" port="out"/>
-            <port-in module="D" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="NC1" port="control"/>
             <port-in module="P2" port="toConveyor"/>
         </connection>
@@ -451,20 +447,24 @@
             <port-in module="P3" port="fromConveyor"/>
         </connection>
         <connection>
+            <port-out module="SC" port="out"/>
+            <port-in module="C" port="flowIn"/>
+        </connection>
+        <connection>
             <port-out module="ABD3" port="flowOut"/>
             <port-in module="ABD4" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="ABD4" port="flowOut"/>
-            <port-in module="ABD4" port="flowIn"/>
+            <port-out module="SD" port="out"/>
+            <port-in module="D" port="flowIn"/>
         </connection>
         <connection>
             <port-out module="SA" port="out"/>
             <port-in module="A1" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="SC" port="out"/>
-            <port-in module="C" port="flowIn"/>
+            <port-out module="ABD4" port="flowOut"/>
+            <port-in module="ABD5" port="flowIn"/>
         </connection>
     </connections>
 </model>

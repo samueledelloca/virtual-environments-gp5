@@ -6,6 +6,8 @@
 package my.company;
 
 import com.ttsnetwork.commands.Transform;
+import com.ttsnetwork.core.AWJoint;
+import com.ttsnetwork.core.AWRS;
 import com.ttsnetwork.modules.standard.BoxUtils;
 import com.ttsnetwork.modules.standard.ConveyorLine2;
 import com.ttsnetwork.modules.standard.IConveyorCommands;
@@ -63,6 +65,11 @@ public class PLCL2 extends ProgrammableLogics {
         if (dBox != null && abd3Box != null) {
             schedule.startSerial();
             {
+//                AWRS entity = abd3Box.entity;
+//                while(entity.getChildren() == null) {
+//                    entity = entity.getChildren().get(0).getChild();
+//                }
+//                System.out.println(entity.getFrame(null));
                 Transform dTargetOffset = BoxUtils.targetOffset(dBox, 0, 0, BoxUtils.zSize(dBox) * 2, 0, 0, 0);
                 r4Cmd.move(dTargetOffset, 2000);
                 r4Cmd.moveLinear(BoxUtils.targetTop(dBox), 2000);
