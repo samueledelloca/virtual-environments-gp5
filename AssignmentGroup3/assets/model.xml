@@ -12391,7 +12391,7 @@
 <joint type="RIGID">
     <transform>
         <ns2:location lengthUnit="mm">
-            <ns2:x>700.0</ns2:x>
+            <ns2:x>400.0</ns2:x>
             <ns2:y>0.0</ns2:y>
             <ns2:z>900.0</ns2:z>
         </ns2:location>
@@ -17495,21 +17495,6 @@
     <ns2:property name="#instance.uuid" type="string">9404deb1-c1ba-4b63-908e-c40ebbe9a6e3</ns2:property>
 </ns2:properties>
 <frames/>
-<joint type="RIGID">
-    <transform>
-        <ns2:location lengthUnit="mm">
-            <ns2:x>0.0</ns2:x>
-            <ns2:y>0.0</ns2:y>
-            <ns2:z>0.0</ns2:z>
-        </ns2:location>
-        <ns2:orientation angleUnit="deg">
-            <ns2:x>1.0</ns2:x>
-            <ns2:y>0.0</ns2:y>
-            <ns2:z>0.0</ns2:z>
-            <ns2:w>0.0</ns2:w>
-        </ns2:orientation>
-    </transform>
-</joint>
 <children>
     <group id="E1.E1.relocator">
         <ns2:properties>
@@ -17752,10 +17737,10 @@
             <ns2:z>847.0</ns2:z>
         </ns2:location>
         <ns2:orientation angleUnit="deg">
-            <ns2:x>0.5773502691896258</ns2:x>
-            <ns2:y>0.5773502691896258</ns2:y>
-            <ns2:z>0.5773502691896258</ns2:z>
-            <ns2:w>120.00000000000001</ns2:w>
+            <ns2:x>0.5773502691896257</ns2:x>
+            <ns2:y>0.5773502691896257</ns2:y>
+            <ns2:z>0.5773502691896257</ns2:z>
+            <ns2:w>119.99999999999999</ns2:w>
         </ns2:orientation>
     </transform>
 </joint>
@@ -18288,7 +18273,7 @@
 <joint type="RIGID">
     <transform>
         <ns2:location lengthUnit="mm">
-            <ns2:x>-500.0</ns2:x>
+            <ns2:x>-1400.0</ns2:x>
             <ns2:y>0.0</ns2:y>
             <ns2:z>900.0</ns2:z>
         </ns2:location>

@@ -443,7 +443,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="1900">
+      <parameter name="sensorPositions" type="double[]" value="1600">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -643,7 +643,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="1000;2000">
+      <parameter name="sensorPositions" type="double[]" value="100;2000">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>

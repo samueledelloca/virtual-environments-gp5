@@ -20,7 +20,7 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
 
 /**
  *
- * @author samu
+ * @author michel
  */
 public class PLCL2 extends ProgrammableLogics {
 
