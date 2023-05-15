@@ -11,8 +11,6 @@ import com.ttsnetwork.modules.standard.ConveyorLine2;
 import com.ttsnetwork.modules.standard.IConveyorCommands;
 import com.ttsnetwork.modules.standard.IRobotCommands;
 import com.ttsnetwork.modules.standard.ISensorProvider;
-import com.ttsnetwork.modules.standard.ISource;
-import com.ttsnetwork.modules.standard.ParametricSource2;
 import com.ttsnetwork.modules.standard.ProgrammableLogics;
 import com.ttsnetwork.modules.standard.Pusher;
 import com.ttsnetwork.modules.standard.Robot6DOF2;
@@ -35,14 +33,18 @@ public class PLCL1 extends ProgrammableLogics {
     public ConveyorLine2 B;
     public ConveyorLine2 ABD1;
     public ConveyorLine2 C;
+    public ConveyorLine2 ABC;
+
     public Robot6DOF2 R1;
     public Robot6DOF2 R2;
+    public Robot6DOF2 R3;
 
     private ISensorProvider s1a1Sens;
     private ISensorProvider s1a2Sens;
     private ISensorProvider s1a3Sens;
     private ISensorProvider s1bSens;
     private ISensorProvider s1cSens;
+    private ISensorProvider s1abcSens;
 
     private IConveyorCommands a1Cmd;
     private IConveyorCommands a2Cmd;
@@ -50,14 +52,17 @@ public class PLCL1 extends ProgrammableLogics {
     private IConveyorCommands bCmd;
     private IConveyorCommands abd1Cmd;
     private IConveyorCommands cCmd;
+    public IConveyorCommands abcCmd;
 
     private ConveyorBox boxOnA;
     private ConveyorBox boxOnB;
     private ConveyorBox boxOnAB;
     private ConveyorBox boxOnC;
+    private ConveyorBox boxOnABC;
 
     private IRobotCommands r1Cmd;
     private IRobotCommands r2Cmd;
+    private IRobotCommands r3Cmd;
 
     private void boxAArrived(SensorCatch sc) {
         // record the arrived box
@@ -99,6 +104,16 @@ public class PLCL1 extends ProgrammableLogics {
         {
             cCmd.speedSet(0);
             doABCAssembly();
+        }
+        schedule.end();
+    }
+    
+    private void boxABCArrived(SensorCatch sc) {
+        boxOnABC = sc.box;
+        schedule.startSerial();
+        {
+            abcCmd.speedSet(0);
+            doABCWelding();
         }
         schedule.end();
     }
@@ -175,37 +190,52 @@ public class PLCL1 extends ProgrammableLogics {
             boxOnC = null;
         }
     }
+    
+    private void doABCWelding() {
+        schedule.startSerial();
+        {
+            Transform abcTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 180);
+            Transform abcTopTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 3, 0, 0, 180);
+            r3Cmd.move(abcTargetOffset, 2000);
+
+            r3Cmd.moveLinear(abcTopTargetOffset, 2000);
+            r3Cmd.moveLinear(abcTargetOffset, 2000);
+            abcCmd.speedSet(1);
+        }
+        schedule.end();
+        boxOnABC = null;
+    }
 
     @Override
     public void onInit() {
-//        srcCmd = SA.createSkill(module);
-
         a1Cmd = A1.createCommands(module);
         a2Cmd = A2.createCommands(module);
         a3Cmd = A3.createCommands(module);
         bCmd = B.createCommands(module);
         abd1Cmd = ABD1.createCommands(module);
         cCmd = C.createCommands(module);
+        abcCmd = ABC.createCommands(module);
 
         s1a1Sens = A1.createSensors(module);
         s1a2Sens = A2.createSensors(module);
         s1a3Sens = A3.createSensors(module);
         s1bSens = B.createSensors(module);
         s1cSens = C.createSensors(module);
+        s1abcSens = ABC.createSensors(module);
         r1Cmd = R1.create(module);
         r2Cmd = R2.create(module);
+        r3Cmd = R3.create(module);
 
         s1a1Sens.registerOnSensors(this::boxAArrived, "S1A1");
         s1a2Sens.registerOnSensors(this::pushA2Box, "S1A2");
         s1a3Sens.registerOnSensors(this::boxABArrived, "S1A3");
         s1bSens.registerOnSensors(this::boxBArrived, "S1B");
         s1cSens.registerOnSensors(this::boxCArrived, "S1C");
+        s1abcSens.registerOnSensors(this::boxABCArrived, "S1ABC");
 
         schedule.startSerial();
         {
             schedule.waitTime(1000);
-//            srcCmd.create(null);
-//            schedule.waitTime(4000);
         }
         schedule.end();
     }
@@ -217,16 +247,4 @@ public class PLCL1 extends ProgrammableLogics {
     public void retractP1() {
         P1.cmdStable.write(false);
     }
-
-//    schedule.startSerial ();
-//
-//    {
-//        c1Cmd.speedSet(0);
-//        schedule.callFunction(this::extract);
-//        schedule.waitTime(1000);
-//        schedule.callFunction(this::retract);
-//        c1Cmd.speedSet(1);
-//    }
-//
-//    schedule.end ();
 }

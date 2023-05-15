@@ -6,11 +6,7 @@
 package my.company;
 
 import com.ttsnetwork.commands.Transform;
-import com.ttsnetwork.core.AWJoint;
-import com.ttsnetwork.core.AWRS;
 import com.ttsnetwork.modules.standard.BoxUtils;
-import com.ttsnetwork.modules.standard.ConveyorArc;
-import com.ttsnetwork.modules.standard.ConveyorLine;
 import com.ttsnetwork.modules.standard.ConveyorLine2;
 import com.ttsnetwork.modules.standard.IConveyorCommands;
 import com.ttsnetwork.modules.standard.IRobotCommands;

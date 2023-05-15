@@ -280,8 +280,8 @@
             <param name="startFrame">ABC.startFrame</param>
             <param name="endFrame">ABC.endFrame</param>
             <param name="sensorNames">S1ABC</param>
-            <param name="sensorPositions">2000</param>
-            <param name="sensorsReveal">LEAD</param>
+            <param name="sensorPositions">1999</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -380,14 +380,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
-            <visual x="-9191" y="988"/>
-            <param name="modelName">SB</param>
-            <param name="creationFrameName">SB.creationFrame</param>
-            <param name="timeInterval">3000</param>
-            <param name="minCreationDistance">200</param>
-            <param name="marker"></param>
-        </module-instance>
         <module-instance name="ABD4" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="293" y="1877"/>
             <param name="conveyorSpeed">1</param>
@@ -399,6 +391,14 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
+            <visual x="-9191" y="988"/>
+            <param name="modelName">SB</param>
+            <param name="creationFrameName">SB.creationFrame</param>
+            <param name="timeInterval">3000</param>
+            <param name="minCreationDistance">200</param>
+            <param name="marker"></param>
         </module-instance>
     </modules>
     <connections>
@@ -505,6 +505,10 @@
         <connection>
             <port-out module="W2" port="control"/>
             <port-in module="R5" port="tool"/>
+        </connection>
+        <connection>
+            <port-out module="W1" port="control"/>
+            <port-in module="R3" port="tool"/>
         </connection>
     </connections>
 </model>

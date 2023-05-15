@@ -171,7 +171,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="2000">
+      <parameter name="sensorPositions" type="double[]" value="1999">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -179,7 +179,7 @@
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="LEAD">
+      <parameter name="sensorReveal" type="string[]" value="CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1462,6 +1462,7 @@
    <relationship sourcePortName="out" sourceInstanceUuid="ecaffec7-634a-4fe6-ba76-39faa94fe749" targetPortName="in" targetInstanceUuid="511e4347-3435-4141-a09c-b2246d126cee"/>
    <relationship sourcePortName="out" sourceInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc" targetPortName="in" targetInstanceUuid="ecaffec7-634a-4fe6-ba76-39faa94fe749"/>
    <relationship sourcePortName="TOOL" sourceInstanceUuid="1d33bea5-f852-43a1-a513-c0af6015f500" targetPortName="TOOL" targetInstanceUuid="8d41c93f-75ee-4958-ae24-2257f19f2d07"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96" targetPortName="TOOL" targetInstanceUuid="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
    <modifiers type="attach">
       <property name="childInstance" type="string" value="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96"/>
       <property name="parentInstance" type="string" value="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
