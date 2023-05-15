@@ -22,8 +22,10 @@ import org.apache.commons.math3.distribution.RealDistribution;
  */
 public class PLCL3 extends ProgrammableLogics {
 
+    private ConveyorBox abd6Box;
+
     public ConveyorLine2 ABC;
-    public ConveyorLine2 ABD5;
+    public ConveyorLine2 ABD6;
     public ConveyorLine2 E1;
     public ConveyorLine2 E2;
     public ConveyorLine2 E3;
@@ -32,16 +34,17 @@ public class PLCL3 extends ProgrammableLogics {
     public Pusher P2;
     public Pusher P3;
 
-    private ISensorProvider s1abcSens;
-    private ISensorProvider s1abd5Sens;
+    private ISensorProvider s1abd6Sens;
+    private ISensorProvider s2abd6Sens;
     private ISensorProvider s1e1Sens;
+    private ISensorProvider s2e1Sens;
     private ISensorProvider s1e2Sens;
     private ISensorProvider s2e2Sens;
     private ISensorProvider s1e4Sens;
     private ISensorProvider s2e4Sens;
 
     private IConveyorCommands abcCmd;
-    private IConveyorCommands abd5Cmd;
+    private IConveyorCommands abd6Cmd;
     private IConveyorCommands e1Cmd;
     private IConveyorCommands e2Cmd;
     private IConveyorCommands e3Cmd;
@@ -56,50 +59,100 @@ public class PLCL3 extends ProgrammableLogics {
 
     private RealDistribution distribution;
 
-    private void Sensor2(SensorCatch sc) {
-//      // If there are boxes on1 allora ferma il conveyor 
-        if (boxOn1 != null) {
-            boxOn1 = sc.box;
-        }
+    public boolean busy = false;
+
+    public enum Priority {
+
+        ABC,
+        ABD,
+        NONE
+    }
+    public Priority priority = Priority.NONE;
+    public boolean abcDetected = false;
+    public boolean abdDetected = false;
+
+    private void abd6BoxArrived(SensorCatch sc) {
+        abd6Box = sc.box;
         schedule.startSerial();
         {
-            // immediately stop conveyor
-            e1Cmd.speedSet(0);
-            doWelding();
+            abd6Cmd.remove(abd6Box);
+            e1Cmd.insert(abd6Box);
         }
         schedule.end();
     }
 
-    private void Sensor4(SensorCatch sc) {
-//      // If there are boxes on1 allora ferma il conveyor 
-        if (boxOn2 != null) {
-            boxOn1 = sc.box;
-        }
+    private void abd6BoxDetected(SensorCatch sc) {
         schedule.startSerial();
         {
-            // immediately stop conveyor
-            e4Cmd.speedSet(0);
-            doQualityCheck1();
-        }
-        schedule.end();
-    }
-
-    private void doWelding() {
-        // Welding can be performed only if the box is present
-        if (boxOn1 != null) {
-            // execute the series of assembly operations
-            schedule.startSerial();
-            {
-
-                r3Cmd.move(driver.getFrameTransform("root.Welding"), 2000);
-
-                schedule.waitTime(15000);
+            abdDetected = true;
+            if (busy) {
+                if (priority.equals(Priority.NONE)) {
+                    priority = Priority.ABD;
+                }
+//            abd6Cmd.speedSet(0);
+            } else if (!busy) {
+                busy = true;
+                abd6Cmd.speedSet(1);
+                if (abcDetected) {
+                    e1Cmd.speedSet(0);
+                }
+                abdDetected = false;
             }
-            schedule.end();
-            // forget the operated boxes
-            boxOn1 = null;
-
         }
+        schedule.end();
+    }
+
+    private void e1BoxDetected(SensorCatch sc) {
+        schedule.startSerial();
+        {
+            abcDetected = true;
+            if (busy) {
+                if (priority.equals(Priority.NONE)) {
+                    priority = Priority.ABC;
+                }
+//            e1Cmd.speedSet(0);
+            } else if (!busy) {
+                busy = true;
+                e1Cmd.speedSet(1);
+                if (abdDetected) {
+                    abd6Cmd.speedSet(0);
+                }
+                abcDetected = false;
+            }
+        }
+
+        schedule.end();
+    }
+
+    private void e1BoxMerging(SensorCatch sc) {
+        schedule.startSerial();
+        {
+//            abd6Cmd.speedSet(0);
+            e1Cmd.speedSet(1);
+        }
+        schedule.end();
+    }
+
+    private void e1BoxStop(SensorCatch sc) {
+        schedule.startSerial();
+        {
+            busy = false;
+//            if(priority.equals(Priority.ABC)) {
+//                abd6Cmd.speedSet(0);
+//                e1Cmd.speedSet(1);
+//            } else if(priority.equals(Priority.ABD)) {
+//                e1Cmd.speedSet(0);
+//                abd6Cmd.speedSet(1);
+//            }
+            
+//            if (!abcDetected) {
+//                e1Cmd.speedSet(1);
+//            }
+//            if (!abdDetected) {
+//                abd6Cmd.speedSet(1);
+//            }
+        }
+        schedule.end();
     }
 
     private void doThermalTreatment() {
@@ -149,25 +202,34 @@ public class PLCL3 extends ProgrammableLogics {
         e4Cmd = E4.createCommands(module);
 
         s1e1Sens = E1.createSensors(module);
+        s2e1Sens = E1.createSensors(module);
         s1e2Sens = E1.createSensors(module);
-        s1e2Sens = E2.createSensors(module);
         s2e2Sens = E2.createSensors(module);
         s1e4Sens = E4.createSensors(module);
         s2e4Sens = E4.createSensors(module);
 
         r3Cmd = R3.create(module);
 
-      // s1e1Sens.registerOnSensors(this::Sensor1, "S1E1");
+        abd6Cmd = ABD6.createCommands(module);
+        s1abd6Sens = ABD6.createSensors(module);
+        s2abd6Sens = ABD6.createSensors(module);
+
+        s1abd6Sens.registerOnSensors(this::abd6BoxDetected, "S1ABD6");
+        s2abd6Sens.registerOnSensors(this::abd6BoxArrived, "S2ABD6");
+        s1e1Sens.registerOnSensors(this::e1BoxDetected, "S1E1");
+        s2e1Sens.registerOnSensors(this::e1BoxMerging, "S2E1");
+        s1e2Sens.registerOnSensors(this::e1BoxStop, "S1E2");
+
         schedule.startSerial();
         {
             schedule.waitTime(1000);
 //            srcCmd.create(null);
 //            schedule.waitTime(4000);
-            schedule.callFunction(this::extractP2);
-            schedule.callFunction(this::extractP3);
-            schedule.waitTime(1000);
-            schedule.callFunction(this::retractP2);
-            schedule.callFunction(this::retractP3);
+//            schedule.callFunction(this::extractP2);
+//            schedule.callFunction(this::extractP3);
+//            schedule.waitTime(1000);
+//            schedule.callFunction(this::retractP2);
+//            schedule.callFunction(this::retractP3);
         }
         schedule.end();
     }

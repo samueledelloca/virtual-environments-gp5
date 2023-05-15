@@ -22,9 +22,6 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
  * @author samu
  */
 public class PLCL1 extends ProgrammableLogics {
-
-//    public ParametricSource2 SA;
-//    ISource srcCmd;
     public Pusher P1;
 
     public ConveyorLine2 A1;
@@ -194,8 +191,8 @@ public class PLCL1 extends ProgrammableLogics {
     private void doABCWelding() {
         schedule.startSerial();
         {
-            Transform abcTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 180);
-            Transform abcTopTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 3, 0, 0, 180);
+            Transform abcTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 90);
+            Transform abcTopTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 3, 0, 0, 90);
             r3Cmd.move(abcTargetOffset, 2000);
 
             r3Cmd.moveLinear(abcTopTargetOffset, 2000);

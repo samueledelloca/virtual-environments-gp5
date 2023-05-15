@@ -31,9 +31,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">E1.startFrame</param>
             <param name="endFrame">E1.endFrame</param>
-            <param name="sensorNames">S12E1</param>
-            <param name="sensorPositions">2000</param>
-            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorNames">S1E1;S2E1</param>
+            <param name="sensorPositions">1000;2000</param>
+            <param name="sensorsReveal">CENTER;CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -60,6 +60,13 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="MyPhotocell" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="-9699" y="-2330"/>
+            <param name="refreshInterval">500</param>
+            <param name="sensorGeometryId">MyPhotocell.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
         </module-instance>
         <module-instance name="E3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="7366" y="-2329"/>
@@ -116,7 +123,7 @@
             <param name="logicClassName">my.company.PLCL2</param>
         </module-instance>
         <module-instance name="W1" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
-            <visual x="871" y="-2062"/>
+            <visual x="842" y="-1988"/>
             <param name="tcpFrameId">W1.gun.tcp</param>
         </module-instance>
         <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
@@ -161,7 +168,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="R3" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="871" y="-3351"/>
+            <visual x="842" y="-3277"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -183,9 +190,9 @@
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">ABD6.startFrame</param>
             <param name="endFrame">ABD6.endFrame</param>
-            <param name="sensorNames">S1ABD6;S2ABD6;S3ABD6</param>
-            <param name="sensorPositions">1;1600;2400</param>
-            <param name="sensorsReveal">LEAD;CENTER;CENTER</param>
+            <param name="sensorNames">S1ABD6;S2ABD6</param>
+            <param name="sensorPositions">1400;2400</param>
+            <param name="sensorsReveal">CENTER;CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -213,8 +220,16 @@
             <param name="infoContent"></param>
             <param name="infoFrame">P1.Base.infoFrame</param>
         </module-instance>
+        <module-instance name="InfluxProxy1" type="com.ttsnetwork.modules.standard.InfluxModule">
+            <visual x="-2046" y="-180"/>
+            <param name="id">InfluxProxy1</param>
+            <param name="url">http://localhost:8090</param>
+            <param name="token">DIrf0SuzmN9AzZbTye1pYZLtGO4AGvxfWavf2GtLOmfA_k9vlaBb1TUe81aBwwn0dnMB0isxUMBEZvq1TkuWFg==</param>
+            <param name="org">SUPSI</param>
+            <param name="bucket">local</param>
+        </module-instance>
         <module-instance name="R2" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-1119" y="-3359"/>
+            <visual x="-1119" y="-3277"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>

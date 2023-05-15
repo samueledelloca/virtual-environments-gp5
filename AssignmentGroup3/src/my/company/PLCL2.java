@@ -22,28 +22,32 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
  */
 public class PLCL2 extends ProgrammableLogics {
 
-    public ConveyorBox dBox;
-    public ConveyorBox abd3Box;
-    public ConveyorBox abd4Box;
+    private ConveyorBox dBox;
+    private ConveyorBox abd3Box;
+    private ConveyorBox abd4Box;
 
     public Robot6DOF2 R4;
     public Robot6DOF2 R5;
 
-    public IRobotCommands r4Cmd;
-    public IRobotCommands r5Cmd;
+    private IRobotCommands r4Cmd;
+    private IRobotCommands r5Cmd;
 
     public ConveyorLine2 D;
     public ConveyorLine2 ABD3;
     public ConveyorLine2 ABD4;
+    public ConveyorLine2 ABD6;
+    public ConveyorLine2 E1;
 
-    public IConveyorCommands dCmd;
-    public IConveyorCommands abd3Cmd;
-    public IConveyorCommands abd4Cmd;
-    public IConveyorCommands abd5Cmd;
+    private IConveyorCommands dCmd;
+    private IConveyorCommands abd3Cmd;
+    private IConveyorCommands abd4Cmd;
+//    private IConveyorCommands abd5Cmd;
+//    private IConveyorCommands abd6Cmd;
+//    private IConveyorCommands e1Cmd;
 
-    public ISensorProvider dSen;
-    public ISensorProvider abd3Sen;
-    public ISensorProvider abd4Sen;
+    private ISensorProvider s1dSens;
+    private ISensorProvider s1abd3Sens;
+    private ISensorProvider s1abd4Sens;
 
     private void dBoxArrived(SensorCatch sc) {
         // record the arrived box
@@ -124,17 +128,20 @@ public class PLCL2 extends ProgrammableLogics {
         r5Cmd = R5.create(module);
 
         dCmd = D.createCommands(module);
-        dSen = D.createSensors(module);
+        s1dSens = D.createSensors(module);
 
         abd3Cmd = ABD3.createCommands(module);
-        abd3Sen = ABD3.createSensors(module);
+        s1abd3Sens = ABD3.createSensors(module);
 
         abd4Cmd = ABD4.createCommands(module);
-        abd4Sen = ABD4.createSensors(module);
+        s1abd4Sens = ABD4.createSensors(module);
 
-        dSen.registerOnSensors(this::dBoxArrived, "S1D");
-        abd3Sen.registerOnSensors(this::abd3BoxArrived, "S1ABD3");
-        abd4Sen.registerOnSensors(this::abd4BoxArrived, "S1ABD4");
+//        e1Cmd = E1.createCommands(module);
+
+        s1dSens.registerOnSensors(this::dBoxArrived, "S1D");
+        s1abd3Sens.registerOnSensors(this::abd3BoxArrived, "S1ABD3");
+        s1abd4Sens.registerOnSensors(this::abd4BoxArrived, "S1ABD4");
+
     }
 
 }

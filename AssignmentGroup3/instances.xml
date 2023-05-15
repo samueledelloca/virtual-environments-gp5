@@ -493,15 +493,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="1;1600;2400">
+      <parameter name="sensorPositions" type="double[]" value="1400;2400">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="S1ABD6;S2ABD6;S3ABD6">
+      <parameter name="sensorNames" type="string[]" value="S1ABD6;S2ABD6">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="LEAD;CENTER;CENTER">
+      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -693,15 +693,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="2000">
+      <parameter name="sensorPositions" type="double[]" value="1000;2000">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="S12E1">
+      <parameter name="sensorNames" type="string[]" value="S1E1;S2E1">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="CENTER">
+      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -870,6 +870,55 @@
       <parameter name="lwGeom" type="boolean" value="false">
          <property name="displayName" type="string" value="Lightweight geometry"/>
          <property name="affectGeometry" type="boolean" value="true"/>
+      </parameter>
+   </instance>
+   <instance name="InfluxProxy1" uuid="8aee757d-15bb-4d1c-92b4-835073c05230" version="1" prototype="a12d3deb-d7cd-43f1-9499-37b7c06b48a9">
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="depth" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="height" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+      <parameter name="url" type="string" value="http://localhost:8090">
+         <property name="displayName" type="string" value="URL"/>
+      </parameter>
+      <parameter name="token" type="string" value="DIrf0SuzmN9AzZbTye1pYZLtGO4AGvxfWavf2GtLOmfA_k9vlaBb1TUe81aBwwn0dnMB0isxUMBEZvq1TkuWFg==">
+         <property name="displayName" type="string" value="API token"/>
+      </parameter>
+      <parameter name="org" type="string" value="SUPSI">
+         <property name="displayName" type="string" value="Organization"/>
+      </parameter>
+      <parameter name="bucket" type="string" value="local">
+         <property name="displayName" type="string" value="Bucket"/>
+      </parameter>
+   </instance>
+   <instance name="MyPhotocell" uuid="185b31a9-bd81-437a-918f-b6754177722c" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="5">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
    <instance name="NC1" uuid="2b24ef96-4472-459a-8071-cd72e84c1bd0" version="1" prototype="468e049a-e061-4e96-8ba8-32583dd93a0c">
