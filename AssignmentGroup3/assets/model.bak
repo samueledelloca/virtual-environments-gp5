@@ -6464,21 +6464,6 @@
     <property name="#instance.uuid" type="string">e9fe2032-4024-4682-a688-00bad708c6c8</property>
 </properties>
 <ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
 <ns2:children>
     <ns2:group id="A3.A3.relocator">
         <properties>
@@ -6721,10 +6706,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -7257,7 +7242,7 @@
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
-            <x>-150.0</x>
+            <x>150.0</x>
             <y>0.0</y>
             <z>900.0</z>
         </location>

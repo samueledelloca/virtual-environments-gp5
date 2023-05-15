@@ -246,6 +246,13 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="RobotGripper1" type="com.ttsnetwork.modules.standard.RobotGripper">
+            <visual x="2000" y="-171"/>
+            <param name="tcpFrameId">RobotGripper1.GruppoPinza.tcp</param>
+            <param name="leftJoint">RobotGripper1.pinza_singola_sx.T</param>
+            <param name="rightJoint">RobotGripper1.pinza_singola_dx.T</param>
+            <param name="zero">551.0</param>
+        </module-instance>
         <module-instance name="SG" type="com.ttsnetwork.modules.standard.Sink">
             <visual x="8875" y="189"/>
             <param name="timeInterval">1000</param>
@@ -465,6 +472,10 @@
         <connection>
             <port-out module="SC" port="out"/>
             <port-in module="C" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="RobotGripper1" port="control"/>
+            <port-in module="R3" port="tool"/>
         </connection>
     </connections>
 </model>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:environment xmlns="http://binding.ttsnetwork.com/commons" xmlns:ns2="http://binding.ttsnetwork.com/xml/v7" version="1.0" id="model.xml">
+    <ns2:view>
+        <background>
+            <color1 r="0.2" g="0.4" b="0.6" a="1.0"/>
+        </background>
+        <floor visible="false">
+            <axis>Z</axis>
+            <center lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </center>
+            <sun-position lengthUnit="mm">
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </sun-position>
+            <top-color r="1.0" g="1.0" b="1.0" a="1.0"/>
+            <bottom-color r="0.5" g="0.5" b="0.5" a="1.0"/>
+            <shadows-color r="0.7" g="0.7" b="0.7" a="1.0"/>
+        </floor>
+        <camera-ortho/>
+        <camera-perspective/>
+    </ns2:view>
+    <ns2:group id="model">
+        <ns2:frames/>
+        <ns2:children>
+            <ns2:body visible="true" id="gun">
+                <ns2:frames>
+                    <frame name="tcp">
+                        <properties>
+                            <property name="#visible" type="boolean">true</property>
+                        </properties>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>76.29</y>
+                            <z>272.95</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.6785983445458468</x>
+                            <y>-0.6785983445458467</y>
+                            <z>0.28108463771482</z>
+                            <w>148.60028519008094</w>
+                        </orientation>
+                    </frame>
+                    <frame name="attach">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>-0.7071067811865476</x>
+                            <y>0.7071067811865475</y>
+                            <z>0.0</z>
+                            <w>180.0</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                    <geometry-uri>gun.ptx</geometry-uri>
+                </ns2:geometry>
+                <ns2:children>
+                    <ns2:body visible="true" id="pipe">
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>-22.70325526393246</y>
+    <z>173.95501362416204</z>
+</location>
+<orientation angleUnit="deg">
+    <x>-0.9999999999999999</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>45.00000000000001</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                            <geometry-uri>pipe.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:body>
+        </ns2:children>
+    </ns2:group>
+</ns2:environment>

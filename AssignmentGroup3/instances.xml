@@ -1189,6 +1189,7 @@
          <property name="file_edit" type="boolean" value="false"/>
       </parameter>
    </instance>
+   <instance name="RobotGripper1" uuid="efa6824f-8b4f-4dd7-a02b-16a99722b8bc" version="1" prototype="24925e13-84ee-4438-a2c8-e7e33076f003"/>
    <instance name="SA" uuid="bab192ab-a1de-4090-8d07-45948cd68258" version="1" prototype="9240bd1e-c461-4c38-bf34-e1c1780df195">
       <parameter name="prodPlan" type="string" value="inputSource/bab192ab-a1de-4090-8d07-45948cd68258/PlanSource2_prodPlan.csv">
          <property name="displayName" type="string" value="Production Plan File"/>
@@ -1366,4 +1367,11 @@
    <relationship sourcePortName="out" sourceInstanceUuid="11a02659-e5c9-4c70-8bb7-f00819b1183c" targetPortName="in" targetInstanceUuid="82699023-9e14-4f28-861c-5efa911a3671"/>
    <relationship sourcePortName="out" sourceInstanceUuid="bab192ab-a1de-4090-8d07-45948cd68258" targetPortName="in" targetInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915"/>
    <relationship sourcePortName="out" sourceInstanceUuid="7effde11-e2d3-4e63-a544-cac24203db39" targetPortName="in" targetInstanceUuid="29a3426f-114e-4c55-9016-9c80f63fc266"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="efa6824f-8b4f-4dd7-a02b-16a99722b8bc" targetPortName="TOOL" targetInstanceUuid="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
+   <modifiers type="attach">
+      <property name="childInstance" type="string" value="efa6824f-8b4f-4dd7-a02b-16a99722b8bc"/>
+      <property name="parentInstance" type="string" value="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
+      <property name="parentNode" type="string" value="R3.link6"/>
+      <property name="matrix" type="double[]" value="0.0;-1.0;0.0;0.0;0.0;0.0;1.0;0.0;-1.0;0.0;0.0;0.0;3180.6400000000003;787.9609610082398;1584.1166228340128;1.0"/>
+   </modifiers>
 </instances>
