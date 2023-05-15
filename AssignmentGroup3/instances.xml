@@ -1148,7 +1148,7 @@
       </parameter>
    </instance>
    <instance name="P2" uuid="58ca01fe-b24b-4820-8694-2f30aeb38366" version="1" prototype="30cb4bc0-9c70-4066-9f16-e708960e187f">
-      <parameter name="upperLimit" type="double" value="500">
+      <parameter name="upperLimit" type="double" value="900">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Upper limit [mm]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1163,7 +1163,7 @@
          <property name="displayName" type="string" value="Speed [m/s]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="marker" type="string" value="A2">
+      <parameter name="marker" type="string" value="box">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1174,7 +1174,7 @@
       </parameter>
    </instance>
    <instance name="P3" uuid="a6cc72a9-3722-435e-a6b4-3f5c85d66c27" version="1" prototype="30cb4bc0-9c70-4066-9f16-e708960e187f">
-      <parameter name="upperLimit" type="double" value="500">
+      <parameter name="upperLimit" type="double" value="900">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Upper limit [mm]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1189,7 +1189,7 @@
          <property name="displayName" type="string" value="Speed [m/s]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="marker" type="string" value="A2">
+      <parameter name="marker" type="string" value="box">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Marker"/>
          <property name="affectGeometry" type="boolean" value="false"/>

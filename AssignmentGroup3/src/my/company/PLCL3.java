@@ -112,16 +112,15 @@ public class PLCL3 extends ProgrammableLogics {
         }
         schedule.end();
     }
-    
+
     private void eBoxExiting(SensorCatch sc) {
         schedule.startSerial();
         {
             busy = false;
-            if(abdDetected) {
+            if (abdDetected) {
                 abd7Cmd.speedSet(1);
                 e1Cmd.speedSet(0);
-            }
-            else {
+            } else {
                 abd7Cmd.speedSet(0);
                 e1Cmd.speedSet(1);
             }
@@ -175,6 +174,34 @@ public class PLCL3 extends ProgrammableLogics {
         }
     }
 
+    private void pushWithP2(SensorCatch sc) {
+        if (model.getRandomGenerator().getUniformRealDistribution(0, 1).sample() >= 0.7) {
+            schedule.startSerial();
+            {
+                e3Cmd.speedSet(0);
+                schedule.callFunction(this::extractP2);
+                schedule.waitTime(1000);
+                schedule.callFunction(this::retractP2);
+                e3Cmd.speedSet(1);
+            }
+            schedule.end();
+        }
+    }
+
+    private void pushWithP3(SensorCatch sc) {
+        if (model.getRandomGenerator().getUniformRealDistribution(0, 1).sample() >= 0.8) {
+            schedule.startSerial();
+            {
+                e5Cmd.speedSet(0);
+                schedule.callFunction(this::extractP3);
+                schedule.waitTime(1000);
+                schedule.callFunction(this::retractP3);
+                e5Cmd.speedSet(1);
+            }
+            schedule.end();
+        }
+    }
+
     @Override
     public void onInit() {
 
@@ -196,7 +223,7 @@ public class PLCL3 extends ProgrammableLogics {
 
         abd6Cmd = ABD6.createCommands(module);
         s1abd6Sens = ABD6.createSensors(module);
-        
+
         abd7Cmd = ABD7.createCommands(module);
         s1abd7Sens = ABD7.createSensors(module);
 
@@ -206,6 +233,8 @@ public class PLCL3 extends ProgrammableLogics {
         s2e1Sens.registerOnSensors(this::eBoxMerging, "S2E1");
         s1e2Sens.registerOnSensors(this::eBoxExiting, "S1E2");
         s1e3Sens.registerOnSensors(this::eBoxStop, "S1E3");
+        s2e3Sens.registerOnSensors(this::pushWithP2, "S2E3");
+        s2e5Sens.registerOnSensors(this::pushWithP3, "S2E5");
 
         schedule.startSerial();
         {

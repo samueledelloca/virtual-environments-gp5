@@ -41,10 +41,10 @@
         <module-instance name="P2" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="5916" y="-2821"/>
             <param name="sensorGeometryId">P2.pc_geom</param>
-            <param name="marker">A2</param>
+            <param name="marker">box</param>
             <param name="pusherId">P2.Spintore</param>
             <param name="lowerLimit">0</param>
-            <param name="upperLimit">500</param>
+            <param name="upperLimit">900</param>
             <param name="speed">1</param>
             <param name="infoContent"></param>
             <param name="infoFrame">P2.Base.infoFrame</param>
@@ -129,10 +129,10 @@
         <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="8909" y="-2806"/>
             <param name="sensorGeometryId">P3.pc_geom</param>
-            <param name="marker">A2</param>
+            <param name="marker">box</param>
             <param name="pusherId">P3.Spintore</param>
             <param name="lowerLimit">0</param>
-            <param name="upperLimit">500</param>
+            <param name="upperLimit">900</param>
             <param name="speed">1</param>
             <param name="infoContent"></param>
             <param name="infoFrame">P3.Base.infoFrame</param>

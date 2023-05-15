@@ -19303,7 +19303,7 @@
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
-            <x>500.0</x>
+            <x>0.0</x>
             <y>0.0</y>
             <z>900.0</z>
         </location>
@@ -27097,7 +27097,7 @@
                         <ns2:joint type="RIGID">
                             <ns2:transform>
 <location lengthUnit="mm">
-    <x>600.0</x>
+    <x>700.0</x>
     <y>0.0</y>
     <z>900.0</z>
 </location>
