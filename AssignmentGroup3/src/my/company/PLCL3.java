@@ -22,33 +22,38 @@ import org.apache.commons.math3.distribution.RealDistribution;
  */
 public class PLCL3 extends ProgrammableLogics {
 
-    private ConveyorBox abd6Box;
+    private ConveyorBox abd7Box;
 
     public ConveyorLine2 ABC;
     public ConveyorLine2 ABD6;
+    public ConveyorLine2 ABD7;
     public ConveyorLine2 E1;
     public ConveyorLine2 E2;
     public ConveyorLine2 E3;
     public ConveyorLine2 E4;
+    public ConveyorLine2 E5;
     public Robot6DOF2 R3;
     public Pusher P2;
     public Pusher P3;
 
     private ISensorProvider s1abd6Sens;
-    private ISensorProvider s2abd6Sens;
+    private ISensorProvider s1abd7Sens;
     private ISensorProvider s1e1Sens;
     private ISensorProvider s2e1Sens;
     private ISensorProvider s1e2Sens;
-    private ISensorProvider s2e2Sens;
-    private ISensorProvider s1e4Sens;
-    private ISensorProvider s2e4Sens;
+    private ISensorProvider s1e3Sens;
+    private ISensorProvider s2e3Sens;
+    private ISensorProvider s1e5Sens;
+    private ISensorProvider s2e5Sens;
 
     private IConveyorCommands abcCmd;
     private IConveyorCommands abd6Cmd;
+    private IConveyorCommands abd7Cmd;
     private IConveyorCommands e1Cmd;
     private IConveyorCommands e2Cmd;
     private IConveyorCommands e3Cmd;
     private IConveyorCommands e4Cmd;
+    private IConveyorCommands e5Cmd;
 
     private IRobotCommands r3Cmd;
 
@@ -60,23 +65,14 @@ public class PLCL3 extends ProgrammableLogics {
     private RealDistribution distribution;
 
     public boolean busy = false;
-
-    public enum Priority {
-
-        ABC,
-        ABD,
-        NONE
-    }
-    public Priority priority = Priority.NONE;
-    public boolean abcDetected = false;
     public boolean abdDetected = false;
 
-    private void abd6BoxArrived(SensorCatch sc) {
-        abd6Box = sc.box;
+    private void abd7BoxArrived(SensorCatch sc) {
+        abd7Box = sc.box;
         schedule.startSerial();
         {
-            abd6Cmd.remove(abd6Box);
-            e1Cmd.insert(abd6Box);
+            abd7Cmd.remove(abd7Box);
+            e2Cmd.insert(abd7Box);
         }
         schedule.end();
     }
@@ -86,16 +82,11 @@ public class PLCL3 extends ProgrammableLogics {
         {
             abdDetected = true;
             if (busy) {
-                if (priority.equals(Priority.NONE)) {
-                    priority = Priority.ABD;
-                }
-//            abd6Cmd.speedSet(0);
-            } else if (!busy) {
+                abd7Cmd.speedSet(0);
+            } else {
                 busy = true;
-                abd6Cmd.speedSet(1);
-                if (abcDetected) {
-                    e1Cmd.speedSet(0);
-                }
+                abd7Cmd.speedSet(1);
+                e1Cmd.speedSet(0);
                 abdDetected = false;
             }
         }
@@ -105,52 +96,43 @@ public class PLCL3 extends ProgrammableLogics {
     private void e1BoxDetected(SensorCatch sc) {
         schedule.startSerial();
         {
-            abcDetected = true;
-            if (busy) {
-                if (priority.equals(Priority.NONE)) {
-                    priority = Priority.ABC;
-                }
-//            e1Cmd.speedSet(0);
-            } else if (!busy) {
+            if (!busy) {
                 busy = true;
                 e1Cmd.speedSet(1);
-                if (abdDetected) {
-                    abd6Cmd.speedSet(0);
-                }
-                abcDetected = false;
+                abd7Cmd.speedSet(0);
             }
         }
-
         schedule.end();
     }
 
-    private void e1BoxMerging(SensorCatch sc) {
+    private void eBoxMerging(SensorCatch sc) {
         schedule.startSerial();
         {
-//            abd6Cmd.speedSet(0);
-            e1Cmd.speedSet(1);
+
         }
         schedule.end();
     }
-
-    private void e1BoxStop(SensorCatch sc) {
+    
+    private void eBoxExiting(SensorCatch sc) {
         schedule.startSerial();
         {
             busy = false;
-//            if(priority.equals(Priority.ABC)) {
-//                abd6Cmd.speedSet(0);
-//                e1Cmd.speedSet(1);
-//            } else if(priority.equals(Priority.ABD)) {
-//                e1Cmd.speedSet(0);
-//                abd6Cmd.speedSet(1);
-//            }
-            
-//            if (!abcDetected) {
-//                e1Cmd.speedSet(1);
-//            }
-//            if (!abdDetected) {
-//                abd6Cmd.speedSet(1);
-//            }
+            if(abdDetected) {
+                abd7Cmd.speedSet(1);
+                e1Cmd.speedSet(0);
+            }
+            else {
+                abd7Cmd.speedSet(0);
+                e1Cmd.speedSet(1);
+            }
+        }
+        schedule.end();
+    }
+
+    private void eBoxStop(SensorCatch sc) {
+        schedule.startSerial();
+        {
+
         }
         schedule.end();
     }
@@ -200,25 +182,30 @@ public class PLCL3 extends ProgrammableLogics {
         e2Cmd = E2.createCommands(module);
         e3Cmd = E3.createCommands(module);
         e4Cmd = E4.createCommands(module);
+        e5Cmd = E5.createCommands(module);
 
         s1e1Sens = E1.createSensors(module);
         s2e1Sens = E1.createSensors(module);
-        s1e2Sens = E1.createSensors(module);
-        s2e2Sens = E2.createSensors(module);
-        s1e4Sens = E4.createSensors(module);
-        s2e4Sens = E4.createSensors(module);
+        s1e2Sens = E2.createSensors(module);
+        s1e3Sens = E3.createSensors(module);
+        s2e3Sens = E3.createSensors(module);
+        s1e5Sens = E5.createSensors(module);
+        s2e5Sens = E5.createSensors(module);
 
         r3Cmd = R3.create(module);
 
         abd6Cmd = ABD6.createCommands(module);
         s1abd6Sens = ABD6.createSensors(module);
-        s2abd6Sens = ABD6.createSensors(module);
+        
+        abd7Cmd = ABD7.createCommands(module);
+        s1abd7Sens = ABD7.createSensors(module);
 
         s1abd6Sens.registerOnSensors(this::abd6BoxDetected, "S1ABD6");
-        s2abd6Sens.registerOnSensors(this::abd6BoxArrived, "S2ABD6");
+        s1abd7Sens.registerOnSensors(this::abd7BoxArrived, "S1ABD7");
         s1e1Sens.registerOnSensors(this::e1BoxDetected, "S1E1");
-        s2e1Sens.registerOnSensors(this::e1BoxMerging, "S2E1");
-        s1e2Sens.registerOnSensors(this::e1BoxStop, "S1E2");
+        s2e1Sens.registerOnSensors(this::eBoxMerging, "S2E1");
+        s1e2Sens.registerOnSensors(this::eBoxExiting, "S1E2");
+        s1e3Sens.registerOnSensors(this::eBoxStop, "S1E3");
 
         schedule.startSerial();
         {
