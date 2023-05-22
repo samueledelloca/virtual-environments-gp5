@@ -171,7 +171,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="1999">
+      <parameter name="sensorPositions" type="double[]" value="1900">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -382,7 +382,7 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="0">
+      <parameter name="sensorPositions" type="double[]" value="750">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
@@ -1727,8 +1727,6 @@
    <relationship sourcePortName="out" sourceInstanceUuid="c8bc44d9-c9d0-4141-8492-ad443ae76984" targetPortName="in" targetInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc"/>
    <relationship sourcePortName="out" sourceInstanceUuid="ecaffec7-634a-4fe6-ba76-39faa94fe749" targetPortName="in" targetInstanceUuid="511e4347-3435-4141-a09c-b2246d126cee"/>
    <relationship sourcePortName="out" sourceInstanceUuid="49f357a8-3016-4309-9dd5-18e74f021bdc" targetPortName="in" targetInstanceUuid="ecaffec7-634a-4fe6-ba76-39faa94fe749"/>
-   <relationship sourcePortName="TOOL" sourceInstanceUuid="1d33bea5-f852-43a1-a513-c0af6015f500" targetPortName="TOOL" targetInstanceUuid="8d41c93f-75ee-4958-ae24-2257f19f2d07"/>
-   <relationship sourcePortName="TOOL" sourceInstanceUuid="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96" targetPortName="TOOL" targetInstanceUuid="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
    <relationship sourcePortName="out" sourceInstanceUuid="1fdc793f-1fe8-4b91-9a0c-abc52dc241ea" targetPortName="in" targetInstanceUuid="9404deb1-c1ba-4b63-908e-c40ebbe9a6e3"/>
    <relationship sourcePortName="out" sourceInstanceUuid="9404deb1-c1ba-4b63-908e-c40ebbe9a6e3" targetPortName="in" targetInstanceUuid="73344f87-6448-4f2b-b62d-aefe6577b9ae"/>
    <relationship sourcePortName="out" sourceInstanceUuid="511e4347-3435-4141-a09c-b2246d126cee" targetPortName="in" targetInstanceUuid="1fde25b1-680c-4d0c-8dba-0acb36adc1e4"/>
@@ -1742,6 +1740,8 @@
    <relationship sourcePortName="out" sourceInstanceUuid="45c0bcbf-3f10-495f-9ec6-d8a26d8f21d8" targetPortName="in" targetInstanceUuid="fc1d78f1-777f-43ff-b10e-89ee80a4b641"/>
    <relationship sourcePortName="out" sourceInstanceUuid="bab192ab-a1de-4090-8d07-45948cd68258" targetPortName="in" targetInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915"/>
    <relationship sourcePortName="out" sourceInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915" targetPortName="in" targetInstanceUuid="14f4c041-9ecf-4439-897c-c497b2894c6b"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="1d33bea5-f852-43a1-a513-c0af6015f500" targetPortName="TOOL" targetInstanceUuid="8d41c93f-75ee-4958-ae24-2257f19f2d07"/>
+   <relationship sourcePortName="TOOL" sourceInstanceUuid="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96" targetPortName="TOOL" targetInstanceUuid="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
    <modifiers type="attach">
       <property name="childInstance" type="string" value="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96"/>
       <property name="parentInstance" type="string" value="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>

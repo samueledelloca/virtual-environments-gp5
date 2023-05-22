@@ -125,6 +125,21 @@
     <property name="#instance.uuid" type="string">64b005a6-20d5-48c0-911e-68b115b81915</property>
 </properties>
 <ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
 <ns2:children>
     <ns2:group id="A1.A1.relocator">
         <properties>
@@ -367,10 +382,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -1260,10 +1275,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -1905,7 +1920,7 @@
                         <ns2:joint type="RIGID">
                             <ns2:transform>
 <location lengthUnit="mm">
-    <x>-8945.8</x>
+    <x>-8949.71645649949</x>
     <y>-3277.19</y>
     <z>0.0</z>
 </location>
@@ -3946,10 +3961,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -4663,21 +4678,6 @@
     <property name="#instance.uuid" type="string">1fdc793f-1fe8-4b91-9a0c-abc52dc241ea</property>
 </properties>
 <ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
 <ns2:children>
     <ns2:group id="ABC.ABC.relocator">
         <properties>
@@ -5456,7 +5456,7 @@
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
-            <x>999.0</x>
+            <x>900.0</x>
             <y>0.0</y>
             <z>900.0</z>
         </location>
@@ -5556,6 +5556,21 @@
     <property name="#instance.uuid" type="string">14f4c041-9ecf-4439-897c-c497b2894c6b</property>
 </properties>
 <ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
 <ns2:children>
     <ns2:group id="A2.A2.relocator">
         <properties>
@@ -5798,10 +5813,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -6718,10 +6733,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -7632,6 +7647,994 @@
                             </ns2:body>
                         </ns2:children>
                     </ns2:body>
+                    <ns2:group id="R3">
+                        <properties>
+                            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+                            <property name="#prototype.uuid" type="string">4cf0efef-ad27-4ae1-a3d4-068ad898d5e0</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>766.9983304955014</x>
+    <y>-3756.646068717353</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>1.0</z>
+    <w>90.0</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:children>
+                            <ns2:group id="R3.root">
+<properties>
+    <property name="#local.name" type="string">root</property>
+    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+</properties>
+<ns2:frames>
+    <frame name="IN">
+        <location lengthUnit="mm">
+            <x>-454.6000061035156</x>
+            <y>-117.0</y>
+            <z>100.5</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </frame>
+    <frame name="OUT">
+        <location lengthUnit="mm">
+            <x>-454.6000061035156</x>
+            <y>155.25922259721006</y>
+            <z>100.5</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+            <w>180.0</w>
+        </orientation>
+    </frame>
+</ns2:frames>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:children>
+    <ns2:body visible="true" id="R3.base">
+        <properties>
+            <property name="#local.name" type="string">base</property>
+            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+        </properties>
+        <ns2:frames>
+            <frame name="origin">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                    <w>90.0</w>
+                </orientation>
+            </frame>
+            <frame name="commands">
+                <location lengthUnit="mm">
+                    <x>-399.68420715422116</x>
+                    <y>-118.86469972773935</y>
+                    <z>120.6030843173818</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+        </ns2:frames>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:geometry lengthUnit="mm" type="VRML">
+            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/base.wrl</geometry-uri>
+        </ns2:geometry>
+        <ns2:children>
+            <ns2:body visible="true" id="R3.link1">
+                <properties>
+                    <property name="#local.name" type="string">link1</property>
+                    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="ROTATIONAL">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                    <ns2:rotation-axis name="R">
+                        <axis>
+                            <origin lengthUnit="mm">
+<x>0.0</x>
+<y>0.0</y>
+<z>0.0</z>
+                            </origin>
+                            <versor>
+<x>0.0</x>
+<y>0.0</y>
+<z>1.0</z>
+                            </versor>
+                        </axis>
+                        <limits>
+                            <home>0.0</home>
+                            <low unit="deg">-170.0</low>
+                            <high unit="deg">170.0</high>
+                            <max-speed unit="deg/s">175.0</max-speed>
+                            <max-acceleration unit="deg/s^2">200.0</max-acceleration>
+                        </limits>
+                    </ns2:rotation-axis>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="mm" type="VRML">
+                    <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link1.wrl</geometry-uri>
+                </ns2:geometry>
+                <ns2:children>
+                    <ns2:body visible="true" id="R3.link2">
+                        <properties>
+                            <property name="#local.name" type="string">link2</property>
+                            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="ROTATIONAL">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                            <ns2:rotation-axis name="R">
+<axis>
+    <origin lengthUnit="mm">
+        <x>150.0</x>
+        <y>0.0</y>
+        <z>565.0</z>
+    </origin>
+    <versor>
+        <x>0.0</x>
+        <y>1.0</y>
+        <z>0.0</z>
+    </versor>
+</axis>
+<limits>
+    <home>0.0</home>
+    <low unit="deg">-45.0</low>
+    <high unit="deg">100.0</high>
+    <max-speed unit="deg/s">180.0</max-speed>
+    <max-acceleration unit="deg/s^2">200.0</max-acceleration>
+</limits>
+                            </ns2:rotation-axis>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="VRML">
+                            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link2.wrl</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                            <ns2:body visible="true" id="R3.link3">
+<properties>
+    <property name="#local.name" type="string">link3</property>
+    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="ROTATIONAL">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+            <w>0.0</w>
+        </orientation>
+    </ns2:transform>
+    <ns2:rotation-axis name="R">
+        <axis>
+            <origin lengthUnit="mm">
+                <x>150.0</x>
+                <y>0.0</y>
+                <z>1435.0</z>
+            </origin>
+            <versor>
+                <x>0.0</x>
+                <y>1.0</y>
+                <z>0.0</z>
+            </versor>
+        </axis>
+        <limits>
+            <home>0.0</home>
+            <low unit="deg">-180.0</low>
+            <high unit="deg">120.0</high>
+            <max-speed unit="deg/s">175.0</max-speed>
+            <max-acceleration unit="deg/s^2">200.0</max-acceleration>
+        </limits>
+    </ns2:rotation-axis>
+</ns2:joint>
+<ns2:geometry lengthUnit="mm" type="VRML">
+    <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link3.wrl</geometry-uri>
+</ns2:geometry>
+<ns2:children>
+    <ns2:body visible="true" id="R3.link4">
+        <properties>
+            <property name="#local.name" type="string">link4</property>
+            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+        </properties>
+        <ns2:frames/>
+        <ns2:joint type="ROTATIONAL">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+            <ns2:rotation-axis name="R">
+                <axis>
+                    <origin lengthUnit="mm">
+                        <x>0.0</x>
+                        <y>0.0</y>
+                        <z>1595.0</z>
+                    </origin>
+                    <versor>
+                        <x>1.0</x>
+                        <y>0.0</y>
+                        <z>0.0</z>
+                    </versor>
+                </axis>
+                <limits>
+                    <home unit="deg">0.0</home>
+                    <low unit="deg">-360.0</low>
+                    <high unit="deg">360.0</high>
+                    <max-speed unit="deg/s">250.0</max-speed>
+                    <max-acceleration unit="deg/s^2">300.0</max-acceleration>
+                </limits>
+            </ns2:rotation-axis>
+        </ns2:joint>
+        <ns2:geometry lengthUnit="mm" type="VRML">
+            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link4.wrl</geometry-uri>
+        </ns2:geometry>
+        <ns2:children>
+            <ns2:body visible="true" id="R3.link5">
+                <properties>
+                    <property name="#local.name" type="string">link5</property>
+                    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+                </properties>
+                <ns2:frames/>
+                <ns2:joint type="ROTATIONAL">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                    <ns2:rotation-axis name="R">
+                        <axis>
+                            <origin lengthUnit="mm">
+<x>1120.0</x>
+<y>0.0</y>
+<z>1595.0</z>
+                            </origin>
+                            <versor>
+<x>0.0</x>
+<y>1.0</y>
+<z>0.0</z>
+                            </versor>
+                        </axis>
+                        <limits>
+                            <home unit="deg">0.0</home>
+                            <low unit="deg">-125.0</low>
+                            <high unit="deg">125.0</high>
+                            <max-speed unit="deg/s">250.0</max-speed>
+                            <max-acceleration unit="deg/s^2">300.0</max-acceleration>
+                        </limits>
+                    </ns2:rotation-axis>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="mm" type="VRML">
+                    <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link5.wrl</geometry-uri>
+                </ns2:geometry>
+                <ns2:children>
+                    <ns2:body visible="true" id="R3.link6">
+                        <properties>
+                            <property name="#local.name" type="string">link6</property>
+                            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+                        </properties>
+                        <ns2:frames>
+                            <frame name="tcp">
+<properties>
+    <property name="#visible" type="boolean">true</property>
+</properties>
+<location lengthUnit="mm">
+    <x>1289.0</x>
+    <y>0.0</y>
+    <z>1595.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+    <w>90.0</w>
+</orientation>
+                            </frame>
+                        </ns2:frames>
+                        <ns2:joint type="ROTATIONAL">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+</location>
+<orientation angleUnit="deg">
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>0.0</w>
+</orientation>
+                            </ns2:transform>
+                            <ns2:rotation-axis name="R">
+<axis>
+    <origin lengthUnit="mm">
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>1595.0</z>
+    </origin>
+    <versor>
+        <x>1.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+    </versor>
+</axis>
+<limits>
+    <home unit="deg">0.0</home>
+    <low unit="deg">-360.0</low>
+    <high unit="deg">360.0</high>
+    <max-speed unit="deg/s">355.0</max-speed>
+    <max-acceleration unit="deg/s^2">400.0</max-acceleration>
+</limits>
+                            </ns2:rotation-axis>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="VRML">
+                            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link6.wrl</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children>
+                            <ns2:group id="W1">
+<properties>
+    <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
+    <property name="#prototype.uuid" type="string">efbf637f-7719-4b85-a81c-15b643d315ae</property>
+</properties>
+<ns2:frames/>
+<ns2:joint type="RIGID">
+    <ns2:transform>
+        <location lengthUnit="mm">
+            <x>1289.0</x>
+            <y>0.0</y>
+            <z>1595.0</z>
+        </location>
+        <orientation angleUnit="deg">
+            <x>-0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>-0.5773502691896257</z>
+            <w>119.99999999999999</w>
+        </orientation>
+    </ns2:transform>
+</ns2:joint>
+<ns2:children>
+    <ns2:group id="W1.model">
+        <properties>
+            <property name="#local.name" type="string">model</property>
+            <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
+        </properties>
+        <ns2:frames/>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:children>
+            <ns2:body visible="true" id="W1.gun">
+                <properties>
+                    <property name="#local.name" type="string">gun</property>
+                    <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
+                </properties>
+                <ns2:frames>
+                    <frame name="tcp">
+                        <properties>
+                            <property name="#visible" type="boolean">true</property>
+                        </properties>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>76.29</y>
+                            <z>272.95</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>0.6785983445458471</x>
+                            <y>-0.678598344545847</y>
+                            <z>0.2810846377148201</z>
+                            <w>148.60028519008094</w>
+                        </orientation>
+                    </frame>
+                    <frame name="attach">
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>-0.7071067811865476</x>
+                            <y>0.7071067811865475</y>
+                            <z>0.0</z>
+                            <w>180.0</w>
+                        </orientation>
+                    </frame>
+                </ns2:frames>
+                <ns2:joint type="RIGID">
+                    <ns2:transform>
+                        <location lengthUnit="mm">
+                            <x>0.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                        </location>
+                        <orientation angleUnit="deg">
+                            <x>1.0</x>
+                            <y>0.0</y>
+                            <z>0.0</z>
+                            <w>0.0</w>
+                        </orientation>
+                    </ns2:transform>
+                </ns2:joint>
+                <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                    <geometry-uri>prototypes/efbf637f-7719-4b85-a81c-15b643d315ae/gun.ptx</geometry-uri>
+                </ns2:geometry>
+                <ns2:children>
+                    <ns2:body visible="true" id="W1.pipe">
+                        <properties>
+                            <property name="#local.name" type="string">pipe</property>
+                            <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
+                        </properties>
+                        <ns2:frames/>
+                        <ns2:joint type="RIGID">
+                            <ns2:transform>
+<location lengthUnit="mm">
+    <x>0.0</x>
+    <y>-22.70325526393246</y>
+    <z>173.95501362416204</z>
+</location>
+<orientation angleUnit="deg">
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <w>45.00000000000001</w>
+</orientation>
+                            </ns2:transform>
+                        </ns2:joint>
+                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
+                            <geometry-uri>prototypes/efbf637f-7719-4b85-a81c-15b643d315ae/pipe.ptx</geometry-uri>
+                        </ns2:geometry>
+                        <ns2:children/>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:body>
+        </ns2:children>
+    </ns2:group>
+</ns2:children>
+                            </ns2:group>
+                        </ns2:children>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:body>
+        </ns2:children>
+    </ns2:body>
+</ns2:children>
+                            </ns2:body>
+                        </ns2:children>
+                    </ns2:body>
+                </ns2:children>
+            </ns2:body>
+        </ns2:children>
+    </ns2:body>
+    <ns2:group id="R3.circleTest">
+        <properties>
+            <property name="#local.name" type="string">circleTest</property>
+            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+        </properties>
+        <ns2:frames>
+            <frame name="frame1">
+                <location lengthUnit="mm">
+                    <x>500.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame2">
+                <location lengthUnit="mm">
+                    <x>353.5533905932738</x>
+                    <y>353.5533905932737</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                    <w>45.00000000000001</w>
+                </orientation>
+            </frame>
+            <frame name="frame3">
+                <location lengthUnit="mm">
+                    <x>3.061616997868383E-14</x>
+                    <y>500.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                    <w>90.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame4">
+                <location lengthUnit="mm">
+                    <x>-353.5533905932737</x>
+                    <y>353.5533905932738</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                    <w>135.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame5">
+                <location lengthUnit="mm">
+                    <x>-500.0</x>
+                    <y>6.123233995736766E-14</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>1.0</z>
+                    <w>180.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame6">
+                <location lengthUnit="mm">
+                    <x>-353.55339059327383</x>
+                    <y>-353.5533905932737</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>-1.0</z>
+                    <w>135.00000000000006</w>
+                </orientation>
+            </frame>
+            <frame name="frame7">
+                <location lengthUnit="mm">
+                    <x>-9.184850993605149E-14</x>
+                    <y>-500.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>-1.0</z>
+                    <w>90.00000000000001</w>
+                </orientation>
+            </frame>
+            <frame name="frame8">
+                <location lengthUnit="mm">
+                    <x>353.55339059327366</x>
+                    <y>-353.55339059327383</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>-1.0</z>
+                    <w>45.00000000000001</w>
+                </orientation>
+            </frame>
+        </ns2:frames>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>1231.6074384344256</x>
+                    <y>0.0</y>
+                    <z>738.310743888525</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:children/>
+    </ns2:group>
+    <ns2:group id="R3.squareTest">
+        <properties>
+            <property name="#local.name" type="string">squareTest</property>
+            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+        </properties>
+        <ns2:frames>
+            <frame name="frame1">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame2">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame3">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>400.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame4">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>400.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame5">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>800.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame6">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>800.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame7">
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame8">
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>0.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame9">
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>400.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame10">
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>400.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame11">
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>800.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame12">
+                <location lengthUnit="mm">
+                    <x>400.0</x>
+                    <y>800.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame13">
+                <location lengthUnit="mm">
+                    <x>800.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame14">
+                <location lengthUnit="mm">
+                    <x>800.0</x>
+                    <y>0.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame15">
+                <location lengthUnit="mm">
+                    <x>800.0</x>
+                    <y>400.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame16">
+                <location lengthUnit="mm">
+                    <x>800.0</x>
+                    <y>400.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame17">
+                <location lengthUnit="mm">
+                    <x>800.0</x>
+                    <y>800.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+            <frame name="frame18">
+                <location lengthUnit="mm">
+                    <x>800.0</x>
+                    <y>800.0</y>
+                    <z>500.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+        </ns2:frames>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>842.2</x>
+                    <y>-400.0</y>
+                    <z>442.0853190540794</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:children/>
+    </ns2:group>
+    <ns2:group id="R3.pickCicle">
+        <properties>
+            <property name="#local.name" type="string">pickCicle</property>
+            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
+        </properties>
+        <ns2:frames>
+            <frame name="over">
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </frame>
+        </ns2:frames>
+        <ns2:joint type="RIGID">
+            <ns2:transform>
+                <location lengthUnit="mm">
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </location>
+                <orientation angleUnit="deg">
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                    <w>0.0</w>
+                </orientation>
+            </ns2:transform>
+        </ns2:joint>
+        <ns2:children/>
+    </ns2:group>
+</ns2:children>
+                            </ns2:group>
+                        </ns2:children>
+                    </ns2:group>
                 </ns2:children>
             </ns2:group>
             <ns2:group id="L2">
@@ -7990,10 +8993,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -8622,21 +9625,6 @@
             <property name="#instance.uuid" type="string">c8bc44d9-c9d0-4141-8492-ad443ae76984</property>
         </properties>
         <ns2:frames/>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
         <ns2:children>
             <ns2:group id="ABD2.ABD2.relocatorRotA">
                 <properties>
@@ -9543,7 +10531,7 @@
                 <orientation angleUnit="deg">
                     <x>0.0</x>
                     <y>0.0</y>
-                    <z>1.0</z>
+                    <z>0.9999999999999999</z>
                     <w>45.00000000000001</w>
                 </orientation>
             </ns2:transform>
@@ -10974,10 +11962,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -11867,10 +12855,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -12760,10 +13748,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -14392,9 +15380,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:group id="ABD5.ABD4_main">
+                            <ns2:group id="ABD5.ABD5_main">
 <properties>
-    <property name="#local.name" type="string">ABD4_main</property>
+    <property name="#local.name" type="string">ABD5_main</property>
     <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
     <property name="#prototype.element.expert_mode" type="boolean">true</property>
 </properties>
@@ -14415,31 +15403,16 @@
     </ns2:transform>
 </ns2:joint>
 <ns2:children>
-    <ns2:group id="ABD5.ABD4.root">
+    <ns2:group id="ABD5.ABD5.root">
         <properties>
-            <property name="#local.name" type="string">ABD4.root</property>
+            <property name="#local.name" type="string">ABD5.root</property>
             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
         </properties>
         <ns2:frames/>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
         <ns2:children>
-            <ns2:group id="ABD5.ABD4.relocatorRotA">
+            <ns2:group id="ABD5.ABD5.relocatorRotA">
                 <properties>
-                    <property name="#local.name" type="string">ABD4.relocatorRotA</property>
+                    <property name="#local.name" type="string">ABD5.relocatorRotA</property>
                     <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
                 </properties>
                 <ns2:frames/>
@@ -14459,9 +15432,9 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="ABD5.ABD4.relocatorA">
+                    <ns2:group id="ABD5.ABD5.relocatorA">
                         <properties>
-                            <property name="#local.name" type="string">ABD4.relocatorA</property>
+                            <property name="#local.name" type="string">ABD5.relocatorA</property>
                             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
                         </properties>
                         <ns2:frames/>
@@ -14481,9 +15454,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:group id="ABD5.ABD4.latoA">
+                            <ns2:group id="ABD5.ABD5.latoA">
 <properties>
-    <property name="#local.name" type="string">ABD4.latoA</property>
+    <property name="#local.name" type="string">ABD5.latoA</property>
     <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
 </properties>
 <ns2:frames/>
@@ -14503,9 +15476,9 @@
     </ns2:transform>
 </ns2:joint>
 <ns2:children>
-    <ns2:body visible="true" id="ABD5.ABD4.carterA1">
+    <ns2:body visible="true" id="ABD5.ABD5.carterA1">
         <properties>
-            <property name="#local.name" type="string">ABD4.carterA1</property>
+            <property name="#local.name" type="string">ABD5.carterA1</property>
             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
         </properties>
         <ns2:frames/>
@@ -14529,9 +15502,9 @@
         </ns2:geometry>
         <ns2:children/>
     </ns2:body>
-    <ns2:body visible="true" id="ABD5.ABD4.carterA2">
+    <ns2:body visible="true" id="ABD5.ABD5.carterA2">
         <properties>
-            <property name="#local.name" type="string">ABD4.carterA2</property>
+            <property name="#local.name" type="string">ABD5.carterA2</property>
             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
         </properties>
         <ns2:frames/>
@@ -14561,9 +15534,9 @@
                     </ns2:group>
                 </ns2:children>
             </ns2:group>
-            <ns2:group id="ABD5.ABD4.relocatorRotB">
+            <ns2:group id="ABD5.ABD5.relocatorRotB">
                 <properties>
-                    <property name="#local.name" type="string">ABD4.relocatorRotB</property>
+                    <property name="#local.name" type="string">ABD5.relocatorRotB</property>
                     <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
                 </properties>
                 <ns2:frames/>
@@ -14583,9 +15556,9 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="ABD5.ABD4.relocatorB">
+                    <ns2:group id="ABD5.ABD5.relocatorB">
                         <properties>
-                            <property name="#local.name" type="string">ABD4.relocatorB</property>
+                            <property name="#local.name" type="string">ABD5.relocatorB</property>
                             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
                         </properties>
                         <ns2:frames/>
@@ -14605,9 +15578,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:group id="ABD5.ABD4.latoB">
+                            <ns2:group id="ABD5.ABD5.latoB">
 <properties>
-    <property name="#local.name" type="string">ABD4.latoB</property>
+    <property name="#local.name" type="string">ABD5.latoB</property>
     <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
 </properties>
 <ns2:frames/>
@@ -14627,9 +15600,9 @@
     </ns2:transform>
 </ns2:joint>
 <ns2:children>
-    <ns2:body visible="true" id="ABD5.ABD4.carterB1">
+    <ns2:body visible="true" id="ABD5.ABD5.carterB1">
         <properties>
-            <property name="#local.name" type="string">ABD4.carterB1</property>
+            <property name="#local.name" type="string">ABD5.carterB1</property>
             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
         </properties>
         <ns2:frames/>
@@ -14653,9 +15626,9 @@
         </ns2:geometry>
         <ns2:children/>
     </ns2:body>
-    <ns2:body visible="true" id="ABD5.ABD4.carterB2">
+    <ns2:body visible="true" id="ABD5.ABD5.carterB2">
         <properties>
-            <property name="#local.name" type="string">ABD4.carterB2</property>
+            <property name="#local.name" type="string">ABD5.carterB2</property>
             <property name="#instance.uuid" type="string">511e4347-3435-4141-a09c-b2246d126cee</property>
         </properties>
         <ns2:frames/>
@@ -14887,10 +15860,10 @@
                             <z>-53.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.5773502691896258</x>
-                            <y>0.5773502691896258</y>
-                            <z>0.5773502691896258</z>
-                            <w>120.00000000000001</w>
+                            <x>0.5773502691896257</x>
+                            <y>0.5773502691896257</y>
+                            <z>0.5773502691896257</z>
+                            <w>119.99999999999999</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
@@ -15020,10 +15993,10 @@
                             <z>-53.0</z>
                         </location>
                         <orientation angleUnit="deg">
-                            <x>0.5773502691896258</x>
-                            <y>0.5773502691896258</y>
-                            <z>0.5773502691896258</z>
-                            <w>120.00000000000001</w>
+                            <x>0.5773502691896257</x>
+                            <y>0.5773502691896257</y>
+                            <z>0.5773502691896257</z>
+                            <w>119.99999999999999</w>
                         </orientation>
                     </ns2:transform>
                 </ns2:joint>
@@ -15342,7 +16315,7 @@
                 <orientation angleUnit="deg">
                     <x>0.0</x>
                     <y>0.0</y>
-                    <z>1.0</z>
+                    <z>0.9999999999999999</z>
                     <w>45.00000000000001</w>
                 </orientation>
             </ns2:transform>
@@ -16444,7 +17417,7 @@
                         <ns2:joint type="RIGID">
                             <ns2:transform>
 <location lengthUnit="mm">
-    <x>-381.2757380533165</x>
+    <x>376.0</x>
     <y>587.91</y>
     <z>0.0</z>
 </location>
@@ -16865,10 +17838,10 @@
             <z>1595.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>-0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>-0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>-0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>-0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -17761,10 +18734,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -18391,31 +19364,16 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:group id="ABD4.ConveyorV2.root">
+                            <ns2:group id="ABD4.ABD4.root">
 <properties>
-    <property name="#local.name" type="string">ConveyorV2.root</property>
+    <property name="#local.name" type="string">ABD4.root</property>
     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
 </properties>
 <ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
 <ns2:children>
-    <ns2:group id="ABD4.ConveyorV2.relocator">
+    <ns2:group id="ABD4.ABD4.relocator">
         <properties>
-            <property name="#local.name" type="string">ConveyorV2.relocator</property>
+            <property name="#local.name" type="string">ABD4.relocator</property>
             <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
         </properties>
         <ns2:frames/>
@@ -18435,9 +19393,9 @@
             </ns2:transform>
         </ns2:joint>
         <ns2:children>
-            <ns2:group id="ABD4.ConveyorV2.relocatorA">
+            <ns2:group id="ABD4.ABD4.relocatorA">
                 <properties>
-                    <property name="#local.name" type="string">ConveyorV2.relocatorA</property>
+                    <property name="#local.name" type="string">ABD4.relocatorA</property>
                     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
                 </properties>
                 <ns2:frames/>
@@ -18457,9 +19415,9 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="ABD4.ConveyorV2.latoA">
+                    <ns2:group id="ABD4.ABD4.latoA">
                         <properties>
-                            <property name="#local.name" type="string">ConveyorV2.latoA</property>
+                            <property name="#local.name" type="string">ABD4.latoA</property>
                             <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
                         </properties>
                         <ns2:frames/>
@@ -18479,9 +19437,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:body visible="true" id="ABD4.ConveyorV2.carterA1">
+                            <ns2:body visible="true" id="ABD4.ABD4.carterA1">
 <properties>
-    <property name="#local.name" type="string">ConveyorV2.carterA1</property>
+    <property name="#local.name" type="string">ABD4.carterA1</property>
     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
 </properties>
 <ns2:frames/>
@@ -18505,9 +19463,9 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="ABD4.ConveyorV2.carterA2">
+                            <ns2:body visible="true" id="ABD4.ABD4.carterA2">
 <properties>
-    <property name="#local.name" type="string">ConveyorV2.carterA2</property>
+    <property name="#local.name" type="string">ABD4.carterA2</property>
     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
 </properties>
 <ns2:frames/>
@@ -18535,9 +19493,9 @@
                     </ns2:group>
                 </ns2:children>
             </ns2:group>
-            <ns2:group id="ABD4.ConveyorV2.relocatorB">
+            <ns2:group id="ABD4.ABD4.relocatorB">
                 <properties>
-                    <property name="#local.name" type="string">ConveyorV2.relocatorB</property>
+                    <property name="#local.name" type="string">ABD4.relocatorB</property>
                     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
                 </properties>
                 <ns2:frames/>
@@ -18557,9 +19515,9 @@
                     </ns2:transform>
                 </ns2:joint>
                 <ns2:children>
-                    <ns2:group id="ABD4.ConveyorV2.latoB">
+                    <ns2:group id="ABD4.ABD4.latoB">
                         <properties>
-                            <property name="#local.name" type="string">ConveyorV2.latoB</property>
+                            <property name="#local.name" type="string">ABD4.latoB</property>
                             <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
                         </properties>
                         <ns2:frames/>
@@ -18579,9 +19537,9 @@
                             </ns2:transform>
                         </ns2:joint>
                         <ns2:children>
-                            <ns2:body visible="true" id="ABD4.ConveyorV2.carterB1">
+                            <ns2:body visible="true" id="ABD4.ABD4.carterB1">
 <properties>
-    <property name="#local.name" type="string">ConveyorV2.carterB1</property>
+    <property name="#local.name" type="string">ABD4.carterB1</property>
     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
 </properties>
 <ns2:frames/>
@@ -18605,9 +19563,9 @@
 </ns2:geometry>
 <ns2:children/>
                             </ns2:body>
-                            <ns2:body visible="true" id="ABD4.ConveyorV2.carterB2">
+                            <ns2:body visible="true" id="ABD4.ABD4.carterB2">
 <properties>
-    <property name="#local.name" type="string">ConveyorV2.carterB2</property>
+    <property name="#local.name" type="string">ABD4.carterB2</property>
     <property name="#instance.uuid" type="string">ecaffec7-634a-4fe6-ba76-39faa94fe749</property>
 </properties>
 <ns2:frames/>
@@ -18654,10 +19612,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -19190,7 +20148,7 @@
 <ns2:joint type="RIGID">
     <ns2:transform>
         <location lengthUnit="mm">
-            <x>-750.0</x>
+            <x>0.0</x>
             <y>0.0</y>
             <z>900.0</z>
         </location>
@@ -19687,10 +20645,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -20553,10 +21511,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -21135,994 +22093,6 @@
                             </ns2:body>
                         </ns2:children>
                     </ns2:group>
-                    <ns2:group id="R3">
-                        <properties>
-                            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-                            <property name="#prototype.uuid" type="string">4cf0efef-ad27-4ae1-a3d4-068ad898d5e0</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>842.34</x>
-    <y>-3277.19</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>0.0</x>
-    <y>0.0</y>
-    <z>1.0</z>
-    <w>90.0</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:children>
-                            <ns2:group id="R3.root">
-<properties>
-    <property name="#local.name" type="string">root</property>
-    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-</properties>
-<ns2:frames>
-    <frame name="IN">
-        <location lengthUnit="mm">
-            <x>-454.6000061035156</x>
-            <y>-117.0</y>
-            <z>100.5</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </frame>
-    <frame name="OUT">
-        <location lengthUnit="mm">
-            <x>-454.6000061035156</x>
-            <y>155.25922259721006</y>
-            <z>100.5</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>1.0</z>
-            <w>180.0</w>
-        </orientation>
-    </frame>
-</ns2:frames>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
-<ns2:children>
-    <ns2:body visible="true" id="R3.base">
-        <properties>
-            <property name="#local.name" type="string">base</property>
-            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-        </properties>
-        <ns2:frames>
-            <frame name="origin">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>1.0</z>
-                    <w>90.0</w>
-                </orientation>
-            </frame>
-            <frame name="commands">
-                <location lengthUnit="mm">
-                    <x>-399.68420715422116</x>
-                    <y>-118.86469972773935</y>
-                    <z>120.6030843173818</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-        </ns2:frames>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:geometry lengthUnit="mm" type="VRML">
-            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/base.wrl</geometry-uri>
-        </ns2:geometry>
-        <ns2:children>
-            <ns2:body visible="true" id="R3.link1">
-                <properties>
-                    <property name="#local.name" type="string">link1</property>
-                    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-                </properties>
-                <ns2:frames/>
-                <ns2:joint type="ROTATIONAL">
-                    <ns2:transform>
-                        <location lengthUnit="mm">
-                            <x>0.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </ns2:transform>
-                    <ns2:rotation-axis name="R">
-                        <axis>
-                            <origin lengthUnit="mm">
-<x>0.0</x>
-<y>0.0</y>
-<z>0.0</z>
-                            </origin>
-                            <versor>
-<x>0.0</x>
-<y>0.0</y>
-<z>1.0</z>
-                            </versor>
-                        </axis>
-                        <limits>
-                            <home>0.0</home>
-                            <low unit="deg">-170.0</low>
-                            <high unit="deg">170.0</high>
-                            <max-speed unit="deg/s">175.0</max-speed>
-                            <max-acceleration unit="deg/s^2">200.0</max-acceleration>
-                        </limits>
-                    </ns2:rotation-axis>
-                </ns2:joint>
-                <ns2:geometry lengthUnit="mm" type="VRML">
-                    <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link1.wrl</geometry-uri>
-                </ns2:geometry>
-                <ns2:children>
-                    <ns2:body visible="true" id="R3.link2">
-                        <properties>
-                            <property name="#local.name" type="string">link2</property>
-                            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="ROTATIONAL">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>0.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                            <ns2:rotation-axis name="R">
-<axis>
-    <origin lengthUnit="mm">
-        <x>150.0</x>
-        <y>0.0</y>
-        <z>565.0</z>
-    </origin>
-    <versor>
-        <x>0.0</x>
-        <y>1.0</y>
-        <z>0.0</z>
-    </versor>
-</axis>
-<limits>
-    <home>0.0</home>
-    <low unit="deg">-45.0</low>
-    <high unit="deg">100.0</high>
-    <max-speed unit="deg/s">180.0</max-speed>
-    <max-acceleration unit="deg/s^2">200.0</max-acceleration>
-</limits>
-                            </ns2:rotation-axis>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="VRML">
-                            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link2.wrl</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children>
-                            <ns2:body visible="true" id="R3.link3">
-<properties>
-    <property name="#local.name" type="string">link3</property>
-    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-</properties>
-<ns2:frames/>
-<ns2:joint type="ROTATIONAL">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
-            <w>0.0</w>
-        </orientation>
-    </ns2:transform>
-    <ns2:rotation-axis name="R">
-        <axis>
-            <origin lengthUnit="mm">
-                <x>150.0</x>
-                <y>0.0</y>
-                <z>1435.0</z>
-            </origin>
-            <versor>
-                <x>0.0</x>
-                <y>1.0</y>
-                <z>0.0</z>
-            </versor>
-        </axis>
-        <limits>
-            <home>0.0</home>
-            <low unit="deg">-180.0</low>
-            <high unit="deg">120.0</high>
-            <max-speed unit="deg/s">175.0</max-speed>
-            <max-acceleration unit="deg/s^2">200.0</max-acceleration>
-        </limits>
-    </ns2:rotation-axis>
-</ns2:joint>
-<ns2:geometry lengthUnit="mm" type="VRML">
-    <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link3.wrl</geometry-uri>
-</ns2:geometry>
-<ns2:children>
-    <ns2:body visible="true" id="R3.link4">
-        <properties>
-            <property name="#local.name" type="string">link4</property>
-            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-        </properties>
-        <ns2:frames/>
-        <ns2:joint type="ROTATIONAL">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-            <ns2:rotation-axis name="R">
-                <axis>
-                    <origin lengthUnit="mm">
-                        <x>0.0</x>
-                        <y>0.0</y>
-                        <z>1595.0</z>
-                    </origin>
-                    <versor>
-                        <x>1.0</x>
-                        <y>0.0</y>
-                        <z>0.0</z>
-                    </versor>
-                </axis>
-                <limits>
-                    <home unit="deg">0.0</home>
-                    <low unit="deg">-360.0</low>
-                    <high unit="deg">360.0</high>
-                    <max-speed unit="deg/s">250.0</max-speed>
-                    <max-acceleration unit="deg/s^2">300.0</max-acceleration>
-                </limits>
-            </ns2:rotation-axis>
-        </ns2:joint>
-        <ns2:geometry lengthUnit="mm" type="VRML">
-            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link4.wrl</geometry-uri>
-        </ns2:geometry>
-        <ns2:children>
-            <ns2:body visible="true" id="R3.link5">
-                <properties>
-                    <property name="#local.name" type="string">link5</property>
-                    <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-                </properties>
-                <ns2:frames/>
-                <ns2:joint type="ROTATIONAL">
-                    <ns2:transform>
-                        <location lengthUnit="mm">
-                            <x>0.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </ns2:transform>
-                    <ns2:rotation-axis name="R">
-                        <axis>
-                            <origin lengthUnit="mm">
-<x>1120.0</x>
-<y>0.0</y>
-<z>1595.0</z>
-                            </origin>
-                            <versor>
-<x>0.0</x>
-<y>1.0</y>
-<z>0.0</z>
-                            </versor>
-                        </axis>
-                        <limits>
-                            <home unit="deg">0.0</home>
-                            <low unit="deg">-125.0</low>
-                            <high unit="deg">125.0</high>
-                            <max-speed unit="deg/s">250.0</max-speed>
-                            <max-acceleration unit="deg/s^2">300.0</max-acceleration>
-                        </limits>
-                    </ns2:rotation-axis>
-                </ns2:joint>
-                <ns2:geometry lengthUnit="mm" type="VRML">
-                    <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link5.wrl</geometry-uri>
-                </ns2:geometry>
-                <ns2:children>
-                    <ns2:body visible="true" id="R3.link6">
-                        <properties>
-                            <property name="#local.name" type="string">link6</property>
-                            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-                        </properties>
-                        <ns2:frames>
-                            <frame name="tcp">
-<properties>
-    <property name="#visible" type="boolean">true</property>
-</properties>
-<location lengthUnit="mm">
-    <x>1289.0</x>
-    <y>0.0</y>
-    <z>1595.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>0.0</x>
-    <y>-1.0</y>
-    <z>0.0</z>
-    <w>90.0</w>
-</orientation>
-                            </frame>
-                        </ns2:frames>
-                        <ns2:joint type="ROTATIONAL">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>0.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-</location>
-<orientation angleUnit="deg">
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>0.0</w>
-</orientation>
-                            </ns2:transform>
-                            <ns2:rotation-axis name="R">
-<axis>
-    <origin lengthUnit="mm">
-        <x>0.0</x>
-        <y>0.0</y>
-        <z>1595.0</z>
-    </origin>
-    <versor>
-        <x>1.0</x>
-        <y>0.0</y>
-        <z>0.0</z>
-    </versor>
-</axis>
-<limits>
-    <home unit="deg">0.0</home>
-    <low unit="deg">-360.0</low>
-    <high unit="deg">360.0</high>
-    <max-speed unit="deg/s">355.0</max-speed>
-    <max-acceleration unit="deg/s^2">400.0</max-acceleration>
-</limits>
-                            </ns2:rotation-axis>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="VRML">
-                            <geometry-uri>prototypes/4cf0efef-ad27-4ae1-a3d4-068ad898d5e0/models/Link6.wrl</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children>
-                            <ns2:group id="W1">
-<properties>
-    <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
-    <property name="#prototype.uuid" type="string">efbf637f-7719-4b85-a81c-15b643d315ae</property>
-</properties>
-<ns2:frames/>
-<ns2:joint type="RIGID">
-    <ns2:transform>
-        <location lengthUnit="mm">
-            <x>1289.0</x>
-            <y>0.0</y>
-            <z>1595.0</z>
-        </location>
-        <orientation angleUnit="deg">
-            <x>-0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>-0.5773502691896258</z>
-            <w>120.00000000000001</w>
-        </orientation>
-    </ns2:transform>
-</ns2:joint>
-<ns2:children>
-    <ns2:group id="W1.model">
-        <properties>
-            <property name="#local.name" type="string">model</property>
-            <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
-        </properties>
-        <ns2:frames/>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:children>
-            <ns2:body visible="true" id="W1.gun">
-                <properties>
-                    <property name="#local.name" type="string">gun</property>
-                    <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
-                </properties>
-                <ns2:frames>
-                    <frame name="tcp">
-                        <properties>
-                            <property name="#visible" type="boolean">true</property>
-                        </properties>
-                        <location lengthUnit="mm">
-                            <x>0.0</x>
-                            <y>76.29</y>
-                            <z>272.95</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>0.6785983445458471</x>
-                            <y>-0.678598344545847</y>
-                            <z>0.2810846377148201</z>
-                            <w>148.60028519008094</w>
-                        </orientation>
-                    </frame>
-                    <frame name="attach">
-                        <location lengthUnit="mm">
-                            <x>0.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>-0.7071067811865476</x>
-                            <y>0.7071067811865475</y>
-                            <z>0.0</z>
-                            <w>180.0</w>
-                        </orientation>
-                    </frame>
-                </ns2:frames>
-                <ns2:joint type="RIGID">
-                    <ns2:transform>
-                        <location lengthUnit="mm">
-                            <x>0.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                        </location>
-                        <orientation angleUnit="deg">
-                            <x>1.0</x>
-                            <y>0.0</y>
-                            <z>0.0</z>
-                            <w>0.0</w>
-                        </orientation>
-                    </ns2:transform>
-                </ns2:joint>
-                <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                    <geometry-uri>prototypes/efbf637f-7719-4b85-a81c-15b643d315ae/gun.ptx</geometry-uri>
-                </ns2:geometry>
-                <ns2:children>
-                    <ns2:body visible="true" id="W1.pipe">
-                        <properties>
-                            <property name="#local.name" type="string">pipe</property>
-                            <property name="#instance.uuid" type="string">1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96</property>
-                        </properties>
-                        <ns2:frames/>
-                        <ns2:joint type="RIGID">
-                            <ns2:transform>
-<location lengthUnit="mm">
-    <x>0.0</x>
-    <y>-22.70325526393246</y>
-    <z>173.95501362416204</z>
-</location>
-<orientation angleUnit="deg">
-    <x>-1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <w>45.00000000000001</w>
-</orientation>
-                            </ns2:transform>
-                        </ns2:joint>
-                        <ns2:geometry lengthUnit="mm" type="PARAMETRIC">
-                            <geometry-uri>prototypes/efbf637f-7719-4b85-a81c-15b643d315ae/pipe.ptx</geometry-uri>
-                        </ns2:geometry>
-                        <ns2:children/>
-                    </ns2:body>
-                </ns2:children>
-            </ns2:body>
-        </ns2:children>
-    </ns2:group>
-</ns2:children>
-                            </ns2:group>
-                        </ns2:children>
-                    </ns2:body>
-                </ns2:children>
-            </ns2:body>
-        </ns2:children>
-    </ns2:body>
-</ns2:children>
-                            </ns2:body>
-                        </ns2:children>
-                    </ns2:body>
-                </ns2:children>
-            </ns2:body>
-        </ns2:children>
-    </ns2:body>
-    <ns2:group id="R3.circleTest">
-        <properties>
-            <property name="#local.name" type="string">circleTest</property>
-            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-        </properties>
-        <ns2:frames>
-            <frame name="frame1">
-                <location lengthUnit="mm">
-                    <x>500.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame2">
-                <location lengthUnit="mm">
-                    <x>353.5533905932738</x>
-                    <y>353.5533905932737</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>1.0</z>
-                    <w>45.00000000000001</w>
-                </orientation>
-            </frame>
-            <frame name="frame3">
-                <location lengthUnit="mm">
-                    <x>3.061616997868383E-14</x>
-                    <y>500.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>1.0</z>
-                    <w>90.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame4">
-                <location lengthUnit="mm">
-                    <x>-353.5533905932737</x>
-                    <y>353.5533905932738</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>1.0</z>
-                    <w>135.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame5">
-                <location lengthUnit="mm">
-                    <x>-500.0</x>
-                    <y>6.123233995736766E-14</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>1.0</z>
-                    <w>180.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame6">
-                <location lengthUnit="mm">
-                    <x>-353.55339059327383</x>
-                    <y>-353.5533905932737</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>-1.0</z>
-                    <w>135.00000000000006</w>
-                </orientation>
-            </frame>
-            <frame name="frame7">
-                <location lengthUnit="mm">
-                    <x>-9.184850993605149E-14</x>
-                    <y>-500.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>-1.0</z>
-                    <w>90.00000000000001</w>
-                </orientation>
-            </frame>
-            <frame name="frame8">
-                <location lengthUnit="mm">
-                    <x>353.55339059327366</x>
-                    <y>-353.55339059327383</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>-1.0</z>
-                    <w>45.00000000000001</w>
-                </orientation>
-            </frame>
-        </ns2:frames>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>1231.6074384344256</x>
-                    <y>0.0</y>
-                    <z>738.310743888525</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:children/>
-    </ns2:group>
-    <ns2:group id="R3.squareTest">
-        <properties>
-            <property name="#local.name" type="string">squareTest</property>
-            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-        </properties>
-        <ns2:frames>
-            <frame name="frame1">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame2">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame3">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>400.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame4">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>400.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame5">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>800.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame6">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>800.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame7">
-                <location lengthUnit="mm">
-                    <x>400.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame8">
-                <location lengthUnit="mm">
-                    <x>400.0</x>
-                    <y>0.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame9">
-                <location lengthUnit="mm">
-                    <x>400.0</x>
-                    <y>400.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame10">
-                <location lengthUnit="mm">
-                    <x>400.0</x>
-                    <y>400.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame11">
-                <location lengthUnit="mm">
-                    <x>400.0</x>
-                    <y>800.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame12">
-                <location lengthUnit="mm">
-                    <x>400.0</x>
-                    <y>800.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame13">
-                <location lengthUnit="mm">
-                    <x>800.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame14">
-                <location lengthUnit="mm">
-                    <x>800.0</x>
-                    <y>0.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame15">
-                <location lengthUnit="mm">
-                    <x>800.0</x>
-                    <y>400.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame16">
-                <location lengthUnit="mm">
-                    <x>800.0</x>
-                    <y>400.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame17">
-                <location lengthUnit="mm">
-                    <x>800.0</x>
-                    <y>800.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-            <frame name="frame18">
-                <location lengthUnit="mm">
-                    <x>800.0</x>
-                    <y>800.0</y>
-                    <z>500.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-        </ns2:frames>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>842.2</x>
-                    <y>-400.0</y>
-                    <z>442.0853190540794</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:children/>
-    </ns2:group>
-    <ns2:group id="R3.pickCicle">
-        <properties>
-            <property name="#local.name" type="string">pickCicle</property>
-            <property name="#instance.uuid" type="string">f68e4e5f-2374-4f9b-aaee-55ed870d8b35</property>
-        </properties>
-        <ns2:frames>
-            <frame name="over">
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </frame>
-        </ns2:frames>
-        <ns2:joint type="RIGID">
-            <ns2:transform>
-                <location lengthUnit="mm">
-                    <x>0.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                </location>
-                <orientation angleUnit="deg">
-                    <x>1.0</x>
-                    <y>0.0</y>
-                    <z>0.0</z>
-                    <w>0.0</w>
-                </orientation>
-            </ns2:transform>
-        </ns2:joint>
-        <ns2:children/>
-    </ns2:group>
-</ns2:children>
-                            </ns2:group>
-                        </ns2:children>
-                    </ns2:group>
                     <ns2:group id="NC2">
                         <properties>
                             <property name="#instance.uuid" type="string">d5fcb7ed-b5dd-4dc3-ad18-882b51cf404f</property>
@@ -22461,10 +22431,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -23792,10 +23762,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -24685,10 +24655,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -25551,10 +25521,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -26569,10 +26539,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896258</x>
-            <y>0.5773502691896258</y>
-            <z>0.5773502691896258</z>
-            <w>120.00000000000001</w>
+            <x>0.5773502691896257</x>
+            <y>0.5773502691896257</y>
+            <z>0.5773502691896257</z>
+            <w>119.99999999999999</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>
@@ -27462,10 +27432,10 @@
             <z>847.0</z>
         </location>
         <orientation angleUnit="deg">
-            <x>0.5773502691896257</x>
-            <y>0.5773502691896257</y>
-            <z>0.5773502691896257</z>
-            <w>119.99999999999999</w>
+            <x>0.5773502691896258</x>
+            <y>0.5773502691896258</y>
+            <z>0.5773502691896258</z>
+            <w>120.00000000000001</w>
         </orientation>
     </ns2:transform>
 </ns2:joint>

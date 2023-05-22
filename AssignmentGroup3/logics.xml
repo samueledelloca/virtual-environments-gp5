@@ -91,7 +91,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="R3" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="842" y="-3277"/>
+            <visual x="767" y="-3757"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -132,7 +132,7 @@
             <param name="startFrame">ABC.startFrame</param>
             <param name="endFrame">ABC.endFrame</param>
             <param name="sensorNames">S1ABC</param>
-            <param name="sensorPositions">1999</param>
+            <param name="sensorPositions">1900</param>
             <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -163,7 +163,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="R5" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-381" y="588"/>
+            <visual x="376" y="588"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -205,7 +205,7 @@
             <param name="startFrame">ABD4.startFrame</param>
             <param name="endFrame">ABD4.endFrame</param>
             <param name="sensorNames">S1ABD4</param>
-            <param name="sensorPositions">0</param>
+            <param name="sensorPositions">750</param>
             <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -266,7 +266,7 @@
             <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="W1" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
-            <visual x="842" y="-1988"/>
+            <visual x="767" y="-2468"/>
             <param name="tcpFrameId">W1.gun.tcp</param>
         </module-instance>
         <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
@@ -387,7 +387,7 @@
             <param name="marker"></param>
         </module-instance>
         <module-instance name="R1" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-8946" y="-3277"/>
+            <visual x="-8950" y="-3277"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -435,7 +435,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="W2" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
-            <visual x="-381" y="1877"/>
+            <visual x="376" y="1877"/>
             <param name="tcpFrameId">W2.gun.tcp</param>
         </module-instance>
         <module-instance name="PL3" type="com.ttsnetwork.modules.standard.PLModule">
@@ -514,14 +514,6 @@
             <port-in module="ABD4" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="W2" port="control"/>
-            <port-in module="R5" port="tool"/>
-        </connection>
-        <connection>
-            <port-out module="W1" port="control"/>
-            <port-in module="R3" port="tool"/>
-        </connection>
-        <connection>
             <port-out module="ABC" port="flowOut"/>
             <port-in module="E1" port="flowIn"/>
         </connection>
@@ -572,6 +564,14 @@
         <connection>
             <port-out module="A1" port="flowOut"/>
             <port-in module="A2" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="W2" port="control"/>
+            <port-in module="R5" port="tool"/>
+        </connection>
+        <connection>
+            <port-out module="W1" port="control"/>
+            <port-in module="R3" port="tool"/>
         </connection>
     </connections>
 </model>

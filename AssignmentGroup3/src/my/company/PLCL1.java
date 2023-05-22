@@ -134,16 +134,16 @@ public class PLCL1 extends ProgrammableLogics {
         if (boxOnA != null && boxOnB != null) {
             // execute the series of assembly operations
             schedule.startSerial();
-            {                
+            {
                 Transform bTargetOffset = BoxUtils.targetOffset(boxOnB, 0, 0, BoxUtils.zSize(boxOnB) * 2, 0, 0, 0);
                 r1Cmd.move(bTargetOffset, 2000);
                 r1Cmd.moveLinear(BoxUtils.targetTop(boxOnB), 2000);
                 bCmd.remove(boxOnB);
                 r1Cmd.pick(driver.getObject(boxOnB.entityId));
                 r1Cmd.moveLinear(bTargetOffset, 2000);
-                Transform aTargetOffset = BoxUtils.targetOffset(boxOnA, 0, 0, BoxUtils.zSize(boxOnA) + BoxUtils.zSize(boxOnB) * 2, 0, 0, 0);
+                Transform aTargetOffset = BoxUtils.targetOffset(boxOnA, 0, 0, BoxUtils.zSize(boxOnA) + BoxUtils.zSize(boxOnB) * 2, 0, 0, -90);
                 r1Cmd.move(aTargetOffset, 2000);
-                r1Cmd.moveLinear(BoxUtils.targetOffset(boxOnA, 0, 0, BoxUtils.zSize(boxOnA) + BoxUtils.zSize(boxOnB), 0, 0, 0), 2000);
+                r1Cmd.moveLinear(BoxUtils.targetOffset(boxOnA, 0, 0, BoxUtils.zSize(boxOnA) + BoxUtils.zSize(boxOnB), 0, 0, -90), 2000);
                 r1Cmd.release();
                 schedule.attach(boxOnB.entity, boxOnA.entity);
                 r1Cmd.moveLinear(aTargetOffset, 2000);
@@ -157,26 +157,27 @@ public class PLCL1 extends ProgrammableLogics {
             boxOnB = null;
         }
     }
-    
+
     private void doABCAssembly() {
         // assembly can be performed only if both boxes are present
         if (boxOnAB != null && boxOnC != null) {
             // execute the series of assembly operations
             schedule.startSerial();
-            {              
+            {
                 Transform cTargetOffset = BoxUtils.targetOffset(boxOnC, 0, 0, BoxUtils.zSize(boxOnC) * 2, 0, 0, 0);
                 r2Cmd.move(cTargetOffset, 2000);
                 r2Cmd.moveLinear(BoxUtils.targetTop(boxOnC), 2000);
                 cCmd.remove(boxOnC);
                 r2Cmd.pick(driver.getObject(boxOnC.entityId));
                 r2Cmd.moveLinear(cTargetOffset, 2000);
-                Transform abTargetOffset = BoxUtils.targetOffset(boxOnAB, 0, 0, BoxUtils.zSize(boxOnAB) + BoxUtils.zSize(boxOnC) * 3, 0, 0, 0);
+                Transform abTargetOffset = BoxUtils.targetOffset(boxOnAB, 0, 0, BoxUtils.zSize(boxOnAB) + BoxUtils.zSize(boxOnC) * 3, 0, 0, 90);
                 r2Cmd.move(abTargetOffset, 2000);
-                r2Cmd.moveLinear(BoxUtils.targetOffset(boxOnAB, 0, 0, BoxUtils.zSize(boxOnAB) + BoxUtils.zSize(boxOnC) * 2, 0, 0, 0), 2000);
+                r2Cmd.moveLinear(BoxUtils.targetOffset(boxOnAB, 0, 0, BoxUtils.zSize(boxOnAB) + BoxUtils.zSize(boxOnC) * 2, 0, 0, 90), 2000);
                 r2Cmd.release();
                 schedule.attach(boxOnC.entity, boxOnAB.entity);
                 r2Cmd.moveLinear(abTargetOffset, 2000);
-                
+                r2Cmd.move(cTargetOffset, 2000);
+
                 // reset the speed of the conveyors
                 a3Cmd.speedSet(1);
                 cCmd.speedSet(1);
@@ -191,12 +192,33 @@ public class PLCL1 extends ProgrammableLogics {
     private void doABCWelding() {
         schedule.startSerial();
         {
-            Transform abcTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 90);
-            Transform abcTopTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 3, 0, 0, 90);
-            r3Cmd.move(abcTargetOffset, 2000);
+            long duration = 500;
+            double  speed = 2000;
+            
+            Transform abcTopCenter = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 90);
+            Transform abcUpperTopLeftCorner = BoxUtils.targetOffset(boxOnABC, -100, -100, BoxUtils.zSize(boxOnABC) * 4, 45, 0, 90);
+            Transform abcUpperBottomLeftCorner = BoxUtils.targetOffset(boxOnABC, -50, -50, BoxUtils.zSize(boxOnABC) * 2, 45, 0, 90);
+            Transform abcLowerBottomLeftCorner = BoxUtils.targetOffset(boxOnABC, 50, -50, BoxUtils.zSize(boxOnABC) * 2, 45, 0, 90);
+            Transform abcLowerBottomLeftCornerRotation = BoxUtils.targetOffset(boxOnABC, 50, -50, BoxUtils.zSize(boxOnABC) * 2, 0, 45, 90);
+            Transform abcLowerBottomRightCorner = BoxUtils.targetOffset(boxOnABC, 50, 50, BoxUtils.zSize(boxOnABC) * 2, 0, 45, 90);
+            Transform abcLowerBottomRightCornerRotation = BoxUtils.targetOffset(boxOnABC, 50, 50, BoxUtils.zSize(boxOnABC) * 2, -45, 0, 90);
+            Transform abcUpperBottomRightCorner = BoxUtils.targetOffset(boxOnABC, -50, 50, BoxUtils.zSize(boxOnABC) * 2, -45, 0, 90);
+            Transform abcUpperBottomRightCornerRotation = BoxUtils.targetOffset(boxOnABC, -50, 50, BoxUtils.zSize(boxOnABC) * 2, 0, -45, 90);
+            Transform abcUpperBottomLeftCornerRotated = BoxUtils.targetOffset(boxOnABC, -50, -50, BoxUtils.zSize(boxOnABC) * 2, 0, -45, 90);
+            Transform abcUpperTopLeftCornerRotated = BoxUtils.targetOffset(boxOnABC, -100, -100, BoxUtils.zSize(boxOnABC) * 4, 0, -45, 90);
 
-            r3Cmd.moveLinear(abcTopTargetOffset, 2000);
-            r3Cmd.moveLinear(abcTargetOffset, 2000);
+            r3Cmd.move(abcTopCenter, duration);
+            r3Cmd.move(abcUpperTopLeftCorner, duration);
+            r3Cmd.moveLinear(abcUpperBottomLeftCorner, speed);
+            r3Cmd.moveLinear(abcLowerBottomLeftCorner, speed);
+            r3Cmd.moveLinear(abcLowerBottomLeftCornerRotation, speed);
+            r3Cmd.moveLinear(abcLowerBottomRightCorner, speed);
+            r3Cmd.moveLinear(abcLowerBottomRightCornerRotation, speed);
+            r3Cmd.moveLinear(abcUpperBottomRightCorner, speed);
+            r3Cmd.moveLinear(abcUpperBottomRightCornerRotation, speed);
+            r3Cmd.moveLinear(abcUpperBottomLeftCornerRotated, speed);
+            r3Cmd.moveLinear(abcUpperTopLeftCornerRotated, speed);
+            r3Cmd.move(abcTopCenter, duration);
             abcCmd.speedSet(1);
         }
         schedule.end();
