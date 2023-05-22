@@ -68,11 +68,11 @@
             <param name="marker">box</param>
             <param name="writeOnlyOnce">true</param>
         </module-instance>
-        <module-instance name="E4" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+        <module-instance name="E5" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="7366" y="-2329"/>
             <param name="conveyorSpeed">0.5</param>
-            <param name="startFrame">E4.startFrame</param>
-            <param name="endFrame">E4.endFrame</param>
+            <param name="startFrame">E5.startFrame</param>
+            <param name="endFrame">E5.endFrame</param>
             <param name="sensorNames"></param>
             <param name="sensorPositions"></param>
             <param name="sensorsReveal"></param>
@@ -80,13 +80,13 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="E5" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="8866" y="-2329"/>
+        <module-instance name="E6" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="9116" y="-2329"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">E5.startFrame</param>
-            <param name="endFrame">E5.endFrame</param>
-            <param name="sensorNames">S1E5;S2E5</param>
-            <param name="sensorPositions">250;1050</param>
+            <param name="startFrame">E6.startFrame</param>
+            <param name="endFrame">E6.endFrame</param>
+            <param name="sensorNames">S1E6;S2E6</param>
+            <param name="sensorPositions">750;1550</param>
             <param name="sensorsReveal">CENTER;CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -127,7 +127,7 @@
             <param name="tcpFrameId">W1.gun.tcp</param>
         </module-instance>
         <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
-            <visual x="8909" y="-2806"/>
+            <visual x="9409" y="-2806"/>
             <param name="sensorGeometryId">P3.pc_geom</param>
             <param name="marker">box</param>
             <param name="pusherId">P3.Spintore</param>
@@ -197,14 +197,26 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="E4" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+            <visual x="5866" y="-2329"/>
+            <param name="conveyorSpeed">1</param>
+            <param name="startFrame">E4.startFrame</param>
+            <param name="endFrame">E4.endFrame</param>
+            <param name="sensorNames">S1E4</param>
+            <param name="sensorPositions">1040</param>
+            <param name="sensorsReveal">CENTER</param>
+            <param name="sensorFrames"></param>
+            <param name="idleOnStart">false</param>
+            <param name="infoContent"></param>
+        </module-instance>
         <module-instance name="E3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="5366" y="-2329"/>
+            <visual x="4366" y="-2329"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">E3.startFrame</param>
             <param name="endFrame">E3.endFrame</param>
-            <param name="sensorNames">S1E3;S2E3</param>
-            <param name="sensorPositions">540;2040</param>
-            <param name="sensorsReveal">CENTER;CENTER</param>
+            <param name="sensorNames">S1E3</param>
+            <param name="sensorPositions">540</param>
+            <param name="sensorsReveal">CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -253,7 +265,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="SG" type="com.ttsnetwork.modules.standard.Sink">
-            <visual x="8875" y="189"/>
+            <visual x="9375" y="189"/>
             <param name="timeInterval">1000</param>
             <param name="infoContent"></param>
             <param name="infoFrame">SG.creationFrame</param>
@@ -276,7 +288,7 @@
             <param name="logicClassName">my.company.PLCL1</param>
         </module-instance>
         <module-instance name="SE" type="com.ttsnetwork.modules.standard.Sink">
-            <visual x="9866" y="-2329"/>
+            <visual x="10366" y="-2329"/>
             <param name="timeInterval">1000</param>
             <param name="infoContent"></param>
             <param name="infoFrame">SE.creationFrame</param>
@@ -302,7 +314,7 @@
             <param name="infoContent"></param>
         </module-instance>
         <module-instance name="NC2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="8875" y="-1061"/>
+            <visual x="9375" y="-1061"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">NC2.startFrame</param>
             <param name="endFrame">NC2.endFrame</param>
@@ -361,18 +373,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="R5" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-381" y="588"/>
-            <param name="translationSpeed">1000</param>
-            <param name="translationAcceleration">1000</param>
-            <param name="rotationSpeed">360</param>
-            <param name="rotationAcceleration">180</param>
-            <param name="modelName">R5</param>
-            <param name="jerkTime">32</param>
-            <param name="showAllGhosts">false</param>
-            <param name="script"></param>
-            <param name="logicClassName"></param>
-        </module-instance>
         <module-instance name="ABD6" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="2843" y="-623"/>
             <param name="conveyorSpeed">1</param>
@@ -384,6 +384,18 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="R5" type="com.ttsnetwork.modules.standard.Robot6DOF2">
+            <visual x="-381" y="588"/>
+            <param name="translationSpeed">1000</param>
+            <param name="translationAcceleration">1000</param>
+            <param name="rotationSpeed">360</param>
+            <param name="rotationAcceleration">180</param>
+            <param name="modelName">R5</param>
+            <param name="jerkTime">32</param>
+            <param name="showAllGhosts">false</param>
+            <param name="script"></param>
+            <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="W2" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
             <visual x="-381" y="1877"/>
@@ -450,10 +462,6 @@
             <port-in module="ABD2" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="NC2" port="flowOut"/>
-            <port-in module="SG" port="in"/>
-        </connection>
-        <connection>
             <port-out module="NC1" port="flowOut"/>
             <port-in module="SF" port="in"/>
         </connection>
@@ -486,23 +494,7 @@
             <port-in module="P3" port="toConveyor"/>
         </connection>
         <connection>
-            <port-out module="E5" port="flowOut"/>
-            <port-in module="SE" port="in"/>
-        </connection>
-        <connection>
-            <port-out module="E3" port="flowOut"/>
-            <port-in module="E4" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="E4" port="flowOut"/>
-            <port-in module="E5" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="E3" port="control"/>
-            <port-in module="P2" port="fromConveyor"/>
-        </connection>
-        <connection>
-            <port-out module="E5" port="control"/>
+            <port-out module="E6" port="control"/>
             <port-in module="P3" port="fromConveyor"/>
         </connection>
         <connection>
@@ -542,10 +534,6 @@
             <port-in module="E1" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="E2" port="flowOut"/>
-            <port-in module="E3" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="E1" port="flowOut"/>
             <port-in module="E2" port="flowIn"/>
         </connection>
@@ -556,6 +544,34 @@
         <connection>
             <port-out module="ABD6" port="flowOut"/>
             <port-in module="ABD7" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E5" port="flowOut"/>
+            <port-in module="E6" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E6" port="flowOut"/>
+            <port-in module="SE" port="in"/>
+        </connection>
+        <connection>
+            <port-out module="NC2" port="flowOut"/>
+            <port-in module="SG" port="in"/>
+        </connection>
+        <connection>
+            <port-out module="E4" port="flowOut"/>
+            <port-in module="E5" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E4" port="control"/>
+            <port-in module="P2" port="fromConveyor"/>
+        </connection>
+        <connection>
+            <port-out module="E2" port="flowOut"/>
+            <port-in module="E3" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="E3" port="flowOut"/>
+            <port-in module="E4" port="flowIn"/>
         </connection>
     </connections>
 </model>

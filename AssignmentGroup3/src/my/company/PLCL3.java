@@ -33,6 +33,7 @@ public class PLCL3 extends ProgrammableLogics {
     public ConveyorLine2 E3;
     public ConveyorLine2 E4;
     public ConveyorLine2 E5;
+    public ConveyorLine2 E6;
     public Robot6DOF2 R3;
     public Pusher P2;
     public Pusher P3;
@@ -43,9 +44,9 @@ public class PLCL3 extends ProgrammableLogics {
     private ISensorProvider s2e1Sens;
     private ISensorProvider s1e2Sens;
     private ISensorProvider s1e3Sens;
-    private ISensorProvider s2e3Sens;
-    private ISensorProvider s1e5Sens;
-    private ISensorProvider s2e5Sens;
+    private ISensorProvider s1e4Sens;
+    private ISensorProvider s1e6Sens;
+    private ISensorProvider s2e6Sens;
 
     private IConveyorCommands abcCmd;
     private IConveyorCommands abd6Cmd;
@@ -55,6 +56,7 @@ public class PLCL3 extends ProgrammableLogics {
     private IConveyorCommands e3Cmd;
     private IConveyorCommands e4Cmd;
     private IConveyorCommands e5Cmd;
+    private IConveyorCommands e6Cmd;
 
     private IRobotCommands r3Cmd;
 
@@ -234,14 +236,15 @@ public class PLCL3 extends ProgrammableLogics {
         e3Cmd = E3.createCommands(module);
         e4Cmd = E4.createCommands(module);
         e5Cmd = E5.createCommands(module);
+        e6Cmd = E6.createCommands(module);
 
         s1e1Sens = E1.createSensors(module);
         s2e1Sens = E1.createSensors(module);
         s1e2Sens = E2.createSensors(module);
         s1e3Sens = E3.createSensors(module);
-        s2e3Sens = E3.createSensors(module);
-        s1e5Sens = E5.createSensors(module);
-        s2e5Sens = E5.createSensors(module);
+        s1e4Sens = E4.createSensors(module);
+        s1e6Sens = E6.createSensors(module);
+        s2e6Sens = E6.createSensors(module);
 
         r3Cmd = R3.create(module);
 
@@ -257,9 +260,9 @@ public class PLCL3 extends ProgrammableLogics {
         s2e1Sens.registerOnSensors(this::eBoxMerging, "S2E1");
         s1e2Sens.registerOnSensors(this::eBoxExiting, "S1E2");
         s1e3Sens.registerOnSensors(this::eBoxFirstStop, "S1E3");
-        s2e3Sens.registerOnSensors(this::pushWithP2, "S2E3");
-        s1e5Sens.registerOnSensors(this::eBoxSecondStop, "S1E5");
-        s2e5Sens.registerOnSensors(this::pushWithP3, "S2E5");
+        s1e4Sens.registerOnSensors(this::pushWithP2, "S1E4");
+        s1e6Sens.registerOnSensors(this::eBoxSecondStop, "S1E6");
+        s2e6Sens.registerOnSensors(this::pushWithP3, "S2E6");
 
         schedule.startSerial();
         {
