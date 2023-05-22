@@ -86,7 +86,7 @@
             <param name="startFrame">E6.startFrame</param>
             <param name="endFrame">E6.endFrame</param>
             <param name="sensorNames">S1E6;S2E6</param>
-            <param name="sensorPositions">750;1550</param>
+            <param name="sensorPositions">750;1525</param>
             <param name="sensorsReveal">CENTER;CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -127,7 +127,7 @@
             <param name="tcpFrameId">W1.gun.tcp</param>
         </module-instance>
         <module-instance name="P3" type="com.ttsnetwork.modules.standard.Pusher">
-            <visual x="9409" y="-2806"/>
+            <visual x="9384" y="-2806"/>
             <param name="sensorGeometryId">P3.pc_geom</param>
             <param name="marker">box</param>
             <param name="pusherId">P3.Spintore</param>

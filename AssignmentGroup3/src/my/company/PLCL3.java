@@ -202,11 +202,11 @@ public class PLCL3 extends ProgrammableLogics {
         if (sc.box.entity.getProperty("defective").equals(true)) {
             schedule.startSerial();
             {
-                e3Cmd.speedSet(0);
+                e4Cmd.speedSet(0);
                 schedule.callFunction(this::extractP2);
                 schedule.waitTime(1000);
                 schedule.callFunction(this::retractP2);
-                e3Cmd.speedSet(1);
+                e4Cmd.speedSet(1);
             }
             schedule.end();
         }
@@ -216,11 +216,11 @@ public class PLCL3 extends ProgrammableLogics {
         if (sc.box.entity.getProperty("defective").equals(true)) {
             schedule.startSerial();
             {
-                e5Cmd.speedSet(0);
+                e6Cmd.speedSet(0);
                 schedule.callFunction(this::extractP3);
                 schedule.waitTime(1000);
                 schedule.callFunction(this::retractP3);
-                e5Cmd.speedSet(1);
+                e6Cmd.speedSet(1);
             }
             schedule.end();
         }
