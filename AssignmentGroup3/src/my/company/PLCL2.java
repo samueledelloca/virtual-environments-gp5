@@ -41,9 +41,6 @@ public class PLCL2 extends ProgrammableLogics {
     private IConveyorCommands dCmd;
     private IConveyorCommands abd3Cmd;
     private IConveyorCommands abd4Cmd;
-//    private IConveyorCommands abd5Cmd;
-//    private IConveyorCommands abd6Cmd;
-//    private IConveyorCommands e1Cmd;
 
     private ISensorProvider s1dSens;
     private ISensorProvider s1abd3Sens;
@@ -97,6 +94,7 @@ public class PLCL2 extends ProgrammableLogics {
                 r4Cmd.release();
                 schedule.attach(dBox.entity, abd3Box.entity);
                 r4Cmd.moveLinear(abd3TargetOffset, 2000);
+                r4Cmd.move(dTargetOffset, 2000);
                 // reset the speed of the conveyors
                 dCmd.speedSet(1);
                 abd3Cmd.speedSet(1);
@@ -110,12 +108,33 @@ public class PLCL2 extends ProgrammableLogics {
     private void doAbdWelding() {
         schedule.startSerial();
         {
-            Transform abd4TargetOffset = BoxUtils.targetOffset(abd4Box, 0, 0, BoxUtils.zSize(abd4Box) * 4, 0, 0, 180);
-            Transform abd4TopTargetOffset = BoxUtils.targetOffset(abd4Box, 0, 0, BoxUtils.zSize(abd4Box) * 3, 0, 0, 180);
-            r5Cmd.move(abd4TargetOffset, 2000);
+            long duration = 500;
+            double  speed = 2000;
+            
+            Transform abd4TopCenter = BoxUtils.targetOffset(abd4Box, 0, 0, BoxUtils.zSize(abd4Box) * 4, 0, 0, 180);
+            Transform abd4UpperTopLeftCorner = BoxUtils.targetOffset(abd4Box, -100, -100, BoxUtils.zSize(abd4Box) * 4, 45, 0, 180);
+            Transform abd4UpperBottomLeftCorner = BoxUtils.targetOffset(abd4Box, -50, -50, BoxUtils.zSize(abd4Box) * 2, 45, 0, 180);
+            Transform abd4LowerBottomLeftCorner = BoxUtils.targetOffset(abd4Box, 50, -50, BoxUtils.zSize(abd4Box) * 2, 45, 0, 180);
+            Transform abd4LowerBottomLeftCornerRotation = BoxUtils.targetOffset(abd4Box, 50, -50, BoxUtils.zSize(abd4Box) * 2, 0, 45, 180);
+            Transform abd4LowerBottomRightCorner = BoxUtils.targetOffset(abd4Box, 50, 50, BoxUtils.zSize(abd4Box) * 2, 0, 45, 180);
+            Transform abd4LowerBottomRightCornerRotation = BoxUtils.targetOffset(abd4Box, 50, 50, BoxUtils.zSize(abd4Box) * 2, -45, 0, 180);
+            Transform abd4UpperBottomRightCorner = BoxUtils.targetOffset(abd4Box, -50, 50, BoxUtils.zSize(abd4Box) * 2, -45, 0, 180);
+            Transform abd4UpperBottomRightCornerRotation = BoxUtils.targetOffset(abd4Box, -50, 50, BoxUtils.zSize(abd4Box) * 2, 0, -45, 180);
+            Transform abd4UpperBottomLeftCornerRotated = BoxUtils.targetOffset(abd4Box, -50, -50, BoxUtils.zSize(abd4Box) * 2, 0, -45, 180);
+            Transform abd4UpperTopLeftCornerRotated = BoxUtils.targetOffset(abd4Box, -100, -100, BoxUtils.zSize(abd4Box) * 4, 0, -45, 180);
 
-            r5Cmd.moveLinear(abd4TopTargetOffset, 2000);
-            r5Cmd.moveLinear(abd4TargetOffset, 2000);
+            r5Cmd.move(abd4TopCenter, duration);
+            r5Cmd.move(abd4UpperTopLeftCorner, duration);
+            r5Cmd.moveLinear(abd4UpperBottomLeftCorner, speed);
+            r5Cmd.moveLinear(abd4LowerBottomLeftCorner, speed);
+            r5Cmd.moveLinear(abd4LowerBottomLeftCornerRotation, speed);
+            r5Cmd.moveLinear(abd4LowerBottomRightCorner, speed);
+            r5Cmd.moveLinear(abd4LowerBottomRightCornerRotation, speed);
+            r5Cmd.moveLinear(abd4UpperBottomRightCorner, speed);
+            r5Cmd.moveLinear(abd4UpperBottomRightCornerRotation, speed);
+            r5Cmd.moveLinear(abd4UpperBottomLeftCornerRotated, speed);
+            r5Cmd.moveLinear(abd4UpperTopLeftCornerRotated, speed);
+            r5Cmd.move(abd4TopCenter, duration);
             abd4Cmd.speedSet(1);
         }
         schedule.end();
@@ -137,7 +156,6 @@ public class PLCL2 extends ProgrammableLogics {
         s1abd4Sens = ABD4.createSensors(module);
 
 //        e1Cmd = E1.createCommands(module);
-
         s1dSens.registerOnSensors(this::dBoxArrived, "S1D");
         s1abd3Sens.registerOnSensors(this::abd3BoxArrived, "S1ABD3");
         s1abd4Sens.registerOnSensors(this::abd4BoxArrived, "S1ABD4");

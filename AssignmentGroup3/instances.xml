@@ -982,16 +982,16 @@
       <parameter name="height" type="double" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
       </parameter>
-      <parameter name="url" type="string" value="http://localhost:8090">
+      <parameter name="url" type="string" value="http://localhost:8086">
          <property name="displayName" type="string" value="URL"/>
       </parameter>
-      <parameter name="token" type="string" value="DIrf0SuzmN9AzZbTye1pYZLtGO4AGvxfWavf2GtLOmfA_k9vlaBb1TUe81aBwwn0dnMB0isxUMBEZvq1TkuWFg==">
+      <parameter name="token" type="string" value="cZbGKMUj3hgGDF0rt2Aa6PYLwib7dEh2u21eM-8dxqpM0al2IGxMq8RnyMG9-apI0zkx5C9t0wMFxShyQiXM_w==">
          <property name="displayName" type="string" value="API token"/>
       </parameter>
       <parameter name="org" type="string" value="SUPSI">
          <property name="displayName" type="string" value="Organization"/>
       </parameter>
-      <parameter name="bucket" type="string" value="local">
+      <parameter name="bucket" type="string" value="DCAPSVE">
          <property name="displayName" type="string" value="Bucket"/>
       </parameter>
    </instance>

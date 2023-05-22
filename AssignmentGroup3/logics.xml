@@ -223,10 +223,10 @@
         <module-instance name="InfluxProxy1" type="com.ttsnetwork.modules.standard.InfluxModule">
             <visual x="-2046" y="-180"/>
             <param name="id">InfluxProxy1</param>
-            <param name="url">http://localhost:8090</param>
-            <param name="token">DIrf0SuzmN9AzZbTye1pYZLtGO4AGvxfWavf2GtLOmfA_k9vlaBb1TUe81aBwwn0dnMB0isxUMBEZvq1TkuWFg==</param>
+            <param name="url">http://localhost:8086</param>
+            <param name="token">cZbGKMUj3hgGDF0rt2Aa6PYLwib7dEh2u21eM-8dxqpM0al2IGxMq8RnyMG9-apI0zkx5C9t0wMFxShyQiXM_w==</param>
             <param name="org">SUPSI</param>
-            <param name="bucket">local</param>
+            <param name="bucket">DCAPSVE</param>
         </module-instance>
         <module-instance name="R2" type="com.ttsnetwork.modules.standard.Robot6DOF2">
             <visual x="-1119" y="-3277"/>
@@ -361,18 +361,6 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="R5" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-381" y="588"/>
-            <param name="translationSpeed">1000</param>
-            <param name="translationAcceleration">1000</param>
-            <param name="rotationSpeed">360</param>
-            <param name="rotationAcceleration">180</param>
-            <param name="modelName">R5</param>
-            <param name="jerkTime">32</param>
-            <param name="showAllGhosts">false</param>
-            <param name="script"></param>
-            <param name="logicClassName"></param>
-        </module-instance>
         <module-instance name="ABD6" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="2843" y="-623"/>
             <param name="conveyorSpeed">1</param>
@@ -384,6 +372,18 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="R5" type="com.ttsnetwork.modules.standard.Robot6DOF2">
+            <visual x="-381" y="588"/>
+            <param name="translationSpeed">1000</param>
+            <param name="translationAcceleration">1000</param>
+            <param name="rotationSpeed">360</param>
+            <param name="rotationAcceleration">180</param>
+            <param name="modelName">R5</param>
+            <param name="jerkTime">32</param>
+            <param name="showAllGhosts">false</param>
+            <param name="script"></param>
+            <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="W2" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
             <visual x="-381" y="1877"/>

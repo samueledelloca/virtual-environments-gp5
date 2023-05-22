@@ -22,6 +22,7 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
  * @author samu
  */
 public class PLCL1 extends ProgrammableLogics {
+
     public Pusher P1;
 
     public ConveyorLine2 A1;
@@ -82,7 +83,7 @@ public class PLCL1 extends ProgrammableLogics {
         }
         schedule.end();
     }
-    
+
     private void boxABArrived(SensorCatch sc) {
         // record the arrived box
         boxOnAB = sc.box;
@@ -104,7 +105,7 @@ public class PLCL1 extends ProgrammableLogics {
         }
         schedule.end();
     }
-    
+
     private void boxABCArrived(SensorCatch sc) {
         boxOnABC = sc.box;
         schedule.startSerial();
@@ -134,7 +135,7 @@ public class PLCL1 extends ProgrammableLogics {
         if (boxOnA != null && boxOnB != null) {
             // execute the series of assembly operations
             schedule.startSerial();
-            {                
+            {
                 Transform bTargetOffset = BoxUtils.targetOffset(boxOnB, 0, 0, BoxUtils.zSize(boxOnB) * 2, 0, 0, 0);
                 r1Cmd.move(bTargetOffset, 2000);
                 r1Cmd.moveLinear(BoxUtils.targetTop(boxOnB), 2000);
@@ -157,13 +158,13 @@ public class PLCL1 extends ProgrammableLogics {
             boxOnB = null;
         }
     }
-    
+
     private void doABCAssembly() {
         // assembly can be performed only if both boxes are present
         if (boxOnAB != null && boxOnC != null) {
             // execute the series of assembly operations
             schedule.startSerial();
-            {              
+            {
                 Transform cTargetOffset = BoxUtils.targetOffset(boxOnC, 0, 0, BoxUtils.zSize(boxOnC) * 2, 0, 0, 0);
                 r2Cmd.move(cTargetOffset, 2000);
                 r2Cmd.moveLinear(BoxUtils.targetTop(boxOnC), 2000);
@@ -176,7 +177,8 @@ public class PLCL1 extends ProgrammableLogics {
                 r2Cmd.release();
                 schedule.attach(boxOnC.entity, boxOnAB.entity);
                 r2Cmd.moveLinear(abTargetOffset, 2000);
-                
+                r2Cmd.move(cTargetOffset, 2000);
+
                 // reset the speed of the conveyors
                 a3Cmd.speedSet(1);
                 cCmd.speedSet(1);
@@ -187,16 +189,37 @@ public class PLCL1 extends ProgrammableLogics {
             boxOnC = null;
         }
     }
-    
+
     private void doABCWelding() {
         schedule.startSerial();
         {
-            Transform abcTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 90);
-            Transform abcTopTargetOffset = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 3, 0, 0, 90);
-            r3Cmd.move(abcTargetOffset, 2000);
+            long duration = 500;
+            double  speed = 2000;
+            
+            Transform abd4TopCenter = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 90);
+            Transform abd4UpperTopLeftCorner = BoxUtils.targetOffset(boxOnABC, -100, -100, BoxUtils.zSize(boxOnABC) * 4, 45, 0, 90);
+            Transform abd4UpperBottomLeftCorner = BoxUtils.targetOffset(boxOnABC, -50, -50, BoxUtils.zSize(boxOnABC) * 2, 45, 0, 90);
+            Transform abd4LowerBottomLeftCorner = BoxUtils.targetOffset(boxOnABC, 50, -50, BoxUtils.zSize(boxOnABC) * 2, 45, 0, 90);
+            Transform abd4LowerBottomLeftCornerRotation = BoxUtils.targetOffset(boxOnABC, 50, -50, BoxUtils.zSize(boxOnABC) * 2, 0, 45, 90);
+            Transform abd4LowerBottomRightCorner = BoxUtils.targetOffset(boxOnABC, 50, 50, BoxUtils.zSize(boxOnABC) * 2, 0, 45, 90);
+            Transform abd4LowerBottomRightCornerRotation = BoxUtils.targetOffset(boxOnABC, 50, 50, BoxUtils.zSize(boxOnABC) * 2, -45, 0, 90);
+            Transform abd4UpperBottomRightCorner = BoxUtils.targetOffset(boxOnABC, -50, 50, BoxUtils.zSize(boxOnABC) * 2, -45, 0, 90);
+            Transform abd4UpperBottomRightCornerRotation = BoxUtils.targetOffset(boxOnABC, -50, 50, BoxUtils.zSize(boxOnABC) * 2, 0, -45, 90);
+            Transform abd4UpperBottomLeftCornerRotated = BoxUtils.targetOffset(boxOnABC, -50, -50, BoxUtils.zSize(boxOnABC) * 2, 0, -45, 90);
+            Transform abd4UpperTopLeftCornerRotated = BoxUtils.targetOffset(boxOnABC, -100, -100, BoxUtils.zSize(boxOnABC) * 4, 0, -45, 90);
 
-            r3Cmd.moveLinear(abcTopTargetOffset, 2000);
-            r3Cmd.moveLinear(abcTargetOffset, 2000);
+            r3Cmd.move(abd4TopCenter, duration);
+            r3Cmd.move(abd4UpperTopLeftCorner, duration);
+            r3Cmd.moveLinear(abd4UpperBottomLeftCorner, speed);
+            r3Cmd.moveLinear(abd4LowerBottomLeftCorner, speed);
+            r3Cmd.moveLinear(abd4LowerBottomLeftCornerRotation, speed);
+            r3Cmd.moveLinear(abd4LowerBottomRightCorner, speed);
+            r3Cmd.moveLinear(abd4LowerBottomRightCornerRotation, speed);
+            r3Cmd.moveLinear(abd4UpperBottomRightCorner, speed);
+            r3Cmd.moveLinear(abd4UpperBottomRightCornerRotation, speed);
+            r3Cmd.moveLinear(abd4UpperBottomLeftCornerRotated, speed);
+            r3Cmd.moveLinear(abd4UpperTopLeftCornerRotated, speed);
+            r3Cmd.move(abd4TopCenter, duration);
             abcCmd.speedSet(1);
         }
         schedule.end();
