@@ -15,6 +15,7 @@ import com.ttsnetwork.modules.standard.Robot6DOF2;
 import com.ttsnetwork.modulespack.conveyors.ConveyorBox;
 import com.ttsnetwork.modulespack.conveyors.SensorCatch;
 import org.apache.commons.math3.distribution.RealDistribution;
+import org.apache.commons.math3.distribution.UniformRealDistribution;
 
 /**
  *
@@ -62,7 +63,7 @@ public class PLCL3 extends ProgrammableLogics {
     private ConveyorBox boxOn3;
     private ConveyorBox boxOn4;
 
-    private RealDistribution distribution;
+    private UniformRealDistribution distribution;
 
     public boolean busy = false;
     public boolean abdDetected = false;
@@ -119,7 +120,6 @@ public class PLCL3 extends ProgrammableLogics {
             busy = false;
             if (abdDetected) {
                 abd7Cmd.speedSet(1);
-                e1Cmd.speedSet(0);
             } else {
                 abd7Cmd.speedSet(0);
                 e1Cmd.speedSet(1);
@@ -128,10 +128,32 @@ public class PLCL3 extends ProgrammableLogics {
         schedule.end();
     }
 
-    private void eBoxStop(SensorCatch sc) {
+    private void eBoxFirstStop(SensorCatch sc) {
         schedule.startSerial();
         {
-
+            e3Cmd.speedSet(0);
+            schedule.waitTime(500);
+            if (distribution.sample() >= 0.7) {
+                sc.box.entity.setProperty("defective", true);
+            } else {
+                sc.box.entity.setProperty("defective", false);
+            }
+            e3Cmd.speedSet(1);
+        }
+        schedule.end();
+    }
+    
+    private void eBoxSecondStop(SensorCatch sc) {
+        schedule.startSerial();
+        {
+            e5Cmd.speedSet(0);
+            schedule.waitTime(500);
+            if (distribution.sample() >= 0.8) {
+                sc.box.entity.setProperty("defective", true);
+            } else {
+                sc.box.entity.setProperty("defective", false);
+            }
+            e5Cmd.speedSet(1);
         }
         schedule.end();
     }
@@ -175,7 +197,7 @@ public class PLCL3 extends ProgrammableLogics {
     }
 
     private void pushWithP2(SensorCatch sc) {
-        if (model.getRandomGenerator().getUniformRealDistribution(0, 1).sample() >= 0.7) {
+        if (sc.box.entity.getProperty("defective").equals(true)) {
             schedule.startSerial();
             {
                 e3Cmd.speedSet(0);
@@ -189,7 +211,7 @@ public class PLCL3 extends ProgrammableLogics {
     }
 
     private void pushWithP3(SensorCatch sc) {
-        if (model.getRandomGenerator().getUniformRealDistribution(0, 1).sample() >= 0.8) {
+        if (sc.box.entity.getProperty("defective").equals(true)) {
             schedule.startSerial();
             {
                 e5Cmd.speedSet(0);
@@ -204,6 +226,8 @@ public class PLCL3 extends ProgrammableLogics {
 
     @Override
     public void onInit() {
+
+        distribution = model.getRandomGenerator().getUniformRealDistribution(0, 1);
 
         e1Cmd = E1.createCommands(module);
         e2Cmd = E2.createCommands(module);
@@ -232,8 +256,9 @@ public class PLCL3 extends ProgrammableLogics {
         s1e1Sens.registerOnSensors(this::e1BoxDetected, "S1E1");
         s2e1Sens.registerOnSensors(this::eBoxMerging, "S2E1");
         s1e2Sens.registerOnSensors(this::eBoxExiting, "S1E2");
-        s1e3Sens.registerOnSensors(this::eBoxStop, "S1E3");
+        s1e3Sens.registerOnSensors(this::eBoxFirstStop, "S1E3");
         s2e3Sens.registerOnSensors(this::pushWithP2, "S2E3");
+        s1e5Sens.registerOnSensors(this::eBoxSecondStop, "S1E5");
         s2e5Sens.registerOnSensors(this::pushWithP3, "S2E5");
 
         schedule.startSerial();
