@@ -109,7 +109,7 @@
             <param name="infoFrame">SF.creationFrame</param>
         </module-instance>
         <module-instance name="A1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-9134" y="-2329"/>
+            <visual x="-9384" y="-2329"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">A1.startFrame</param>
             <param name="endFrame">A1.endFrame</param>
@@ -339,7 +339,7 @@
             <visual x="-2046" y="-180"/>
             <param name="id">InfluxProxy1</param>
             <param name="url">http://localhost:8090</param>
-            <param name="token">DIrf0SuzmN9AzZbTye1pYZLtGO4AGvxfWavf2GtLOmfA_k9vlaBb1TUe81aBwwn0dnMB0isxUMBEZvq1TkuWFg==</param>
+            <param name="token">R0lvdCbQT1YKHdOV9Q65fhW6TzGFHOdL_FBgwSMVO1DDw1eMCvlSKW18Hrxmm-DBxAKi6ZOcxxgRGwbcWmJPvQ==</param>
             <param name="org">SUPSI</param>
             <param name="bucket">local</param>
         </module-instance>
@@ -356,12 +356,12 @@
             <param name="logicClassName"></param>
         </module-instance>
         <module-instance name="A2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
-            <visual x="-5634" y="-2329"/>
+            <visual x="-5884" y="-2329"/>
             <param name="conveyorSpeed">1</param>
             <param name="startFrame">A2.startFrame</param>
             <param name="endFrame">A2.endFrame</param>
             <param name="sensorNames">S1A2;S2A2</param>
-            <param name="sensorPositions">2380;5000</param>
+            <param name="sensorPositions">2880;5500</param>
             <param name="sensorsReveal">CENTER;CENTER</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
@@ -466,10 +466,6 @@
             <port-in module="SF" port="in"/>
         </connection>
         <connection>
-            <port-out module="A1" port="flowOut"/>
-            <port-in module="A2" port="flowIn"/>
-        </connection>
-        <connection>
             <port-out module="A2" port="flowOut"/>
             <port-in module="A3" port="flowIn"/>
         </connection>
@@ -504,10 +500,6 @@
         <connection>
             <port-out module="SD" port="out"/>
             <port-in module="D" port="flowIn"/>
-        </connection>
-        <connection>
-            <port-out module="SA" port="out"/>
-            <port-in module="A1" port="flowIn"/>
         </connection>
         <connection>
             <port-out module="ABD2" port="flowOut"/>
@@ -572,6 +564,14 @@
         <connection>
             <port-out module="E3" port="flowOut"/>
             <port-in module="E4" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="SA" port="out"/>
+            <port-in module="A1" port="flowIn"/>
+        </connection>
+        <connection>
+            <port-out module="A1" port="flowOut"/>
+            <port-in module="A2" port="flowIn"/>
         </connection>
     </connections>
 </model>

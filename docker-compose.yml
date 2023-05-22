@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  influxdb:
+    image: influxdb:2.7.0
+    restart: always
+    ports:
+      - 8090:8086
+    volumes:
+      - influxDb:/var/lib/influxdb2 
+  grafana:
+    image: grafana/grafana-enterprise
+    restart: always
+    depends_on:
+      - influxdb
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana:/var/lib/grafana
+volumes:
+  influxDb: {}
+  grafana: {}
