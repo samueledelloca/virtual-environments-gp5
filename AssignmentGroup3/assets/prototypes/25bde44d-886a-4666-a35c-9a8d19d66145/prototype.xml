@@ -1,0 +1,44 @@
+<prototype uuid="25bde44d-886a-4666-a35c-9a8d19d66145" name="MqttPhotocell" version="1">	
+    <parameter name="refreshInterval" type="long" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Refresh interval [ms]" type="string"/>
+    </parameter>
+    <parameter name="broker" type="string" value="tcp://127.0.0.1:1883">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Mqtt broker (tcp://[host]:[port])" type="string"/>
+    </parameter>
+    <parameter name="topic" type="string" value="">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Topic" type="string"/>
+    </parameter>
+    <parameter name="length" type="double" value="500">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam length [mm]" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="5">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam height [mm]" type="string"/>
+    </parameter>
+    <parameter name="width" type="double" value="5">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Beam width [mm]" type="string"/>
+    </parameter>
+    <parameter name="marker" type="string" value="">
+        <property name="constraints" value=">0" type="string"/>
+        <property name="displayName" value="Object marker" type="string"/>
+    </parameter>
+    <property name="displayName" value="MQTT PhotoCell" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="sensor" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;3" type="double[]"/>
+	<property name="bounds_size" value="500;5;5" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.PhotoCell">
+        <param name="id" type="string">${instance.name}</param>
+        <param name="broker" type="string">${broker}</param>
+        <param name="topic" type="string">${topic}/${instance.name}</param>
+        <param name="refreshInterval" type="long">${refreshInterval}</param>
+        <param name="sensorGeometryId" type="string">${instance.name}.pc_geom</param>
+        <param name="marker" type="string">${marker}</param>
+    </logics>
+</prototype>

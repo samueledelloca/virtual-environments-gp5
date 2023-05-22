@@ -1,0 +1,29 @@
+<prototype uuid="7c051f44-2536-4d43-92ac-0d7c5b147bb3" name="Encoder" version="1">	
+     
+    <parameter name="axisName" type="string" value="">
+        <property name="displayName" value="Name of monitored axis" type="string"/>
+    </parameter>
+    
+    <parameter name="k" type="double" value="1">
+        <property name="displayName" value="Conversion factor from axis value (mm) to encoder steps]" type="string"/>
+    </parameter>
+    
+    <parameter name="offset" type="int" value="0">
+        <property name="displayName" value="Encoder value at axis=0" type="string"/>
+    </parameter>
+    
+    <output name="valueHW" type="com.ttsnetwork.heron.v5.OutputSignal"/>
+    <output name="valueLW" type="com.ttsnetwork.heron.v5.OutputSignal"/>
+
+    <property name="displayName" value="Encoder" type="string"/>
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="category" value="sensor" type="string"/>
+    <property name="generator" value="builder.js" type="string"/>
+    <property name="bounds_center" value="0;0;0" type="double[]"/>
+    <property name="bounds_size" value="500;500;200" type="double[]"/>
+    <logics type="com.ttsnetwork.modules.standard.Encoder">
+        <param name="axisName" type="string">${axisName}</param>
+        <param name="offset" type="double">${offset}</param>
+        <param name="k" type="double">${k}</param>
+    </logics>
+</prototype>

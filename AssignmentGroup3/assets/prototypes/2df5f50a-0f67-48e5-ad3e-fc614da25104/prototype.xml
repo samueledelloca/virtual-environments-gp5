@@ -1,0 +1,13 @@
+<prototype uuid="2df5f50a-0f67-48e5-ad3e-fc614da25104" name="Cylinder" version="1">	
+    <property name="vendor" value="TTS" type="string"/>
+    <property name="generator" value="build.js" type="string"/>
+    <property name="bounds_center" value="0;0;50" type="double[]"/>
+    <property name="bounds_size" value="100;100;100" type="double[]"/>
+    <property name="position" type="integer" value="300"/>
+    <parameter name="radius" type="double" value="50">
+        <property name="constraints" value="0" type="string"/>
+    </parameter>
+    <parameter name="height" type="double" value="100">
+        <property name="constraints" value=">0" type="string"/>
+    </parameter>
+</prototype>
