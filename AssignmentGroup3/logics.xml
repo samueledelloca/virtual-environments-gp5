@@ -2,6 +2,15 @@
 <model xmlns="http://heron.ttsnetwork.com/xml/v1" name="model.xml">
     <variables/>
     <modules>
+        <module-instance name="rfidOut1" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="5896" y="-250"/>
+            <param name="id">rfidOut1</param>
+            <param name="refreshInterval">200</param>
+            <param name="sensorGeometryId">rfidOut1.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
+        </module-instance>
         <module-instance name="E1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="1866" y="-2329"/>
             <param name="conveyorSpeed">1</param>
@@ -246,13 +255,6 @@
             <param name="infoContent"></param>
             <param name="infoFrame">P2.Base.infoFrame</param>
         </module-instance>
-        <module-instance name="MyPhotocell" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
-            <visual x="-9699" y="-2330"/>
-            <param name="refreshInterval">100</param>
-            <param name="sensorGeometryId">MyPhotocell.pc_geom</param>
-            <param name="marker">box</param>
-            <param name="writeOnlyOnce">true</param>
-        </module-instance>
         <module-instance name="R4" type="com.ttsnetwork.modules.standard.Robot6DOF2">
             <visual x="-3246" y="2742"/>
             <param name="translationSpeed">1000</param>
@@ -335,13 +337,22 @@
             <param name="infoContent"></param>
             <param name="infoFrame">P1.Base.infoFrame</param>
         </module-instance>
-        <module-instance name="InfluxProxy1" type="com.ttsnetwork.modules.standard.InfluxModule">
+        <module-instance name="InfluxProxy" type="com.ttsnetwork.modules.standard.InfluxModule">
             <visual x="-2046" y="-180"/>
-            <param name="id">InfluxProxy1</param>
+            <param name="id">InfluxProxy</param>
             <param name="url">http://localhost:8090</param>
-            <param name="token">R0lvdCbQT1YKHdOV9Q65fhW6TzGFHOdL_FBgwSMVO1DDw1eMCvlSKW18Hrxmm-DBxAKi6ZOcxxgRGwbcWmJPvQ==</param>
+            <param name="token">x90EBRYWxgfU4g1QLtEzuDImgv-MQUQfnq-JMQFaMgUfcd7I7cBLglJ6PcBWG4hX2e_U8BKJnC1z2oRAK5gluQ==</param>
             <param name="org">SUPSI</param>
             <param name="bucket">local</param>
+        </module-instance>
+        <module-instance name="rfidOut3" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="9927" y="-2334"/>
+            <param name="id">rfidOut3</param>
+            <param name="refreshInterval">200</param>
+            <param name="sensorGeometryId">rfidOut3.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="R2" type="com.ttsnetwork.modules.standard.Robot6DOF2">
             <visual x="-1119" y="-3277"/>
@@ -354,6 +365,15 @@
             <param name="showAllGhosts">false</param>
             <param name="script"></param>
             <param name="logicClassName"></param>
+        </module-instance>
+        <module-instance name="rfidOut2" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="9377" y="-257"/>
+            <param name="id">rfidOut2</param>
+            <param name="refreshInterval">200</param>
+            <param name="sensorGeometryId">rfidOut2.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="A2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="-5884" y="-2329"/>
@@ -442,6 +462,15 @@
             <visual x="7700" y="-824"/>
             <param name="id">PL3</param>
             <param name="logicClassName">my.company.PLCL3</param>
+        </module-instance>
+        <module-instance name="rfidIn" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="-9771" y="-2330"/>
+            <param name="id">rfidIn</param>
+            <param name="refreshInterval">200</param>
+            <param name="sensorGeometryId">rfidIn.pc_geom</param>
+            <param name="marker"></param>
+            <param name="codeName">rfid</param>
+            <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-9191" y="988"/>

@@ -1022,7 +1022,7 @@
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
    </instance>
-   <instance name="InfluxProxy1" uuid="8aee757d-15bb-4d1c-92b4-835073c05230" version="1" prototype="a12d3deb-d7cd-43f1-9499-37b7c06b48a9">
+   <instance name="InfluxProxy" uuid="8aee757d-15bb-4d1c-92b4-835073c05230" version="1" prototype="a12d3deb-d7cd-43f1-9499-37b7c06b48a9">
       <parameter name="width" type="double" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
       </parameter>
@@ -1035,7 +1035,7 @@
       <parameter name="url" type="string" value="http://localhost:8090">
          <property name="displayName" type="string" value="URL"/>
       </parameter>
-      <parameter name="token" type="string" value="R0lvdCbQT1YKHdOV9Q65fhW6TzGFHOdL_FBgwSMVO1DDw1eMCvlSKW18Hrxmm-DBxAKi6ZOcxxgRGwbcWmJPvQ==">
+      <parameter name="token" type="string" value="x90EBRYWxgfU4g1QLtEzuDImgv-MQUQfnq-JMQFaMgUfcd7I7cBLglJ6PcBWG4hX2e_U8BKJnC1z2oRAK5gluQ==">
          <property name="displayName" type="string" value="API token"/>
       </parameter>
       <parameter name="org" type="string" value="SUPSI">
@@ -1054,32 +1054,6 @@
       </parameter>
       <parameter name="height" type="double" value="500">
          <property name="constraints" type="string" value="&gt;0"/>
-      </parameter>
-   </instance>
-   <instance name="MyPhotocell" uuid="185b31a9-bd81-437a-918f-b6754177722c" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
-      <parameter name="refreshInterval" type="long" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Refresh interval [ms]"/>
-      </parameter>
-      <parameter name="length" type="double" value="500">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Beam length [mm]"/>
-      </parameter>
-      <parameter name="height" type="double" value="100">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Beam height [mm]"/>
-      </parameter>
-      <parameter name="width" type="double" value="5">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Beam width [mm]"/>
-      </parameter>
-      <parameter name="marker" type="string" value="box">
-         <property name="constraints" type="string" value="&gt;0"/>
-         <property name="displayName" type="string" value="Object marker"/>
-      </parameter>
-      <parameter name="writeDistinct" type="boolean" value="true">
-         <property name="displayName" type="string" value="Only changes"/>
-         <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
    <instance name="NC1" uuid="2b24ef96-4472-459a-8071-cd72e84c1bd0" version="1" prototype="468e049a-e061-4e96-8ba8-32583dd93a0c">
@@ -1710,6 +1684,134 @@
       </parameter>
       <parameter name="height" type="double" value="80">
          <property name="constraints" type="string" value="&gt;0"/>
+      </parameter>
+   </instance>
+   <instance name="rfidIn" uuid="1c3ec362-ba13-4fd1-8e63-bb5f17b9fa9d" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="rfid">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="rfidOut1" uuid="086519f6-74d9-42d8-ab6b-fd0224e74883" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="rfid">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="rfidOut2" uuid="4029080f-dbda-4793-8b0b-acc6a6f48249" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="rfid">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="rfidOut3" uuid="dad84dbd-376b-4bec-9b06-9705fc6b0eb0" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="rfid">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
    <relationship sourcePortName="out" sourceInstanceUuid="a0053e56-8d67-406d-8882-66e2dd3c094e" targetPortName="in" targetInstanceUuid="4b6e6755-23a5-4f2e-a36d-6c268cd923b5"/>
