@@ -47,6 +47,7 @@ public class PLCL3 extends ProgrammableLogics {
     private ISensorProvider s1e4Sens;
     private ISensorProvider s1e6Sens;
     private ISensorProvider s2e6Sens;
+    private ISensorProvider s3e6Sens;
 
     private IConveyorCommands abcCmd;
     private IConveyorCommands abd6Cmd;
@@ -144,58 +145,20 @@ public class PLCL3 extends ProgrammableLogics {
         }
         schedule.end();
     }
-    
+
     private void eBoxSecondStop(SensorCatch sc) {
         schedule.startSerial();
         {
-            e5Cmd.speedSet(0);
+            e6Cmd.speedSet(0);
             schedule.waitTime(500);
             if (distribution.sample() >= 0.8) {
                 sc.box.entity.setProperty("defective", true);
             } else {
                 sc.box.entity.setProperty("defective", false);
             }
-            e5Cmd.speedSet(1);
+            e6Cmd.speedSet(1);
         }
         schedule.end();
-    }
-
-    private void doThermalTreatment() {
-        schedule.startSerial();
-        {
-
-        }
-        schedule.end();
-    }
-
-    private void doQualityCheck1() {
-        // Welding can be performed only if the box is present
-        if (boxOn2 != null) {
-            // execute the series of quality check operations
-            schedule.startSerial();
-            {
-
-                schedule.waitTime(30000);
-            }
-            schedule.end();
-            // forget the operated boxes
-            boxOn2 = null;
-        }
-    }
-
-    private void doQualityCheck2() {
-        // Welding can be performed only if the box is present
-        if (boxOn4 != null) {
-            // execute the series of quality check operations
-            schedule.startSerial();
-            {
-
-                schedule.waitTime(30000);
-            }
-            schedule.end();
-            // forget the operated boxes
-            boxOn4 = null;
-        }
     }
 
     private void pushWithP2(SensorCatch sc) {
@@ -226,6 +189,18 @@ public class PLCL3 extends ProgrammableLogics {
         }
     }
 
+    private void boxFinished(SensorCatch sc) {
+//        long creationDateMs = sc.box.entity.getProperty("creationDateMs");
+//        long durationMs = System.currentTimeMillis() - creationDateMs;
+//
+//        if (sc.box.entity.getProperty("rfid").equals("A1")) {
+//            sc.box.entity.setProperty("durationMsA1", durationMs);
+//        } else {
+//            sc.box.entity.setProperty("durationMsA2", durationMs);
+//        }
+
+    }
+
     @Override
     public void onInit() {
 
@@ -245,6 +220,7 @@ public class PLCL3 extends ProgrammableLogics {
         s1e4Sens = E4.createSensors(module);
         s1e6Sens = E6.createSensors(module);
         s2e6Sens = E6.createSensors(module);
+        s3e6Sens = E6.createSensors(module);
 
         r3Cmd = R3.create(module);
 
@@ -263,6 +239,7 @@ public class PLCL3 extends ProgrammableLogics {
         s1e4Sens.registerOnSensors(this::pushWithP2, "S1E4");
         s1e6Sens.registerOnSensors(this::eBoxSecondStop, "S1E6");
         s2e6Sens.registerOnSensors(this::pushWithP3, "S2E6");
+        s3e6Sens.registerOnSensors(this::boxFinished, "S3E6");
 
         schedule.startSerial();
         {

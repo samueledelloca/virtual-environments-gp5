@@ -22,6 +22,7 @@ import com.ttsnetwork.modulespack.conveyors.SensorCatch;
  * @author samu
  */
 public class PLCL1 extends ProgrammableLogics {
+
     public Pusher P1;
 
     public ConveyorLine2 A1;
@@ -37,6 +38,7 @@ public class PLCL1 extends ProgrammableLogics {
     public Robot6DOF2 R3;
 
     private ISensorProvider s1a1Sens;
+    private ISensorProvider s2a1Sens;
     private ISensorProvider s1a2Sens;
     private ISensorProvider s1a3Sens;
     private ISensorProvider s1bSens;
@@ -61,6 +63,11 @@ public class PLCL1 extends ProgrammableLogics {
     private IRobotCommands r2Cmd;
     private IRobotCommands r3Cmd;
 
+    private void boxACreated(SensorCatch sc) {
+        // record the arrived box
+        sc.box.entity.setProperty("creationDateMs", System.currentTimeMillis());
+    }
+
     private void boxAArrived(SensorCatch sc) {
         // record the arrived box
         boxOnA = sc.box;
@@ -82,7 +89,7 @@ public class PLCL1 extends ProgrammableLogics {
         }
         schedule.end();
     }
-    
+
     private void boxABArrived(SensorCatch sc) {
         // record the arrived box
         boxOnAB = sc.box;
@@ -104,7 +111,7 @@ public class PLCL1 extends ProgrammableLogics {
         }
         schedule.end();
     }
-    
+
     private void boxABCArrived(SensorCatch sc) {
         boxOnABC = sc.box;
         schedule.startSerial();
@@ -188,13 +195,13 @@ public class PLCL1 extends ProgrammableLogics {
             boxOnC = null;
         }
     }
-    
+
     private void doABCWelding() {
         schedule.startSerial();
         {
             long duration = 500;
-            double  speed = 2000;
-            
+            double speed = 2000;
+
             Transform abcTopCenter = BoxUtils.targetOffset(boxOnABC, 0, 0, BoxUtils.zSize(boxOnABC) * 4, 0, 0, 90);
             Transform abcUpperTopLeftCorner = BoxUtils.targetOffset(boxOnABC, -100, -100, BoxUtils.zSize(boxOnABC) * 4, 45, 0, 90);
             Transform abcUpperBottomLeftCorner = BoxUtils.targetOffset(boxOnABC, -50, -50, BoxUtils.zSize(boxOnABC) * 2, 45, 0, 90);
@@ -236,6 +243,7 @@ public class PLCL1 extends ProgrammableLogics {
         abcCmd = ABC.createCommands(module);
 
         s1a1Sens = A1.createSensors(module);
+        s2a1Sens = A1.createSensors(module);
         s1a2Sens = A2.createSensors(module);
         s1a3Sens = A3.createSensors(module);
         s1bSens = B.createSensors(module);
@@ -245,7 +253,8 @@ public class PLCL1 extends ProgrammableLogics {
         r2Cmd = R2.create(module);
         r3Cmd = R3.create(module);
 
-        s1a1Sens.registerOnSensors(this::boxAArrived, "S1A1");
+        s1a1Sens.registerOnSensors(this::boxACreated, "S1A1");
+        s2a1Sens.registerOnSensors(this::boxAArrived, "S2A1");
         s1a2Sens.registerOnSensors(this::pushA2Box, "S1A2");
         s1a3Sens.registerOnSensors(this::boxABArrived, "S1A3");
         s1bSens.registerOnSensors(this::boxBArrived, "S1B");

@@ -21,15 +21,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="950">
+      <parameter name="sensorPositions" type="double[]" value="0;950">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="S1A1">
+      <parameter name="sensorNames" type="string[]" value="S1A1;S2A1">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="CENTER">
+      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -993,15 +993,15 @@
          <property name="displayName" type="string" value="Height [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorPositions" type="double[]" value="750;1525">
+      <parameter name="sensorPositions" type="double[]" value="750;1525;1550">
          <property name="displayName" type="string" value="Sensor positions [mm]"/>
          <property name="affectGeometry" type="boolean" value="true"/>
       </parameter>
-      <parameter name="sensorNames" type="string[]" value="S1E6;S2E6">
+      <parameter name="sensorNames" type="string[]" value="S1E6;S2E6;S3E6">
          <property name="displayName" type="string" value="Sensor names"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
-      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER">
+      <parameter name="sensorReveal" type="string[]" value="CENTER;CENTER;CENTER">
          <property name="displayName" type="string" value="Sensor reveal [LEAD/CENTER/TAIL]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
@@ -1686,8 +1686,104 @@
          <property name="constraints" type="string" value="&gt;0"/>
       </parameter>
    </instance>
+   <instance name="durationMsA1" uuid="59c1016e-5d43-43ab-920b-9a104ed05a24" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="durationMsA1">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="durationMsA2" uuid="b1593de5-6d16-4464-b157-ca895c5a4760" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="durationMsA2">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="porco" uuid="f13ff198-b519-47fc-b332-fd7c218ba389" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
+      <parameter name="refreshInterval" type="long" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="codeName" type="string" value="porco">
+         <property name="displayName" type="string" value="Code property name"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="length" type="double" value="400">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="200">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="true">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
    <instance name="rfidIn" uuid="1c3ec362-ba13-4fd1-8e63-bb5f17b9fa9d" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
-      <parameter name="refreshInterval" type="long" value="200">
+      <parameter name="refreshInterval" type="long" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Refresh interval [ms]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1719,7 +1815,7 @@
       </parameter>
    </instance>
    <instance name="rfidOut1" uuid="086519f6-74d9-42d8-ab6b-fd0224e74883" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
-      <parameter name="refreshInterval" type="long" value="200">
+      <parameter name="refreshInterval" type="long" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Refresh interval [ms]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1751,7 +1847,7 @@
       </parameter>
    </instance>
    <instance name="rfidOut2" uuid="4029080f-dbda-4793-8b0b-acc6a6f48249" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
-      <parameter name="refreshInterval" type="long" value="200">
+      <parameter name="refreshInterval" type="long" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Refresh interval [ms]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
@@ -1783,7 +1879,7 @@
       </parameter>
    </instance>
    <instance name="rfidOut3" uuid="dad84dbd-376b-4bec-9b06-9705fc6b0eb0" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
-      <parameter name="refreshInterval" type="long" value="200">
+      <parameter name="refreshInterval" type="long" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
          <property name="displayName" type="string" value="Refresh interval [ms]"/>
          <property name="affectGeometry" type="boolean" value="false"/>
