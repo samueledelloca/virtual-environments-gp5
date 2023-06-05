@@ -147,11 +147,11 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="NC2" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+        <module-instance name="G" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="9375" y="-1061"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">NC2.startFrame</param>
-            <param name="endFrame">NC2.endFrame</param>
+            <param name="startFrame">G.startFrame</param>
+            <param name="endFrame">G.endFrame</param>
             <param name="sensorNames"></param>
             <param name="sensorPositions"></param>
             <param name="sensorsReveal"></param>
@@ -159,11 +159,11 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
-        <module-instance name="NC1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
+        <module-instance name="F" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="5895" y="-977"/>
             <param name="conveyorSpeed">1</param>
-            <param name="startFrame">NC1.startFrame</param>
-            <param name="endFrame">NC1.endFrame</param>
+            <param name="startFrame">F.startFrame</param>
+            <param name="endFrame">F.endFrame</param>
             <param name="sensorNames"></param>
             <param name="sensorPositions"></param>
             <param name="sensorsReveal"></param>
@@ -468,7 +468,7 @@
             <param name="id">rfidIn</param>
             <param name="refreshInterval">200</param>
             <param name="sensorGeometryId">rfidIn.pc_geom</param>
-            <param name="marker"></param>
+            <param name="marker">box</param>
             <param name="codeName">rfid</param>
             <param name="writeOnlyOnce">true</param>
         </module-instance>
@@ -491,7 +491,7 @@
             <port-in module="ABD2" port="flowIn"/>
         </connection>
         <connection>
-            <port-out module="NC1" port="flowOut"/>
+            <port-out module="F" port="flowOut"/>
             <port-in module="SF" port="in"/>
         </connection>
         <connection>
@@ -511,11 +511,11 @@
             <port-in module="P1" port="toConveyor"/>
         </connection>
         <connection>
-            <port-out module="NC1" port="control"/>
+            <port-out module="F" port="control"/>
             <port-in module="P2" port="toConveyor"/>
         </connection>
         <connection>
-            <port-out module="NC2" port="control"/>
+            <port-out module="G" port="control"/>
             <port-in module="P3" port="toConveyor"/>
         </connection>
         <connection>
@@ -567,7 +567,7 @@
             <port-in module="SE" port="in"/>
         </connection>
         <connection>
-            <port-out module="NC2" port="flowOut"/>
+            <port-out module="G" port="flowOut"/>
             <port-in module="SG" port="in"/>
         </connection>
         <connection>
