@@ -11,13 +11,13 @@
             <param name="codeName">rfid</param>
             <param name="writeOnlyOnce">true</param>
         </module-instance>
-        <module-instance name="durationMsA2" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="9841" y="-2334"/>
-            <param name="id">durationMsA2</param>
+        <module-instance name="durationMsA1" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="10097" y="-2334"/>
+            <param name="id">durationMsA1</param>
             <param name="refreshInterval">100</param>
-            <param name="sensorGeometryId">durationMsA2.pc_geom</param>
+            <param name="sensorGeometryId">durationMsA1.pc_geom</param>
             <param name="marker">box</param>
-            <param name="codeName">durationMsA2</param>
+            <param name="codeName">durationMsA1</param>
             <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="E1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
@@ -62,8 +62,8 @@
             <param name="startFrame">E6.startFrame</param>
             <param name="endFrame">E6.endFrame</param>
             <param name="sensorNames">S1E6;S2E6;S3E6</param>
-            <param name="sensorPositions">750;1525;1550</param>
-            <param name="sensorsReveal">CENTER;CENTER;CENTER</param>
+            <param name="sensorPositions">750;1525;2000</param>
+            <param name="sensorsReveal">CENTER;CENTER;LEAD</param>
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
@@ -126,15 +126,6 @@
             <param name="infoContent"></param>
             <param name="infoFrame">SF.creationFrame</param>
         </module-instance>
-        <module-instance name="porco" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="9028" y="-2325"/>
-            <param name="id">porco</param>
-            <param name="refreshInterval">500</param>
-            <param name="sensorGeometryId">porco.pc_geom</param>
-            <param name="marker">box</param>
-            <param name="codeName">porco</param>
-            <param name="writeOnlyOnce">true</param>
-        </module-instance>
         <module-instance name="A1" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="-9384" y="-2329"/>
             <param name="conveyorSpeed">1</param>
@@ -153,13 +144,13 @@
             <param name="infoContent"></param>
             <param name="infoFrame">SG.creationFrame</param>
         </module-instance>
-        <module-instance name="durationMsA1" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="9981" y="-2334"/>
-            <param name="id">durationMsA1</param>
+        <module-instance name="durationMsA2" type="com.ttsnetwork.modules.standard.RFIDSensor">
+            <visual x="10093" y="-2334"/>
+            <param name="id">durationMsA2</param>
             <param name="refreshInterval">100</param>
-            <param name="sensorGeometryId">durationMsA1.pc_geom</param>
+            <param name="sensorGeometryId">durationMsA2.pc_geom</param>
             <param name="marker">box</param>
-            <param name="codeName">durationMsA1</param>
+            <param name="codeName">durationMsA2</param>
             <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="ABC" type="com.ttsnetwork.modules.standard.ConveyorLine2">
@@ -373,7 +364,7 @@
             <param name="bucket">local</param>
         </module-instance>
         <module-instance name="rfidOut3" type="com.ttsnetwork.modules.standard.RFIDSensor">
-            <visual x="9981" y="-2334"/>
+            <visual x="10097" y="-2334"/>
             <param name="id">rfidOut3</param>
             <param name="refreshInterval">100</param>
             <param name="sensorGeometryId">rfidOut3.pc_geom</param>

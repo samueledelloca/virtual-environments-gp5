@@ -190,14 +190,15 @@ public class PLCL3 extends ProgrammableLogics {
     }
 
     private void boxFinished(SensorCatch sc) {
-//        long creationDateMs = sc.box.entity.getProperty("creationDateMs");
-//        long durationMs = System.currentTimeMillis() - creationDateMs;
-//
-//        if (sc.box.entity.getProperty("rfid").equals("A1")) {
-//            sc.box.entity.setProperty("durationMsA1", durationMs);
-//        } else {
-//            sc.box.entity.setProperty("durationMsA2", durationMs);
-//        }
+        long creationDateMs = sc.box.entity.getProperty("creationDateMs");
+        long durationMs = System.currentTimeMillis() - creationDateMs;
+        String durationMsString = String.valueOf(durationMs);
+
+        if (sc.box.entity.getProperty("rfid").equals("A1")) {
+            sc.box.entity.setProperty("durationMsA1", durationMsString);
+        } else {
+            sc.box.entity.setProperty("durationMsA2", durationMsString);
+        }
 
     }
 
