@@ -41,9 +41,6 @@ public class PLCL2 extends ProgrammableLogics {
     private IConveyorCommands dCmd;
     private IConveyorCommands abd3Cmd;
     private IConveyorCommands abd4Cmd;
-//    private IConveyorCommands abd5Cmd;
-//    private IConveyorCommands abd6Cmd;
-//    private IConveyorCommands e1Cmd;
 
     private ISensorProvider s1dSens;
     private ISensorProvider s1abd3Sens;
@@ -99,7 +96,6 @@ public class PLCL2 extends ProgrammableLogics {
                 r4Cmd.moveLinear(abd3TargetOffset, 2000);
                 abd3Cmd.speedSet(1);
                 r4Cmd.move(dTargetOffset, 2000);
-                // reset the speed of the conveyors
                 dCmd.speedSet(1);
             }
             schedule.end();
@@ -158,11 +154,14 @@ public class PLCL2 extends ProgrammableLogics {
         abd4Cmd = ABD4.createCommands(module);
         s1abd4Sens = ABD4.createSensors(module);
 
-//        e1Cmd = E1.createCommands(module);
         s1dSens.registerOnSensors(this::dBoxArrived, "S1D");
         s1abd3Sens.registerOnSensors(this::abd3BoxArrived, "S1ABD3");
         s1abd4Sens.registerOnSensors(this::abd4BoxArrived, "S1ABD4");
-
+        
+        schedule.startSerial();
+        {
+            schedule.waitTime(1000);
+        }
+        schedule.end();
     }
-
 }

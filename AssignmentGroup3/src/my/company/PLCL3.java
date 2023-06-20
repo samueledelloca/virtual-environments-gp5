@@ -49,22 +49,12 @@ public class PLCL3 extends ProgrammableLogics {
     private ISensorProvider s2e6Sens;
     private ISensorProvider s3e6Sens;
 
-    private IConveyorCommands abcCmd;
-    private IConveyorCommands abd6Cmd;
     private IConveyorCommands abd7Cmd;
     private IConveyorCommands e1Cmd;
     private IConveyorCommands e2Cmd;
     private IConveyorCommands e3Cmd;
     private IConveyorCommands e4Cmd;
-    private IConveyorCommands e5Cmd;
     private IConveyorCommands e6Cmd;
-
-    private IRobotCommands r3Cmd;
-
-    private ConveyorBox boxOn1;
-    private ConveyorBox boxOn2;
-    private ConveyorBox boxOn3;
-    private ConveyorBox boxOn4;
 
     private UniformRealDistribution distribution;
 
@@ -105,14 +95,6 @@ public class PLCL3 extends ProgrammableLogics {
                 e1Cmd.speedSet(1);
                 abd7Cmd.speedSet(0);
             }
-        }
-        schedule.end();
-    }
-
-    private void eBoxMerging(SensorCatch sc) {
-        schedule.startSerial();
-        {
-
         }
         schedule.end();
     }
@@ -199,63 +181,8 @@ public class PLCL3 extends ProgrammableLogics {
         } else {
             sc.box.entity.setProperty("durationMsA2", durationMsString);
         }
-
     }
-
-    @Override
-    public void onInit() {
-
-        distribution = model.getRandomGenerator().getUniformRealDistribution(0, 1);
-
-        e1Cmd = E1.createCommands(module);
-        e2Cmd = E2.createCommands(module);
-        e3Cmd = E3.createCommands(module);
-        e4Cmd = E4.createCommands(module);
-        e5Cmd = E5.createCommands(module);
-        e6Cmd = E6.createCommands(module);
-
-        s1e1Sens = E1.createSensors(module);
-        s2e1Sens = E1.createSensors(module);
-        s1e2Sens = E2.createSensors(module);
-        s1e3Sens = E3.createSensors(module);
-        s1e4Sens = E4.createSensors(module);
-        s1e6Sens = E6.createSensors(module);
-        s2e6Sens = E6.createSensors(module);
-        s3e6Sens = E6.createSensors(module);
-
-        r3Cmd = R3.create(module);
-
-        abd6Cmd = ABD6.createCommands(module);
-        s1abd6Sens = ABD6.createSensors(module);
-
-        abd7Cmd = ABD7.createCommands(module);
-        s1abd7Sens = ABD7.createSensors(module);
-
-        s1abd6Sens.registerOnSensors(this::abd6BoxDetected, "S1ABD6");
-        s1abd7Sens.registerOnSensors(this::abd7BoxArrived, "S1ABD7");
-        s1e1Sens.registerOnSensors(this::e1BoxDetected, "S1E1");
-        s2e1Sens.registerOnSensors(this::eBoxMerging, "S2E1");
-        s1e2Sens.registerOnSensors(this::eBoxExiting, "S1E2");
-        s1e3Sens.registerOnSensors(this::eBoxFirstStop, "S1E3");
-        s1e4Sens.registerOnSensors(this::pushWithP2, "S1E4");
-        s1e6Sens.registerOnSensors(this::eBoxSecondStop, "S1E6");
-        s2e6Sens.registerOnSensors(this::pushWithP3, "S2E6");
-        s3e6Sens.registerOnSensors(this::boxFinished, "S3E6");
-
-        schedule.startSerial();
-        {
-            schedule.waitTime(1000);
-//            srcCmd.create(null);
-//            schedule.waitTime(4000);
-//            schedule.callFunction(this::extractP2);
-//            schedule.callFunction(this::extractP3);
-//            schedule.waitTime(1000);
-//            schedule.callFunction(this::retractP2);
-//            schedule.callFunction(this::retractP3);
-        }
-        schedule.end();
-    }
-
+    
     public void extractP2() {
         P2.cmdStable.write(true);
     }
@@ -270,5 +197,45 @@ public class PLCL3 extends ProgrammableLogics {
 
     public void retractP3() {
         P3.cmdStable.write(false);
+    }
+
+    @Override
+    public void onInit() {
+
+        distribution = model.getRandomGenerator().getUniformRealDistribution(0, 1);
+
+        e1Cmd = E1.createCommands(module);
+        e2Cmd = E2.createCommands(module);
+        e3Cmd = E3.createCommands(module);
+        e4Cmd = E4.createCommands(module);
+        e6Cmd = E6.createCommands(module);
+        abd7Cmd = ABD7.createCommands(module);
+
+        s1e1Sens = E1.createSensors(module);
+        s2e1Sens = E1.createSensors(module);
+        s1e2Sens = E2.createSensors(module);
+        s1e3Sens = E3.createSensors(module);
+        s1e4Sens = E4.createSensors(module);
+        s1e6Sens = E6.createSensors(module);
+        s2e6Sens = E6.createSensors(module);
+        s3e6Sens = E6.createSensors(module);
+        s1abd6Sens = ABD6.createSensors(module);
+        s1abd7Sens = ABD7.createSensors(module);
+
+        s1abd6Sens.registerOnSensors(this::abd6BoxDetected, "S1ABD6");
+        s1abd7Sens.registerOnSensors(this::abd7BoxArrived, "S1ABD7");
+        s1e1Sens.registerOnSensors(this::e1BoxDetected, "S1E1");
+        s1e2Sens.registerOnSensors(this::eBoxExiting, "S1E2");
+        s1e3Sens.registerOnSensors(this::eBoxFirstStop, "S1E3");
+        s1e4Sens.registerOnSensors(this::pushWithP2, "S1E4");
+        s1e6Sens.registerOnSensors(this::eBoxSecondStop, "S1E6");
+        s2e6Sens.registerOnSensors(this::pushWithP3, "S2E6");
+        s3e6Sens.registerOnSensors(this::boxFinished, "S3E6");
+
+        schedule.startSerial();
+        {
+            schedule.waitTime(1000);
+        }
+        schedule.end();
     }
 }

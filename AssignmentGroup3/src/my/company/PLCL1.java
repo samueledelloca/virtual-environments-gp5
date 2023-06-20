@@ -49,7 +49,6 @@ public class PLCL1 extends ProgrammableLogics {
     private IConveyorCommands a2Cmd;
     private IConveyorCommands a3Cmd;
     private IConveyorCommands bCmd;
-    private IConveyorCommands abd1Cmd;
     private IConveyorCommands cCmd;
     public IConveyorCommands abcCmd;
 
@@ -136,7 +135,7 @@ public class PLCL1 extends ProgrammableLogics {
         }
     }
 
-    private void doABAssembly() {
+    private void doABAssembly() { 
         // assembly can be performed only if both boxes are present
         if (boxOnA != null && boxOnB != null) {
             // execute the series of assembly operations
@@ -231,6 +230,14 @@ public class PLCL1 extends ProgrammableLogics {
         schedule.end();
         boxOnABC = null;
     }
+    
+    public void extractP1() {
+        P1.cmdStable.write(true);
+    }
+
+    public void retractP1() {
+        P1.cmdStable.write(false);
+    }
 
     @Override
     public void onInit() {
@@ -238,7 +245,6 @@ public class PLCL1 extends ProgrammableLogics {
         a2Cmd = A2.createCommands(module);
         a3Cmd = A3.createCommands(module);
         bCmd = B.createCommands(module);
-        abd1Cmd = ABD1.createCommands(module);
         cCmd = C.createCommands(module);
         abcCmd = ABC.createCommands(module);
 
@@ -249,6 +255,7 @@ public class PLCL1 extends ProgrammableLogics {
         s1bSens = B.createSensors(module);
         s1cSens = C.createSensors(module);
         s1abcSens = ABC.createSensors(module);
+        
         r1Cmd = R1.create(module);
         r2Cmd = R2.create(module);
         r3Cmd = R3.create(module);
@@ -266,13 +273,5 @@ public class PLCL1 extends ProgrammableLogics {
             schedule.waitTime(1000);
         }
         schedule.end();
-    }
-
-    public void extractP1() {
-        P1.cmdStable.write(true);
-    }
-
-    public void retractP1() {
-        P1.cmdStable.write(false);
     }
 }
