@@ -1750,6 +1750,214 @@
          <property name="affectGeometry" type="boolean" value="false"/>
       </parameter>
    </instance>
+   <instance name="photocellFirstQC" uuid="12028397-a64c-43ef-8e6a-5537f5069743" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellOven" uuid="a18f6c88-04be-4c03-b3ed-e9dd0caf9a8d" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="1000">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellR1" uuid="a28ebfcd-f776-431c-a178-4bd05ec156ec" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellR2" uuid="8c7c631e-23ee-43e1-aed4-2969eb83def9" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellR3" uuid="6e7c0031-6d6e-48a5-bab3-ec38e4ab8086" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellR4" uuid="b717610a-be6a-45a4-810d-3f2363619fdd" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellR5" uuid="75905f21-881f-4906-a2cf-69a5be6d9475" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
+   <instance name="photocellSecondQC" uuid="2efecf00-67ba-4232-b11d-3926f1bd6f28" version="1" prototype="8c1784c8-48f3-45f0-92f6-ba38ec17a296">
+      <parameter name="refreshInterval" type="long" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Refresh interval [ms]"/>
+      </parameter>
+      <parameter name="length" type="double" value="500">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam length [mm]"/>
+      </parameter>
+      <parameter name="height" type="double" value="50">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam height [mm]"/>
+      </parameter>
+      <parameter name="width" type="double" value="100">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Beam width [mm]"/>
+      </parameter>
+      <parameter name="marker" type="string" value="box">
+         <property name="constraints" type="string" value="&gt;0"/>
+         <property name="displayName" type="string" value="Object marker"/>
+      </parameter>
+      <parameter name="writeDistinct" type="boolean" value="false">
+         <property name="displayName" type="string" value="Only changes"/>
+         <property name="affectGeometry" type="boolean" value="false"/>
+      </parameter>
+   </instance>
    <instance name="rfidIn" uuid="1c3ec362-ba13-4fd1-8e63-bb5f17b9fa9d" version="1" prototype="26e00061-2d73-4934-8d37-94ce4f116b71">
       <parameter name="refreshInterval" type="long" value="100">
          <property name="constraints" type="string" value="&gt;0"/>
@@ -1908,6 +2116,7 @@
    <relationship sourcePortName="out" sourceInstanceUuid="64b005a6-20d5-48c0-911e-68b115b81915" targetPortName="in" targetInstanceUuid="14f4c041-9ecf-4439-897c-c497b2894c6b"/>
    <relationship sourcePortName="TOOL" sourceInstanceUuid="1d33bea5-f852-43a1-a513-c0af6015f500" targetPortName="TOOL" targetInstanceUuid="8d41c93f-75ee-4958-ae24-2257f19f2d07"/>
    <relationship sourcePortName="TOOL" sourceInstanceUuid="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96" targetPortName="TOOL" targetInstanceUuid="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>
+   <relationship sourcePortName="control" sourceInstanceUuid="1fdc793f-1fe8-4b91-9a0c-abc52dc241ea" targetPortName="IN" targetInstanceUuid="4bd601ac-3870-4683-8abe-876d9f477987"/>
    <modifiers type="attach">
       <property name="childInstance" type="string" value="1dc4c48d-92ee-44c3-9e6a-cf6e83f44e96"/>
       <property name="parentInstance" type="string" value="f68e4e5f-2374-4f9b-aaee-55ed870d8b35"/>

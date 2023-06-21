@@ -11,6 +11,13 @@
             <param name="codeName">rfid</param>
             <param name="writeOnlyOnce">true</param>
         </module-instance>
+        <module-instance name="photocellR1" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="-9183" y="-2352"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellR1.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
+        </module-instance>
         <module-instance name="durationMsA1" type="com.ttsnetwork.modules.standard.RFIDSensor">
             <visual x="10097" y="-2334"/>
             <param name="id">durationMsA1</param>
@@ -201,6 +208,13 @@
             <param name="script"></param>
             <param name="logicClassName"></param>
         </module-instance>
+        <module-instance name="photocellR2" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="-1985" y="-2337"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellR2.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
+        </module-instance>
         <module-instance name="ABD3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="-2207" y="1877"/>
             <param name="conveyorSpeed">1</param>
@@ -285,6 +299,13 @@
             <param name="script"></param>
             <param name="logicClassName"></param>
         </module-instance>
+        <module-instance name="photocellR4" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="-1959" y="1886"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellR4.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
+        </module-instance>
         <module-instance name="W1" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
             <visual x="767" y="-2468"/>
             <param name="tcpFrameId">W1.gun.tcp</param>
@@ -320,6 +341,13 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="photocellR3" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="768" y="-2324"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellR3.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
+        </module-instance>
         <module-instance name="E3" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="4366" y="-2329"/>
             <param name="conveyorSpeed">1</param>
@@ -343,6 +371,13 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="photocellOven" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="7362" y="-2322"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellOven.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
         </module-instance>
         <module-instance name="P1" type="com.ttsnetwork.modules.standard.Pusher">
             <visual x="-5757" y="-2807"/>
@@ -373,7 +408,7 @@
             <param name="writeOnlyOnce">true</param>
         </module-instance>
         <module-instance name="R2" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-1119" y="-3277"/>
+            <visual x="-704" y="-2997"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -425,7 +460,7 @@
             <param name="marker"></param>
         </module-instance>
         <module-instance name="R1" type="com.ttsnetwork.modules.standard.Robot6DOF2">
-            <visual x="-8950" y="-3277"/>
+            <visual x="-9188" y="-3277"/>
             <param name="translationSpeed">1000</param>
             <param name="translationAcceleration">1000</param>
             <param name="rotationSpeed">360</param>
@@ -460,6 +495,13 @@
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
         </module-instance>
+        <module-instance name="photocellR5" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="277" y="1860"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellR5.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
+        </module-instance>
         <module-instance name="ABD6" type="com.ttsnetwork.modules.standard.ConveyorLine2">
             <visual x="2843" y="-623"/>
             <param name="conveyorSpeed">1</param>
@@ -471,6 +513,13 @@
             <param name="sensorFrames"></param>
             <param name="idleOnStart">false</param>
             <param name="infoContent"></param>
+        </module-instance>
+        <module-instance name="photocellFirstQC" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="4418" y="-2323"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellFirstQC.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
         </module-instance>
         <module-instance name="W2" type="com.ttsnetwork.modules.standard.RobotWeldingGun">
             <visual x="376" y="1877"/>
@@ -489,6 +538,13 @@
             <param name="marker">box</param>
             <param name="codeName">rfid</param>
             <param name="writeOnlyOnce">true</param>
+        </module-instance>
+        <module-instance name="photocellSecondQC" type="com.ttsnetwork.modules.standard.SimplePhotoCell">
+            <visual x="8619" y="-2355"/>
+            <param name="refreshInterval">50</param>
+            <param name="sensorGeometryId">photocellSecondQC.pc_geom</param>
+            <param name="marker">box</param>
+            <param name="writeOnlyOnce">false</param>
         </module-instance>
         <module-instance name="SB" type="com.ttsnetwork.modules.standard.ParametricSource2">
             <visual x="-9191" y="988"/>
@@ -619,6 +675,10 @@
         <connection>
             <port-out module="W1" port="control"/>
             <port-in module="R3" port="tool"/>
+        </connection>
+        <connection>
+            <port-out module="ABC" port="control"/>
+            <port-in module="R2" port="in"/>
         </connection>
     </connections>
 </model>
