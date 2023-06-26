@@ -121,7 +121,7 @@ public class PLCL1 extends ProgrammableLogics {
         schedule.end();
     }
 
-    private void pushA2Box(SensorCatch sc) {
+    private void pushA1Box(SensorCatch sc) {
         if ("A1".equals(sc.box.entity.getProperty("rfid"))) {
             schedule.startSerial();
             {
@@ -262,7 +262,7 @@ public class PLCL1 extends ProgrammableLogics {
 
         s1a1Sens.registerOnSensors(this::boxACreated, "S1A1");
         s2a1Sens.registerOnSensors(this::boxAArrived, "S2A1");
-        s1a2Sens.registerOnSensors(this::pushA2Box, "S1A2");
+        s1a2Sens.registerOnSensors(this::pushA1Box, "S1A2");
         s1a3Sens.registerOnSensors(this::boxABArrived, "S1A3");
         s1bSens.registerOnSensors(this::boxBArrived, "S1B");
         s1cSens.registerOnSensors(this::boxCArrived, "S1C");
